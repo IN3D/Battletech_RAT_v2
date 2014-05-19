@@ -12,7 +12,7 @@
 	
 	This file contains the tables found in Field Manual: Mercenaries Revised
 -->
-<book>
+<book name="Field Manual: Mercenaries Revised">
 	<faction name="Mercenary">
 		<tech name="A">
 			<weight name="light">

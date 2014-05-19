@@ -12,7 +12,7 @@
 	
 	This file contains the tables found in Field Manual: Crusader Clans
 -->
-<book>
+<book name="Field Manual: Crusader Clans">
 	<faction name="Clan Blood Spirit">
 		<tech name="Front Line">
 			<weight name="light">

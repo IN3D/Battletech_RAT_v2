@@ -12,7 +12,7 @@
 	
 	This file contains the tables found in Field Manual: Federated Suns
 -->
-<book>
+<book name="Field Manual: Federated Suns">
 	<faction name="Federated Suns">
 		<tech name="A">
 			<weight name="light">

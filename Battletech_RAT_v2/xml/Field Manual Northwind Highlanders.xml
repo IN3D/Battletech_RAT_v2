@@ -12,7 +12,7 @@
 	
 	This file contains the tables found in Field Manual: Northwind Highlanders
 -->
-<book>
+<book name="Field Manual: Northwind Highlanders">
 	<faction name="Northwind Highlanders">
 		<tech name="default">
 			<weight name="light">

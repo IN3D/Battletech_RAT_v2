@@ -12,7 +12,7 @@
     
     This file contains the tables found in Field Manual: Capellan Confederation
 -->
-<book>
+<book name ="Field Manual: Capellan Confederation">
     <faction name="Capellan Confederation">
         <tech name="CCAF A">
             <weight name="light">

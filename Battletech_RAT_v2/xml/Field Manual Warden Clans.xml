@@ -12,7 +12,7 @@
 	
 	This file contains the tables found in Field Manual: Warden Clans
 -->
-<book>
+<book name="Field Manual: Warden Clans">
 	<faction name="Clan Cloud Cobra">
 		<tech name="Front Line">
 			<weight name="light">

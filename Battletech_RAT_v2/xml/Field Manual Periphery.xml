@@ -12,7 +12,7 @@
 	
 	This file contains the tables found in Field Manual: Periphery
 -->
-<book>
+<book name="Field Manual: Periphery">
 	<faction name="General Periphery">
 		<tech name="default">
 			<weight name="light">

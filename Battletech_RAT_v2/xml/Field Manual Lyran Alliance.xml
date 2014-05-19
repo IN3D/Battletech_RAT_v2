@@ -12,7 +12,7 @@
 	
 	This file contains the tables found in Field Manual: Lyran Alliance
 -->
-<book>
+<book name="Field Manual: Lyran Alliance">
 	<faction name="Lyran Alliance">
 		<tech name="A">
 			<weight name="light">

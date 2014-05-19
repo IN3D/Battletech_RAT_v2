@@ -12,7 +12,7 @@
     
     This file contains the tables found in Field Manual: Free Worlds League
 -->
-<book>
+<book name="Field Manual: Free Worlds League">
     <faction name="Free Worlds League">
         <tech name="A">
             <weight name="light">

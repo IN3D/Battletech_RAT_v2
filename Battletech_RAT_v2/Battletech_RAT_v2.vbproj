@@ -123,8 +123,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="xml\Field Manual Capellan Confederation.xml" />
+    <Content Include="xml\Field Manual Crusader Clans.xml" />
+    <Content Include="xml\Field Manual Draconis Combine.xml" />
+    <Content Include="xml\Field Manual Federated Suns.xml" />
+    <Content Include="xml\Field Manual Free Worlds League.xml" />
+    <Content Include="xml\Field Manual Lyran Alliance.xml" />
+    <Content Include="xml\Field Manual Mercenaries Revised.xml" />
     <Content Include="xml\Field Manual Mercenaries.xml" />
+    <Content Include="xml\Field Manual Northwind Highlanders.xml" />
+    <Content Include="xml\Field Manual Periphery.xml" />
+    <Content Include="xml\Field Manual Warden Clans.xml" />
     <Content Include="xml\Total Warfare.xml" />
+    <Content Include="xml\War of 3039.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
