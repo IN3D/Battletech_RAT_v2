@@ -7,7 +7,7 @@
 
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        Call LoadXML("..//..//xml//Total Warfare.xml")
+        Call LoadXML("..//..//xml//")
         Call PopulateFactionList()
     End Sub
 
@@ -22,6 +22,7 @@
 
             ComboBoxTech.Items.Add(tempName)
         Next
+
     End Sub
 
     Private Sub ComboBoxTech_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxTech.SelectedIndexChanged

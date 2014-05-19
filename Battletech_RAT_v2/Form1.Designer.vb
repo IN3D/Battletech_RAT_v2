@@ -31,6 +31,8 @@ Partial Class MainForm
         Me.LabelWeight = New System.Windows.Forms.Label()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabelDebugCounter = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.ComboBoxBook = New System.Windows.Forms.ComboBox()
+        Me.LabelBook = New System.Windows.Forms.Label()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -47,7 +49,7 @@ Partial Class MainForm
         'ComboBoxFaction
         '
         Me.ComboBoxFaction.FormattingEnabled = True
-        Me.ComboBoxFaction.Location = New System.Drawing.Point(12, 50)
+        Me.ComboBoxFaction.Location = New System.Drawing.Point(12, 70)
         Me.ComboBoxFaction.Name = "ComboBoxFaction"
         Me.ComboBoxFaction.Size = New System.Drawing.Size(121, 21)
         Me.ComboBoxFaction.TabIndex = 1
@@ -55,7 +57,7 @@ Partial Class MainForm
         'ComboBoxTech
         '
         Me.ComboBoxTech.FormattingEnabled = True
-        Me.ComboBoxTech.Location = New System.Drawing.Point(12, 90)
+        Me.ComboBoxTech.Location = New System.Drawing.Point(12, 110)
         Me.ComboBoxTech.Name = "ComboBoxTech"
         Me.ComboBoxTech.Size = New System.Drawing.Size(121, 21)
         Me.ComboBoxTech.TabIndex = 2
@@ -63,7 +65,7 @@ Partial Class MainForm
         'ComboBoxWeight
         '
         Me.ComboBoxWeight.FormattingEnabled = True
-        Me.ComboBoxWeight.Location = New System.Drawing.Point(12, 130)
+        Me.ComboBoxWeight.Location = New System.Drawing.Point(12, 150)
         Me.ComboBoxWeight.Name = "ComboBoxWeight"
         Me.ComboBoxWeight.Size = New System.Drawing.Size(121, 21)
         Me.ComboBoxWeight.TabIndex = 3
@@ -71,7 +73,7 @@ Partial Class MainForm
         'LabelFaction
         '
         Me.LabelFaction.AutoSize = True
-        Me.LabelFaction.Location = New System.Drawing.Point(12, 34)
+        Me.LabelFaction.Location = New System.Drawing.Point(12, 54)
         Me.LabelFaction.Name = "LabelFaction"
         Me.LabelFaction.Size = New System.Drawing.Size(45, 13)
         Me.LabelFaction.TabIndex = 4
@@ -80,7 +82,7 @@ Partial Class MainForm
         'LabelTech
         '
         Me.LabelTech.AutoSize = True
-        Me.LabelTech.Location = New System.Drawing.Point(12, 74)
+        Me.LabelTech.Location = New System.Drawing.Point(12, 94)
         Me.LabelTech.Name = "LabelTech"
         Me.LabelTech.Size = New System.Drawing.Size(35, 13)
         Me.LabelTech.TabIndex = 5
@@ -89,7 +91,7 @@ Partial Class MainForm
         'LabelWeight
         '
         Me.LabelWeight.AutoSize = True
-        Me.LabelWeight.Location = New System.Drawing.Point(13, 114)
+        Me.LabelWeight.Location = New System.Drawing.Point(13, 134)
         Me.LabelWeight.Name = "LabelWeight"
         Me.LabelWeight.Size = New System.Drawing.Size(44, 13)
         Me.LabelWeight.TabIndex = 6
@@ -110,11 +112,30 @@ Partial Class MainForm
         Me.ToolStripStatusLabelDebugCounter.Size = New System.Drawing.Size(13, 17)
         Me.ToolStripStatusLabelDebugCounter.Text = "0"
         '
+        'ComboBoxBook
+        '
+        Me.ComboBoxBook.FormattingEnabled = True
+        Me.ComboBoxBook.Location = New System.Drawing.Point(12, 30)
+        Me.ComboBoxBook.Name = "ComboBoxBook"
+        Me.ComboBoxBook.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBoxBook.TabIndex = 8
+        '
+        'LabelBook
+        '
+        Me.LabelBook.AutoSize = True
+        Me.LabelBook.Location = New System.Drawing.Point(12, 12)
+        Me.LabelBook.Name = "LabelBook"
+        Me.LabelBook.Size = New System.Drawing.Size(35, 13)
+        Me.LabelBook.TabIndex = 9
+        Me.LabelBook.Text = "Book:"
+        '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(368, 332)
+        Me.Controls.Add(Me.LabelBook)
+        Me.Controls.Add(Me.ComboBoxBook)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.LabelWeight)
         Me.Controls.Add(Me.LabelTech)
@@ -140,5 +161,7 @@ Partial Class MainForm
     Friend WithEvents LabelWeight As System.Windows.Forms.Label
     Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
     Friend WithEvents ToolStripStatusLabelDebugCounter As System.Windows.Forms.ToolStripStatusLabel
+    Friend WithEvents ComboBoxBook As System.Windows.Forms.ComboBox
+    Friend WithEvents LabelBook As System.Windows.Forms.Label
 
 End Class

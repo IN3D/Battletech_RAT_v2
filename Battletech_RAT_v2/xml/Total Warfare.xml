@@ -7,12 +7,12 @@
 	by: Eric Hopkins
 	
 	==Last Modified==
-	on: 5/16/14
+	on: 5/19/14
 	by: Eric Hopkins
 	
 	This file contrains the tables found in Total Warfare
 -->
-<book>
+<book name="Total Warfare">
 	<faction name="Kurita">
 		<tech name="default">
 			<weight name="light">
