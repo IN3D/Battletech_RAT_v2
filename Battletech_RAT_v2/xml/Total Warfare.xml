@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Battletech: Random Assignment Table v2.0
+	
+	==Created==
+	on: 5/3/14
+	by: Eric Hopkins
+	
+	==Last Modified==
+	on: 5/16/14
+	by: Eric Hopkins
+	
+	This file contrains the tables found in Total Warfare
+-->
+<book>
+	<faction name="Kurita">
+		<tech name="default">
+			<weight name="light">
+				<mech>HM-1 Hitman</mech>
+				<mech>JR7-D Jenner</mech>
+				<mech>OW-1 Owens</mech>
+				<mech>PN-10K Panther</mech>
+				<mech>RTX1-0C Raptor</mech>
+				<mech>RTX1-0 Raptor</mech>
+				<mech>SDR-9K Spider</mech>
+				<mech>JR7-K Jenner</mech>
+				<mech>SDR-7M Spider</mech>
+				<mech>KBO-7A Kabuto</mech>
+				<mech>PNT-9R Panther</mech>
+			</weight>
+			<weight name="medium">
+				<mech>KTO-20 Kintaro</mech>
+				<mech>BSN-3K Bishamon</mech>
+				<mech>WFT-1 Wolf Trap</mech>
+				<mech>DMO-1K Daimyo</mech>
+				<mech>BJ2-0 Blackjack</mech>
+				<mech>FS9-0 Firestarter</mech>
+				<mech>SR1-0D Strider</mech>
+				<mech>KIM-2 Komodo</mech>
+				<mech>WFT-1 Wolf Trap</mech>
+				<mech>WVR-8K Wolverine</mech>
+				<mech>LNX-9C Lynx</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>NJT-2 Ninja-To</mech>
+				<mech>DGR-3F Dragon Fire</mech>
+				<mech>AV1-0A Avatar</mech>
+				<mech>BHKU-0 Black Hawk-KU</mech>
+				<mech>DAI-01 Daikyu</mech>
+				<mech>DRG-5K Grand Dragon</mech>
+				<mech>DRG-5K Grand Dragon</mech>
+				<mech>MTR-5K Maelstrom</mech>
+				<mech>SJA-7D Shugenja</mech>
+				<mech>CDR-5K Crusader</mech>
+				<mech>NDA-1K No Dachi</mech>
+			</weight>
+			<weight name="assault">
+				<mech>TSH-7S Tai-sho</mech>
+				<mech>NG-C3A Naginata</mech>
+				<mech>HTM-27T Hatamoto-Chi</mech>
+				<mech>SD1-0 Sunder</mech>
+				<mech>AS7-K Atlas</mech>
+				<mech>HTM-27T Hatamoto-Chi</mech>
+				<mech>MAL-1R Mauler</mech>
+				<mech>CRK-5003-2 Katana</mech>
+				<mech>CGR-3K Charger</mech>
+				<mech>SD1-0B Sunder</mech>
+				<mech>AKU-1X Axuma</mech>
+			</weight>
+		</tech>
+	</faction>
+	<faction name="Davion">
+		<tech name="default">
+			<weight name="light">
+				<mech>RTX1-0 Raptor</mech>
+				<mech>HNT-171 Hornet</mech>
+				<mech>ALM-7D Fireball</mech>
+				<mech>JVN-10P Javelin</mech>
+				<mech>WLF-2 Wolfhound</mech>
+				<mech>JVN-10P Javelin</mech>
+				<mech>COM-5S Commando</mech>
+				<mech>VLK-QD1 Valkyrie</mech>
+				<mech>DRT-3S Dart</mech>
+				<mech>BH-305 Battle Hawk</mech>
+				<mech>SPR-5F Spector</mech>
+			</weight>
+			<weight name="medium">
+				<mech>ENF-6M Enforcer III</mech>
+				<mech>FS9-0 Firestarter</mech>
+				<mech>STH-1D Stealth</mech>
+				<mech>BJ-2 Blackjack</mech>
+				<mech>WTH-2 Whitworth</mech>
+				<mech>ENF-5D Enforcer</mech>
+				<mech>HCT-5S Hatchetman</mech>
+				<mech>CN9-D Centurion</mech>
+				<mech>NGS-4S Nightsky</mech>
+				<mech>SNT-04 Sentry</mech>
+				<mech>SR1-0 Strider</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>TNS-4S Thantos</mech>
+				<mech>OTL-6D Ostsol</mech>
+				<mech>AXM-1N Axman</mech>
+				<mech>CES-3R Caesar</mech>
+				<mech>PTR-4D Penetrator</mech>
+				<mech>JM6-DD Jagermech</mech>
+				<mech>FLC-8R Falconer</mech>
+				<mech>JM6-D3 JagerMech III</mech>
+				<mech>WHM-8D Warhammer</mech>
+				<mech>CTF-3D Cataphract</mech>
+				<mech>RFL-8D Rifleman</mech>
+				</weight>
+			<weight name="assault">
+				<mech>DVS-02 Devastator</mech>
+				<mech>TLR1-0 Templar</mech>
+				<mech>AWS-8Q Awesome</mech>
+				<mech>GUN-1ERD Gunslinger</mech>
+				<mech>VTR-9K Victor</mech>
+				<mech>VTR-9K Victor</mech>
+				<mech>AS7-K Atlas</mech>
+				<mech>VTR-9B Victor</mech>
+				<mech>LGB-12C Longbow</mech>
+				<mech>BNC-5S Banshee</mech>
+				<mech>SGT-8R Sagittaire</mech>
+			</weight>
+		</tech>
+	</faction>
+	<faction name="Liao">
+		<tech name="default">
+			<weight name="light">
+				<mech>JA-KL-1532 Jackal</mech>
+				<mech>JR7-D Jenner</mech>
+				<mech>RVN-3L Raven</mech>
+				<mech>UM-R63 UrbanMech</mech>
+				<mech>FS9-S Firestarter</mech>
+				<mech>RVN-3L Raven</mech>
+				<mech>SDR-5V Spider</mech>
+				<mech>C-SK1 Cossack</mech>
+				<mech>ZPH-1A Tarantula</mech>
+				<mech>JVN-10N Javelin</mech>
+				<mech>UM-R60 UrbanMech</mech>
+			</weight>
+			<weight name="medium">
+				<mech>BJ2-0E Blackjack</mech>
+				<mech>SYU-2B Sha Yu</mech>
+				<mech>HUR-WO-R4L Huron Warrior</mech>
+				<mech>VND-3L Vindicator</mech>
+				<mech>DV-7D Dervish</mech>
+				<mech>VND-3L Vindicator</mech>
+				<mech>BJ-2 Blackjack</mech>
+				<mech>CLNT-2-3U Clint</mech>
+				<mech>SNK-1V Snake</mech>
+				<mech>HUR-WO-R4L Huron Warrior</mech>
+				<mech>MS1-0 Men Shen</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>THR-1L Thunder</mech>
+				<mech>ON1-K Orion</mech>
+				<mech>LHU-2B Lao Hu</mech>
+				<mech>TSG-9H Ti Ts'ang</mech>
+				<mech>JN-G8A Jinggau</mech>
+				<mech>MAD-5L Marauder</mech>
+				<mech>GHR-5H Grasshopper</mech>
+				<mech>CPLT-C1 Catapult</mech>
+				<mech>ANV-3M Anvil</mech>
+				<mech>OSR-4L Ostroc</mech>
+				<mech>HEL-3D Helios</mech>
+			</weight>
+			<weight name="assault">
+			<mech>SRC-3C Sirocco</mech>
+			<mech>AWS-9M Awesome</mech>
+			<mech>MR-V2 Cerberus</mech>
+			<mech>AS7-K Atlas</mech>
+			<mech>EMP-6A Emperor</mech>
+			<mech>AWS-8Q Awesome</mech>
+			<mech>STK-5M Stalker</mech>
+			<mech>PLG-3Z Pillager</mech>
+			<mech>T-IT-N10M Grand Titan</mech>
+			<mech>CP-11-A Cyclops</mech>
+			<mech>Y-H9G Yu Huang</mech>
+			</weight>
+		</tech>
+	</faction>
+	<faction name="Marik">
+		<tech name="default">
+			<weight name="light">
+				<mech>ZPH-1A Tarantula</mech>
+				<mech>ZPH-1A Tarantula</mech>
+				<mech>JA-KL-1532 Jackal</mech>
+				<mech>HER-3S Hermes</mech>
+				<mech>SDR-7M Spider</mech>
+				<mech>HMR-3M Hammer</mech>
+				<mech>HMR-3M Hammer</mech>
+				<mech>JR7-D Jenner</mech>
+				<mech>HER-3S Hermes</mech>
+				<mech>FNHK-9K Falcon Hawk</mech>
+				<mech>ZPH-1A Tarantula</mech>
+			</weight>
+			<weight name="medium">
+				<mech>FS9-0F Firestarter</mech>
+				<mech>APL-1M Apollo</mech>
+				<mech>CDA-3M Cicada</mech>
+				<mech>HER-2S Hermes II</mech>
+				<mech>TBT-7M Trebuchet</mech>
+				<mech>HER-5S Hermes II</mech>
+				<mech>HBK-5M Hunchback</mech>
+				<mech>B1-HND Bloodhound</mech>
+				<mech>TBT-7M Trebuchet</mech>
+				<mech>TR-1 Wraith</mech>
+				<mech>BJ2-0E Blackjack</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>TDR-9M Thunderbolt</mech>
+				<mech>ANV-3M Anvil</mech>
+				<mech>GLT-5M Guillotine</mech>
+				<mech>TMP-3M Tempest</mech>
+				<mech>ON1-M Orion</mech>
+				<mech>ON1-M Orion</mech>
+				<mech>CPLT-C1 Catapult</mech>
+				<mech>GLT-5M Guillotine</mech>
+				<mech>YMN-6Y Yeoman</mech>
+				<mech>HRC-LS-9000 Hercules</mech>
+				<mech>P1 Perseus</mech>
+			</weight>
+			<weight name="assault">
+				<mech>ALB-3U Albatross</mech>
+				<mech>CGR-1A1 Charger</mech>
+				<mech>T-IT-N10M Grand Titan</mech>
+				<mech>STK-5M Stalker</mech>
+				<mech>AS7-D Atlas</mech>
+				<mech>AWS-9M Awesome</mech>
+				<mech>AWS-9M Awesome</mech>
+				<mech>AS7-K Atlas</mech>
+				<mech>MR-V2 Cerberus</mech>
+				<mech>LGB-7Q Longbow</mech>
+				<mech>GRN-D-01 Grand Crusader</mech>
+			</weight>
+		</tech>
+	</faction>
+	<faction name="Steiner">
+		<tech name="default">
+			<weight name="light">
+				<mech>OSR-3D Osiris</mech>
+				<mech>STO-4A Stiletto</mech>
+				<mech>BZK-F3 Hollander</mech>
+				<mech>WLF-2 Wolfhound</mech>
+				<mech>COM-5S Commando</mech>
+				<mech>FS9-S Firestarter</mech>
+				<mech>NTK-2Q Night Hawk</mech>
+				<mech>DRT-3S Dart</mech>
+				<mech>RZK-9S Razorback</mech>
+				<mech>ALM-7D Fireball</mech>
+				<mech>TLN-5W Talon</mech>
+			</weight>
+			<weight name="medium">
+				<mech>GRF-6S Griffin</mech>
+				<mech>BTZ-3F Blitzkrieg</mech>
+				<mech>ENF-5D Enforcer</mech>
+				<mech>HCT-5S Hatchetman</mech>
+				<mech>STH-1D Stealth</mech>
+				<mech>NGS-4S Nightsky</mech>
+				<mech>UZL-3S Uziel</mech>
+				<mech>CN9-D Centurion</mech>
+				<mech>STY-3C Starslayer</mech>
+				<mech>SCP-12S Scorpion</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>CTS-6Y Cestus</mech>
+				<mech>AXM-1N Axman</mech>
+				<mech>CES-3R Caesar</mech>
+				<mech>GAL-1GLS Gallowglas</mech>
+				<mech>PTR-4D Penetrator</mech>
+				<mech>FLC-8R Falconer</mech>
+				<mech>DRG-3F Dragon Fire</mech>
+				<mech>MTR-5K Maelstrom</mech>
+				<mech>BGS-1T Barghest</mech>
+				<mech>VR5-R Verfolger</mech>
+				<mech>TNS-4S Thanatos</mech>
+			</weight>
+			<weight name="assault">
+				<mech>BLR-4S BattleMaster</mech>
+				<mech>BRZ-A3 Berzerker</mech>
+				<mech>PPR-5S Salamander</mech>
+				<mech>HA1-0 Hauptmann</mech>
+				<mech>AS7-K Atlas</mech>
+				<mech>ZEU-9S Zeus</mech>
+				<mech>BNC-5S Banshee</mech>
+				<mech>TDK-7X Thunder Hawk</mech>
+				<mech>GUN-1ERD Gunslinger</mech>
+				<mech>MR-V2 Cerberus</mech>
+				<mech>FNR-5 Fafnir</mech>
+			</weight>
+		</tech>
+	</faction>
+	<faction name="Comstar">
+		<tech name="default">
+			<weight name="light">
+				<mech>SPR-5F Spector</mech>
+				<mech>HSR-200-D Hussar</mech>
+				<mech>THE-N Thorn</mech>
+				<mech>MCY-99 Mercury</mech>
+				<mech>HER-1S Hermes</mech>
+				<mech>RTX-0 Raptor</mech>
+				<mech>OW-1 Owens</mech>
+				<mech>HM-1 Hitman</mech>
+				<mech>RTX1-0 Raptor</mech>
+				<mech>C-SK1 Cossack</mech>
+				<mech>OTT-9CS Ostscout</mech>
+			</weight>
+			<weight name="medium">
+				<mech>LNX-9Q Linx</mech>
+				<mech>BJ2-0D Blackjack</mech>
+				<mech>CLNT-2-3U Clint</mech>
+				<mech>END-6Q Endfield</mech>
+				<mech>BEO-12 Beowulf</mech>
+				<mech>BJ-2 Blackjack</mech>
+				<mech>HBK-4G Hunchback</mech>
+				<mech>FS9-0 Firestarter</mech>
+				<mech>TSN-1C Tessen</mech>
+				<mech>GRM-R-PR29 Grim Reaper</mech>
+				<mech>DV-6M Dervish</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>BMB-12D Bombardier</mech>
+				<mech>CHP-3N Champion</mech>
+				<mech>GLT-3N Guilltine</mech>
+				<mech>FLC-8R Falconer</mech>
+				<mech>BL-6-KNT Black Knight</mech>
+				<mech>FLS-8K Flashman</mech>
+				<mech>AV1-0E Avatar</mech>
+				<mech>HEL-3D Helios</mech>
+				<mech>ST-8A Shootish</mech>
+				<mech>EXT-4D Exterminator</mech>
+				<mech>EXC-B2 Excalibur</mech>
+			</weight>
+			<weight name="assault">
+				<mech>KGC-000 King Crab</mech>
+				<mech>T-IT-N10M Grand Titan</mech>
+				<mech>AWS-8Q Awesome</mech>
+				<mech>THG-11E Thug</mech>
+				<mech>HGN-732 Highlander</mech>
+				<mech>AS7-K Atlas</mech>
+				<mech>VKG-2F Viking</mech>
+				<mech>PPR-5S Salamander</mech>
+				<mech>STK-5M Stalker</mech>
+				<mech>TDR-7K Thunder Hawk</mech>
+			</weight>
+		</tech>
+	</faction>
+	<faction name="Word of Blake">
+		<tech name="default">
+			<weight name="light">
+				<mech>RSD-2A Red Shift</mech>
+				<mech>HSR-200-D Hussar</mech>
+				<mech>MON-66 Mongoose</mech>
+				<mech>MCY-99 Mercury</mech>
+				<mech>SDR-7M Spider</mech>
+				<mech>NXS2-A Nexus II</mech>
+				<mech>HMR-3M Hammer</mech>
+				<mech>EGL-2M Eagle</mech>
+				<mech>GUR-2G Gurkha</mech>
+				<mech>LCT-5M Locust</mech>
+				<mech>TLN-5W Talon</mech>
+			</weight>
+			<weight name="medium">
+				<mech>BJ2-0A Blackjack</mech>
+				<mech>APL-1M Apollo</mech>
+				<mech>GRM-R-PR29 Grim Reaper</mech>
+				<mech>LGH-4W Lightray</mech>
+				<mech>INI-02 Initiate</mech>
+				<mech>FS9-0 Firestarter</mech>
+				<mech>HBK-4G Hunchback</mech>
+				<mech>BCN-3R Buccaneer</mech>
+				<mech>RJN-200-A Raijin II</mech>
+				<mech>TBT-7M Trebuchet</mech>
+				<mech>BLF-21 Blue Flame</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>MAD-5L Marauder</mech>
+				<mech>YMN-6Y Yeoman</mech>
+				<mech>ANV-3M Anvil</mech>
+				<mech>TMP-3M Tempest</mech>
+				<mech>FLS-8K Flashman</mech>
+				<mech>BL-6-KNT Black Knight</mech>
+				<mech>TYM-1A Toyama</mech>
+				<mech>WFB-3B White Flame</mech>
+				<mech>AV1-0E Avatar</mech>
+				<mech>ARC-8M Archer</mech>
+				<mech>TDR-9M Thunderbolt</mech>
+			</weight>
+			<weight name="assault">
+				<mech>KGC-000 King Crab</mech>
+				<mech>AWS-8Q Awesome</mech>
+				<mech>MR-V2 Cerberus</mech>
+				<mech>GRN-D-04 Grand Crusader II</mech>
+				<mech>AWS-9M Awesome</mech>
+				<mech>THG-11E Thug</mech>
+				<mech>VNQ-2A Vanquisher</mech>
+				<mech>LGC-01 Legacy</mech>
+				<mech>T-IT-N10M Grand Titan</mech>
+				<mech>ALB-3U Albatross</mech>
+				<mech>PLG-3Z Pillager</mech>
+			</weight>
+		</tech>
+	</faction>
+	<faction name="Periphery">
+		<tech name="default">
+			<weight name="light">
+				<mech>NTK-2Q Night Hawk</mech>
+				<mech>THE-S Thorn</mech>
+				<mech>ABS-3L Anubis</mech>
+				<mech>PNT-9R Panther</mech>
+				<mech>JR7-D Jenner</mech>
+				<mech>MON-67 Mongoose</mech>
+				<mech>FS9-H Firestarter</mech>
+				<mech>JVN-10N Javelin</mech>
+				<mech>STG-5R Stinger</mech>
+				<mech>HMR-3M Hamer</mech>
+				<mech>LDT-1 Brigand</mech>
+			</weight>
+			<weight name="medium">
+				<mech>HCT-3F Hatchetman</mech>
+				<mech>HBK-4G Hunchback</mech>
+				<mech>DV-6M Dervish</mech>
+				<mech>TBT-5N Trebuchet</mech>
+				<mech>VL-2T Vulcan</mech>
+				<mech>WTH-1 Whitworth</mech>
+				<mech>HBK-4G Hunchback</mech>
+				<mech>ASN-21 Assassin</mech>
+				<mech>BJ-1 Blackjack</mech>
+				<mech>BJ-1 Blackjack</mech>
+				<mech>MHL-X1 Marshal</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>JM6-S JagerMech</mech>
+				<mech>QKD-4G Quickdraw</mech>
+				<mech>DRG-1N Dragon</mech>
+				<mech>BL-7-KNT Black Knight</mech>
+				<mech>MLN-1A Merlin</mech>
+				<mech>GHR-5H Grasshopper</mech>
+				<mech>GLT-4L Guillotine</mech>
+				<mech>ON1-K Orion</mech>
+				<mech>CPLT-C1 Catapult</mech>
+				<mech>JM6-S JagerMech</mech>
+				<mech>QKD-4G Quickdraw</mech>
+			</weight>
+			<weight name="assault">
+				<mech>CGR-1A1 Charger</mech>
+				<mech>KGC-000 King Crab</mech>
+				<mech>HGN-733 Highlander</mech>
+				<mech>BNC-3E Banshee</mech>
+				<mech>THG-10E Thug</mech>
+				<mech>AWS-8Q Awesome</mech>
+				<mech>CRK-5003-1 Crockett</mech>
+				<mech>VTR-9B Victor</mech>
+				<mech>AS7-D Atlas</mech>
+				<mech>AS7-D Atlas</mech>
+				<mech>ZEU-6S Zeus</mech>
+			</weight>
+		</tech>
+	</faction>
+	<faction name="Clan Wolf">
+		<tech name="default">
+			<weight name="light">
+			<mech>Locust IIC 4</mech>
+			<mech>Puma A</mech>
+			<mech>Koshi B</mech>
+			<mech>Puma B</mech>
+			<mech>Dasher D</mech>
+			<mech>Puma Prime</mech>
+			<mech>Uller C</mech>
+			<mech>Uller A</mech>
+			<mech>Puma C</mech>
+			<mech>Koshi A</mech>
+			<mech>Icestorm</mech>
+		</weight>
+		<weight name="medium">
+			<mech>Arctic Wolf</mech>
+			<mech>Fenris H</mech>
+			<mech>Ryoken Prime</mech>
+			<mech>Black Hawk Prime</mech>
+			<mech>Phantom C</mech>
+			<mech>Fenris Prime</mech>
+			<mech>Pouncer Prime</mech>
+			<mech>Pouncer Prime</mech>
+			<mech>Pouncer D</mech>
+			<mech>Phantom H</mech>
+			<mech>Lobo</mech>
+		</weight>
+		<weight name="heavy">
+			<mech>Linebacker D</mech>
+			<mech>Mad Cat D</mech>
+			<mech>Vulture Prime</mech>
+			<mech>Mad Cat B</mech>
+			<mech>Loki B</mech>
+			<mech>Mad Cat Prime</mech>
+			<mech>Mad Cat A</mech>
+			<mech>Thor Prime</mech>
+			<mech>Mad Cat C</mech>
+			<mech>Linebacker Prime</mech>
+			<mech>Orion IIC</mech>
+		</weight>
+		<weight name="assault">
+			<mech>Man O' War H</mech>
+			<mech>Daishi H</mech>
+			<mech>Masakari C</mech>
+			<mech>Gladiator D</mech>
+			<mech>Daishi C</mech>
+			<mech>Man O' War Prime</mech>
+			<mech>Gladiator Prime</mech>
+			<mech>Man O' War A</mech>
+			<mech>Daishi Prime</mech>
+			<mech>Masakari Prime</mech>
+			<mech>Supernova</mech>
+		</weight>
+		</tech>
+	</faction>
+	<faction name="Clan Jade Falcon">
+		<tech name="default">
+		<weight name="light">
+			<mech>Locust IIC 4</mech>
+			<mech>Cougar C</mech>
+			<mech>Hellion Prime</mech>
+			<mech>Fire Falcon H</mech>
+			<mech>Cougar Prime</mech>
+			<mech>Fire Falcon Prime</mech>
+			<mech>Uller Prime</mech>
+			<mech>Uller A</mech>
+			<mech>Fire Falcon B</mech>
+			<mech>Hellion B</mech>
+			<mech>Spirit</mech>
+		</weight>
+		<weight name="medium">
+			<mech>Pinion</mech>
+			<mech>Ryoken Prime</mech>
+			<mech>Fenris A</mech>
+			<mech>Dragonfly A</mech>
+			<mech>Black Lanner C</mech>
+			<mech>Black Lanner Prime</mech>
+			<mech>Ryoken B</mech>
+			<mech>Black Hawk A</mech>
+			<mech>Grendel Prime</mech>
+			<mech>Hunchback IIC</mech>
+			<mech>Phantom C</mech>
+		</weight>
+		<weight name="heavy">
+			<mech>Night Gyr D</mech>
+			<mech>Night Gyr B</mech>
+			<mech>Loki B</mech>
+			<mech>Thor A</mech>
+			<mech>Loki Prime</mech>
+			<mech>Thor Prime</mech>
+			<mech>Thor D</mech>
+			<mech>Night Gyr Prime</mech>
+			<mech>Night Gyr A</mech>
+			<mech>Loki A</mech>
+			<mech>Night Gyr C</mech>
+		</weight>
+		<weight name="assault">
+			<mech>Man O' War Prime</mech>
+			<mech>Gladiator Prime</mech>
+			<mech>Masakari C</mech>
+			<mech>Turkina B</mech>
+			<mech>Turkina Prime</mech>
+			<mech>Masakari Prime</mech>
+			<mech>Masakari B</mech>
+			<mech>Daishi Prime</mech>
+			<mech>Daishi A</mech>
+			<mech>Masakari A</mech>
+			<mech>Mad Cat MK.II</mech>
+		</weight>
+		</tech>
+	</faction>
+	<faction name="Clan Ghost Bear">
+		<tech name="default">
+			<weight name="light">
+				<mech>Locust IIC 4</mech>
+				<mech>Solitaire</mech>
+				<mech>Koshi B</mech>
+				<mech>Puma A</mech>
+				<mech>Dasher A</mech>
+				<mech>Dasher Prime</mech>
+				<mech>Kit Fox C</mech>
+				<mech>Puma C</mech>
+				<mech>Puma D</mech>
+				<mech>Pack Hunter</mech>
+				<mech>KBO-7A Kabuto</mech>
+			</weight>
+			<weight name="medium">
+				<mech>Stooping Hawk Prime</mech>
+				<mech>Fenris Prime</mech>
+				<mech>Dragonfly H</mech>
+				<mech>Dragonfly A</mech>
+				<mech>Black Hawk Prime</mech>
+				<mech>Dragonfly Prime</mech>
+				<mech>Dragonfly B</mech>
+				<mech>Ryoken C</mech>
+				<mech>Dragonfly C</mech>
+				<mech>Ursus</mech>
+				<mech>Arctic Wolf</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>Arcas</mech>
+				<mech>Thresher</mech>
+				<mech>Vulture C</mech>
+				<mech>Vulture B</mech>
+				<mech>Thor Prime</mech>
+				<mech>Vulture Prime</mech>
+				<mech>Vulture A</mech>
+				<mech>Thor C</mech>
+				<mech>Cauldron-Born Prime</mech>
+				<mech>Nova Cat A</mech>
+				<mech>Grizzly</mech>
+			</weight>
+			<weight name="assault">
+				<mech>Warhammer IIC 4</mech>
+				<mech>Kodiak</mech>
+				<mech>Man O' War B</mech>
+				<mech>Masakari B</mech>
+				<mech>Daishi Prime</mech>
+				<mech>Gladiator A</mech>
+				<mech>Gladiator Prime</mech>
+				<mech>Kingfisher Prime</mech>
+				<mech>Gladiator D</mech>
+				<mech>Kingfisher B</mech>
+				<mech>Mad Cat Mk.II</mech>
+			</weight>
+		</tech>
+	</faction>
+	<faction name="Clan Snow Raven">
+		<tech name="default">
+			<weight name="light">
+				<mech>Baboon 2</mech>
+				<mech>Dasher A</mech>
+				<mech>Puma C</mech>
+				<mech>Puma A</mech>
+				<mech>Dasher Prime</mech>
+				<mech>Uller D</mech>
+				<mech>Uller Prime</mech>
+				<mech>Uller B</mech>
+				<mech>Koshi Prime</mech>
+				<mech>Peregrine 4</mech>
+				<mech>UrbanMech IIC</mech>
+			</weight>
+			<weight name="medium">
+				<mech>Crimson Langur Prime</mech>
+				<mech>Dragonfly A</mech>
+				<mech>Fenris Prime</mech>
+				<mech>Dragonfly Prime</mech>
+				<mech>Black Hawk C</mech>
+				<mech>Black Hawk Prime</mech>
+				<mech>Grendel Prime</mech>
+				<mech>Ryoken D</mech>
+				<mech>Shadow Cat B</mech>
+				<mech>Phantom H</mech>
+				<mech>Clint IIC</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>Guillotine IIC</mech>
+				<mech>Cauldron-Born C</mech>
+				<mech>Linebacker D</mech>
+				<mech>Mad Cat C</mech>
+				<mech>Thor D</mech>
+				<mech>Mad Cat Prime</mech>
+				<mech>Vulture B</mech>
+				<mech>Loki Prime</mech>
+				<mech>Loki A</mech>
+				<mech>Vulture A</mech>
+				<mech>Grizzly</mech>
+			</weight>
+			<weight name="assault">
+				<mech>Man O' War A</mech>
+				<mech>Gladiator A</mech>
+				<mech>Masakari B</mech>
+				<mech>Masakari C</mech>
+				<mech>Kingfisher Prime</mech>
+				<mech>Daishi Prime</mech>
+				<mech>Gladiator D</mech>
+				<mech>Man O' War C</mech>
+				<mech>Masakari Prime</mech>
+				<mech>Daishi A</mech>
+				<mech>Daishi C</mech>
+			</weight>
+		</tech>
+	</faction>
+	<faction name="Clan Diamond Shark">
+		<tech name="default">
+			<weight name="light">
+				<mech>Hellion Prime</mech>
+				<mech>Solitaire</mech>
+				<mech>Hankyu Prime</mech>
+				<mech>Dasher Prime</mech>
+				<mech>Hankyu C</mech>
+				<mech>Puma Prime</mech>
+				<mech>Hellion A</mech>
+				<mech>Koshi Prime</mech>
+				<mech>Hankyu H</mech>
+				<mech>Piranha</mech>
+				<mech>Pack Hunter</mech>
+			</weight>
+			<weight name="medium">
+				<mech>Shadow Hawk IIC 4</mech>
+				<mech>Hellhound 2</mech>
+				<mech>Black Hawk Prime</mech>
+				<mech>Fenris Prime</mech>
+				<mech>Grendel Prime</mech>
+				<mech>Ryoken Prime</mech>
+				<mech>Grendel A</mech>
+				<mech>Fenris D</mech>
+				<mech>Shadow Cat Prime</mech>
+				<mech>Nobori-nin A</mech>
+				<mech>Griffin IIC 4</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>Ha Otoko</mech>
+				<mech>Nova Cat D</mech>
+				<mech>Mad Cat Prime</mech>
+				<mech>Thor D</mech>
+				<mech>Vulture A</mech>
+				<mech>Cauldron-Born Prime</mech>
+				<mech>Cauldron-Born H</mech>
+				<mech>Vulture Prime</mech>
+				<mech>Nova Cat Prime</mech>
+				<mech>Rifleman IIC 3</mech>
+				<mech>Predator</mech>
+			</weight>
+			<weight name="assault">
+				<mech>Warhammer IIC 4</mech>
+				<mech>Masakari H</mech>
+				<mech>Gladiator A</mech>
+				<mech>Daishi S</mech>
+				<mech>Masakari C</mech>
+				<mech>Masakari Prime</mech>
+				<mech>Gladiator D</mech>
+				<mech>Daishi C</mech>
+				<mech>Masakari B</mech>
+				<mech>Daishi A</mech>
+				<mech>Phoenix Hawk IIC 4</mech>
+			</weight>
+		</tech>
+	</faction>
+</book>
