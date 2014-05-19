@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Battletech: Random Assignment Table v2.0
+    
+    ==Created==
+    on: 5/5/14
+    by: Eric Hopkins
+    
+    ==Last Modified==
+    on: 5/5/14
+    by: Eric Hopkins
+    
+    This file contains the tables found in Field Manual: Free Worlds League
+-->
+<book>
+    <faction name="Free Worlds League">
+        <tech name="A">
+            <weight name="light">
+                <mech>FS9-0 Firestarter</mech>
+                <mech>FNHK-9K Falcon Hawk</mech>
+                <mech>ZPH-1A Tarantula</mech>
+                <mech>WSP-3M Wasp</mech>
+                <mech>LCT-3M Locust</mech>
+                <mech>STG-5M Stinger</mech>
+                <mech>HER-3S Hermes</mech>
+                <mech>HMR-3M Hammer</mech>
+                <mech>SDR-7M Spider</mech>
+                <mech>JA-KL-1532 Jackal</mech>
+                <mech>OW-1 Owens</mech>
+            </weight>
+            <weight name="medium">
+                <mech>APL-1M Apollo</mech>
+                <mech>PXH-3M Phoenix Hawk</mech>
+                <mech>SHD-5M Shadow Hawk</mech>
+                <mech>WVR-7M Wolverine</mech>
+                <mech>HER-5S Hermes II</mech>
+                <mech>TBT-7M Trebuchet</mech>
+                <mech>GRF-3M Griffin</mech>
+                <mech>TR-1 Wraith</mech>
+                <mech>HBK-5M Hunchback</mech>
+                <mech>CDA-3M Cicada</mech>
+                <mech>BJ2-0 Blackjack</mech>
+            </weight>
+            <weight name="heavy">
+                <mech>ANV-3M Anvil</mech>
+                <mech>HRC-LS-9000 Hercules</mech>
+                <mech>WHM-7M Warhammer</mech>
+                <mech>MAD-5M Marauder</mech>
+                <mech>CRD-5M Crusader</mech>
+                <mech>TDR-7M Thunderbolt</mech>
+                <mech>ON1-M Orion</mech>
+                <mech>ARC-4M Archer</mech>
+                <mech>WHM-7M Warhammer</mech>
+                <mech>TMP-3M Tempest</mech>
+                <mech>P1 Perseus</mech>
+            </weight>
+            <weight name="assault">
+                <mech>ALB-3U Albatross</mech>
+                <mech>GRN-D-01 Grand Crusader</mech>
+                <mech>LGB-7Q Longbow</mech>
+                <mech>STK-5M Stalker</mech>
+                <mech>AWS-9M Awesome</mech>
+                <mech>AWS-9M Awesome</mech>
+                <mech>BLR-3M BattleMaster</mech>
+                <mech>AS7-K Atlas</mech>
+                <mech>GOL-3M Goliath</mech>
+                <mech>T-IT-N10M Grand Titan</mech>
+                <mech>MR-V2 Cerberus</mech>
+            </weight>
+        </tech>
+        <tech name="B">
+            <weight name="light">
+                <mech>FS9-0 Firestarter</mech>
+                <mech>ZPH-1A Tarantula</mech>
+                <mech>ZPH-1A Tarantula</mech>
+                <mech>WSP-3M Wasp</mech>
+                <mech>STG-5M Stinger</mech>
+                <mech>LCT-3M Locust</mech>
+                <mech>LCT-3M Locust</mech>
+                <mech>WSP-3M Wasp</mech>
+                <mech>SDR-7M Spider</mech>
+                <mech>HER-3S Hermes</mech>
+                <mech>HER-3S Hermes</mech>
+            </weight>
+            <weight name="medium">
+                <mech>APL-1M Apollo</mech>
+                <mech>SCP-1O Scorpion</mech>
+                <mech>CDA-3M Cicada</mech>
+                <mech>SHD-5M Shadow Hawk</mech>
+                <mech>HER-5S Hermes II</mech>
+                <mech>TBT-7M Trebuchet</mech>
+                <mech>GRF-3M Griffin</mech>
+                <mech>WVR-7M Wolverine</mech>
+                <mech>GRF-3M Griffin</mech>
+                <mech>HBK-5M Hunchback</mech>
+                <mech>TR-1 Wraith</mech>
+            </weight>
+            <weight name="heavy">
+                <mech>HRC-LS-9000 Hercules</mech>
+                <mech>QKD-5M Quickdraw</mech>
+                <mech>RFL-5M Rifleman</mech>
+                <mech>MAD-5M Marauder</mech>
+                <mech>ARC-4M Archer</mech>
+                <mech>CRD-5M Crusader</mech>
+                <mech>OTL-5M Ostsol</mech>
+                <mech>ON1-M Orion</mech>
+                <mech>WHM-7M Warhammer</mech>
+                <mech>TMP-3M Tempest</mech>
+                <mech>WR-DG-02FC War Dog</mech>
+            </weight>
+            <weight name="assault">
+                <mech>VTR-9K Victor</mech>
+                <mech>LGB-7Q Longbow</mech>
+                <mech>CP-11-A Cyclops</mech>
+                <mech>CP-11-A Cyclops</mech>
+                <mech>STK-5M Stalker</mech>
+                <mech>STK-3F Stalker</mech>
+                <mech>BLR-3M BattleMaster</mech>
+                <mech>AWS-9M Awesome</mech>
+                <mech>GOL-3M Goliath</mech>
+                <mech>BNC-5S Banshee</mech>
+                <mech>AS7-D Atlas</mech>
+            </weight>
+        </tech>
+        <tech name="C">
+            <weight name="light">
+                <mech>ZPH-1A Tarantula</mech>
+                <mech>OTT-7J Ostscout</mech>
+                <mech>STG-5M Stinger</mech>
+                <mech>JVN-10P Javelin</mech>
+                <mech>STG-3R Stinger</mech>
+                <mech>WSP-3M Wasp</mech>
+                <mech>LCT-1V Locust</mech>
+                <mech>LCT-3M Locust</mech>
+                <mech>PNT-9R Panther</mech>
+                <mech>JR7-D Jenner</mech>
+                <mech>HMR-3M Hammer</mech>
+            </weight>
+            <weight name="medium">
+                <mech>VT-5M Vulcan</mech>
+                <mech>HBK-5M Hunchback</mech>
+                <mech>GRF-3M Griffin</mech>
+                <mech>GRF-1N Griffin</mech>
+                <mech></mech>
+            </weight>
+            <weight name="heavy">
+                
+            </weight>
+            <weight name="assault">
+                
+            </weight>
+        </tech>
+        <tech name="D">
+            <weight name="light">
+                
+            </weight>
+            <weight name="medium">
+                
+            </weight>
+            <weight name="heavy">
+                
+            </weight>
+            <weight name="assault">
+                
+            </weight>
+        </tech>
+        <tech name="F">
+            <weight name="light">
+                
+            </weight>
+            <weight name="medium">
+                
+            </weight>
+            <weight name="heavy">
+                
+            </weight>
+            <weight name="assault">
+                
+            </weight>
+        </tech>
+    </faction>
+</book>

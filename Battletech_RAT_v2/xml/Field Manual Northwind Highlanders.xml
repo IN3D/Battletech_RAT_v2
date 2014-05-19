@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Battletech Random Assignment Table v2.0
+	
+	==Created==
+	on: 5/6/14
+	by: Eric Hopkins
+	
+	==Last Modified==
+	on: 5/6/14
+	by: Eric Hopkins
+	
+	This file contains the tables found in Field Manual: Northwind Highlanders
+-->
+<book>
+	<faction name="Northwind Highlanders">
+		<tech name="default">
+			<weight name="light">
+				<mech>Koshi</mech>
+				<mech>NTK-2Q Night Hawk</mech>
+				<mech>SPR-5F Spector</mech>
+				<mech>SCB-9A Scarabus</mech>
+				<mech>VLK-QD Valkyrie</mech>
+				<mech>WLF-2 Wolfhound</mech>
+				<mech>JR7-K Jenner</mech>
+				<mech>COM-5S Commando</mech>
+				<mech>BZK-F3 Hollander</mech>
+				<mech>Uller</mech>
+				<mech>Fire Falcon</mech>
+			</weight>
+			<weight name="medium">
+				<mech>Ryoken</mech>
+				<mech>LNX-9Q Lynx</mech>
+				<mech>STY-3C Starslayer</mech>
+				<mech>KIM-2 Komodo</mech>
+				<mech>GRF-3M Griffin</mech>
+				<mech>CRB-27 Crab</mech>
+				<mech>PXH-3M Phoenix Hawk</mech>
+				<mech>CLNT-2-3U Clint</mech>
+				<mech>NGS-4S Nightsky</mech>
+				<mech>Black Hawk</mech>
+				<mech>Shadow Cat</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>Vulture</mech>
+				<mech>DGR-3F Dragon Fire</mech>
+				<mech>CTS-6Y Cestus</mech>
+				<mech>TMP-3M Tempest</mech>
+				<mech>GHR-5J Grasshopper</mech>
+				<mech>WHM-7M Warhammer</mech>
+				<mech>TDR-7M Thunderbolt</mech>
+				<mech>QKD-5M Quickdraw</mech>
+				<mech>GAL-1GLS Gallowglas</mech>
+				<mech>Thor</mech>
+				<mech>Night Gyr</mech>
+			</weight>
+			<weight name="assault">
+				<mech>Daishi</mech>
+				<mech>NSR-9J Nightstar</mech>
+				<mech>LGB-7Q Longbow</mech>
+				<mech>GUN-1ERD Gunslinger</mech>
+				<mech>BLR-3M BattleMaster</mech>
+				<mech>STK-4M Stalker</mech>
+				<mech>AWS-9M Awesome</mech>
+				<mech>HGR-732 Highlander</mech>
+				<mech>BKW-7R Black Watch</mech>
+				<mech>Warhawk</mech>
+				<mech>Turkina</mech>
+			</weight>
+		</tech>
+	</faction>
+</book>
