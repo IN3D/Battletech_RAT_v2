@@ -7,7 +7,7 @@
     by: Eric Hopkins
     
     ==Last Modified==
-    on: 5/7/14
+    on: 5/19/14
     by: Eric Hopkins
     
     This file contains the tables found in Field Manual: Capellan Confederation
@@ -194,6 +194,7 @@
                 <mech>ENF-6M Enforcer III</mech>
                 <mech>BSW-X1 Bushwacker</mech>
                 <mech>SNT-04 Sentinel</mech>
+                <mech>STN-04 Stealth</mech>
                 <mech>HCT-5S Hatchetman</mech>
                 <mech>BJ2-0F Blackjack</mech>
                 <mech>BJ2-0 Blackjack</mech>
@@ -274,6 +275,7 @@
                 <mech>NSR-9J Nightstar</mech>
                 <mech>EMP-6A Emperor</mech>
                 <mech>AS7-K Atlas</mech>
+                <mech>AWS-8Q Awesome</mech>
                 <mech>VTR-9K Victor</mech>
                 <mech>CGR-1A9 Charger</mech>
                 <mech>BNC-5S Banshee</mech>

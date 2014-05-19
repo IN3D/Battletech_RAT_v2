@@ -7,7 +7,7 @@
 	by: Eric Hopkins
 	
 	==Last Modified==
-	on: 5/4/14
+	on: 5/19/14
 	by: Eric Hopkins
 	
 	This file contains the tables found in Field Manual: Draconis Combine
@@ -37,6 +37,7 @@
 				<mech>SR1-0 Strider</mech>
 				<mech>WVR-7K Wolverine</mech>
 				<mech>FS9-0 Firestarter</mech>
+        <mech>FS9-0 Firestarter</mech>
 				<mech>LNX-9C Lynx</mech>
 				<mech>KIM-2A Komodo</mech>
 			</weight>

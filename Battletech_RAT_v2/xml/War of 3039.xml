@@ -7,12 +7,12 @@
 	by: Eric Hopkins
 	
 	==Last Modified==
-	on: 5/15/14
+	on: 5/19/14
 	by: Eric Hopkins
 	
-	This file contains the tables found in Source Manual: War of 3039
+	This file contains the tables found in Historical: War of 3039
 -->
-<book name="Source Manual: War of 3039">
+<book name="Historical: War of 3039">
 	<faction name="Capellan Confederation">
 		<tech name="A">
 			<weight name="light">
@@ -365,6 +365,7 @@
 				<mech>WVE-5N Wyvern</mech>
 				<mech>STN-3K Sentinel</mech>
 				<mech>STN-3M Sentinel</mech>
+        <mech>KTO-20 Kintaro</mech>
 				<mech>WVE-5N Wyvern</mech>
 				<mech>WVE-5N Wyvern</mech>
 			</weight>
