@@ -41,9 +41,9 @@ Partial Class MainForm
         Me.ListBoxMechs.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ListBoxMechs.FormattingEnabled = True
-        Me.ListBoxMechs.Location = New System.Drawing.Point(192, 12)
+        Me.ListBoxMechs.Location = New System.Drawing.Point(184, 12)
         Me.ListBoxMechs.Name = "ListBoxMechs"
-        Me.ListBoxMechs.Size = New System.Drawing.Size(164, 290)
+        Me.ListBoxMechs.Size = New System.Drawing.Size(172, 290)
         Me.ListBoxMechs.TabIndex = 0
         '
         'ComboBoxFaction
@@ -51,7 +51,7 @@ Partial Class MainForm
         Me.ComboBoxFaction.FormattingEnabled = True
         Me.ComboBoxFaction.Location = New System.Drawing.Point(12, 70)
         Me.ComboBoxFaction.Name = "ComboBoxFaction"
-        Me.ComboBoxFaction.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBoxFaction.Size = New System.Drawing.Size(152, 21)
         Me.ComboBoxFaction.TabIndex = 1
         '
         'ComboBoxTech
@@ -59,7 +59,7 @@ Partial Class MainForm
         Me.ComboBoxTech.FormattingEnabled = True
         Me.ComboBoxTech.Location = New System.Drawing.Point(12, 110)
         Me.ComboBoxTech.Name = "ComboBoxTech"
-        Me.ComboBoxTech.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBoxTech.Size = New System.Drawing.Size(152, 21)
         Me.ComboBoxTech.TabIndex = 2
         '
         'ComboBoxWeight
@@ -67,7 +67,7 @@ Partial Class MainForm
         Me.ComboBoxWeight.FormattingEnabled = True
         Me.ComboBoxWeight.Location = New System.Drawing.Point(12, 150)
         Me.ComboBoxWeight.Name = "ComboBoxWeight"
-        Me.ComboBoxWeight.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBoxWeight.Size = New System.Drawing.Size(152, 21)
         Me.ComboBoxWeight.TabIndex = 3
         '
         'LabelFaction
@@ -117,7 +117,7 @@ Partial Class MainForm
         Me.ComboBoxBook.FormattingEnabled = True
         Me.ComboBoxBook.Location = New System.Drawing.Point(12, 30)
         Me.ComboBoxBook.Name = "ComboBoxBook"
-        Me.ComboBoxBook.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBoxBook.Size = New System.Drawing.Size(152, 21)
         Me.ComboBoxBook.TabIndex = 8
         '
         'LabelBook
