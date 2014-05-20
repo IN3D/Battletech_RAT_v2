@@ -102,7 +102,8 @@ Module UtilityModule
         Dim value As Object
 
         value = InputBox(prompt, title, defaultValue)
-        Dim usersVal = Integer.Parse(value)
+        Dim usersVal As Integer
+        Integer.TryParse(value, usersVal)
 
         ' If the value is greater than 0, set the new number
         If usersVal > 0 Then
