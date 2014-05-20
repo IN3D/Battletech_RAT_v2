@@ -41,6 +41,8 @@ Partial Class MainForm
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SetDiceTypeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripStatusLabelDiceRoll = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.ClearToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -108,7 +110,7 @@ Partial Class MainForm
         '
         'StatusStrip1
         '
-        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabelDebugCounter})
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabelDebugCounter, Me.ToolStripStatusLabelDiceRoll})
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 334)
         Me.StatusStrip1.Name = "StatusStrip1"
         Me.StatusStrip1.Size = New System.Drawing.Size(368, 22)
@@ -186,7 +188,7 @@ Partial Class MainForm
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SetDiceTypeToolStripMenuItem, Me.ExitToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClearToolStripMenuItem, Me.SetDiceTypeToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
@@ -202,6 +204,18 @@ Partial Class MainForm
         Me.SetDiceTypeToolStripMenuItem.Name = "SetDiceTypeToolStripMenuItem"
         Me.SetDiceTypeToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SetDiceTypeToolStripMenuItem.Text = "Set dice type"
+        '
+        'ToolStripStatusLabelDiceRoll
+        '
+        Me.ToolStripStatusLabelDiceRoll.Name = "ToolStripStatusLabelDiceRoll"
+        Me.ToolStripStatusLabelDiceRoll.Size = New System.Drawing.Size(30, 17)
+        Me.ToolStripStatusLabelDiceRoll.Text = "Roll:"
+        '
+        'ClearToolStripMenuItem
+        '
+        Me.ClearToolStripMenuItem.Name = "ClearToolStripMenuItem"
+        Me.ClearToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ClearToolStripMenuItem.Text = "Clear"
         '
         'MainForm
         '
@@ -253,5 +267,7 @@ Partial Class MainForm
     Friend WithEvents FileToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SetDiceTypeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ToolStripStatusLabelDiceRoll As System.Windows.Forms.ToolStripStatusLabel
+    Friend WithEvents ClearToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

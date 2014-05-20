@@ -93,6 +93,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="vb files\Book.vb" />
+    <Compile Include="vb files\Dice.vb" />
     <Compile Include="vb files\Faction.vb" />
     <Compile Include="vb files\Mech.vb" />
     <Compile Include="vb files\Tech.vb" />

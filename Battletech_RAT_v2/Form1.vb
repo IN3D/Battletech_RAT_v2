@@ -3,10 +3,10 @@
     Public bookList As New LinkedList(Of Book)
     Dim diceStyle As Integer = 6
 
-    Dim selectedBook As Integer
-    Dim selectedFaction As Integer
-    Dim selectedTech As Integer
-    Dim selectedWeight As Integer
+    Public selectedBook As Integer
+    Public selectedFaction As Integer
+    Public selectedTech As Integer
+    Public selectedWeight As Integer
 
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -16,65 +16,28 @@
 
     Private Sub ComboBoxBook_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxBook.SelectedIndexChanged
 
-        ComboBoxFaction.Items.Clear()
-        selectedBook = ComboBoxBook.SelectedIndex
-
-        For i As Integer = 0 To ((bookList(selectedBook).factionList.Count) - 1)
-
-            Dim tempName As String = bookList(selectedBook).factionList(i).Name
-            ComboBoxFaction.Items.Add(tempName)
-        Next
+        indexChange(0)
 
         ' If the other comboBoxes have been filled, clear them out on a book change
         If selectedFaction <> -1 And selectedTech <> -1 And selectedWeight <> -1 Then
 
-            ComboBoxFaction.Text = ""
-            ComboBoxTech.Text = ""
-            ComboBoxWeight.Text = ""
-
-            ' Clean out the list of mechs
-            ListBoxMechs.Items.Clear()
+            clearForm(0)
         End If
     End Sub
 
     Private Sub ComboBoxFaction_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxFaction.SelectedIndexChanged
 
-        ComboBoxTech.Items.Clear()
-        selectedFaction = ComboBoxFaction.SelectedIndex
-
-        For i As Integer = 0 To ((bookList(selectedBook).factionList(selectedFaction).techList.Count) - 1)
-
-            Dim tempName As String = bookList(selectedBook).factionList(selectedFaction).techList(i).Name
-            ComboBoxTech.Items.Add(tempName)
-        Next
+        indexChange(1)
     End Sub
 
     Private Sub ComboBoxTech_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxTech.SelectedIndexChanged
 
-        ComboBoxWeight.Items.Clear()
-        selectedTech = ComboBoxTech.SelectedIndex
-
-        For i As Integer = 0 To ((bookList(selectedBook).factionList(selectedFaction).techList(selectedTech) _
-                                  .WeightList.Count) - 1)
-
-            Dim tempName As String = bookList(selectedBook).factionList(selectedFaction).techList(selectedTech) _
-                                     .WeightList(i).Name
-            ComboBoxWeight.Items.Add(tempName)
-        Next
+        indexChange(2)
     End Sub
 
     Private Sub ComboBoxWeight_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxWeight.SelectedIndexChanged
 
-        ListBoxMechs.Items.Clear()
-        selectedWeight = ComboBoxWeight.SelectedIndex
-
-        For i As Integer = 0 To ((bookList(selectedBook).factionList(selectedFaction).techList(selectedTech) _
-                                  .WeightList(selectedWeight).mechList.Count) - 1)
-
-            Dim tempName As String = bookList(selectedBook).factionList(selectedFaction).techList(selectedTech) _
-                                     .WeightList(selectedWeight).mechList(i).Name
-            ListBoxMechs.Items.Add(tempName)
-        Next
+        indexChange(3)
 
         ' FOR DEBUG: CAN BE REMOVED FOR RELEASE
         ToolStripStatusLabelDebugCounter.Text = ListBoxMechs.Items.Count.ToString()
@@ -82,25 +45,28 @@
 
     Private Sub ButtonRoll_Click(sender As Object, e As EventArgs) Handles ButtonRoll.Click
 
-        Dim diceTotal As Integer = rollDice()
+        Dim diceSet As New Dice(rollDice(diceStyle))
 
-        Dim jokes = {"DISHONORABLE", "DEZGRA", "STRAVAG CHEATER"}
+        Dim die1 As Integer = diceSet.dice1
+        Dim die2 As Integer = diceSet.dice2
+        Dim modifier As Integer
+        Integer.TryParse(TextBoxModifier.Text, modifier)
 
-        ' MechWarrior 3 Joke ;)
-        If ((LabelJoke.Text <> "") And (diceTotal <= (ListBoxMechs.Items.Count))) Then
+        ' Ensure that there are even mechs to roll for
+        If ListBoxMechs.Items.Count = 0 Then
 
-            LabelJoke.Text = ""
-        ElseIf diceTotal >= (ListBoxMechs.Items.Count) Then
+            MessageBox.Show("Please populate the mech list first!", "Error!")
+        Else
 
-            LabelJoke.Text = jokes((Int(Rnd() * 3)))
+            Dim total As Integer = (die1 + die2) + modifier
+            total = checkOutOfBounds(total, (ListBoxMechs.Items.Count - 1))
+
+            ListBoxMechs.SelectedIndex = total
+            ' added some formatting so that the dice aren't 0 based
+            ToolStripStatusLabelDiceRoll.Text = "Roll: " & (total + 2) & " = " & _
+                                                "(" & (die1 + 1) & " + " & (die2 + 1) & ") " & _
+                                                "+ " & modifier
         End If
-
-        If diceTotal > ListBoxMechs.Items.Count Then
-
-            diceTotal = ((ListBoxMechs.Items.Count) - 1)
-        End If
-
-        ListBoxMechs.SelectedIndex = diceTotal
 
     End Sub
 
@@ -112,5 +78,11 @@
     Private Sub SetDiceTypeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SetDiceTypeToolStripMenuItem.Click
 
         diceStyle = setDiceStyle(diceStyle)
+    End Sub
+
+    Private Sub ClearToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ClearToolStripMenuItem.Click
+
+        ' clean out everything
+        clearForm(0)
     End Sub
 End Class

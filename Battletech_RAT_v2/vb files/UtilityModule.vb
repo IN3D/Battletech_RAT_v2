@@ -77,24 +77,18 @@ Module UtilityModule
         Next
     End Sub
 
-    Public Function rollDice()
+    Public Function rollDice(ByVal diceStyle As Integer) As Dice
 
-        Dim modifier As Integer
-        Integer.TryParse(MainForm.TextBoxModifier.Text, modifier)
+        Dim die1 As Integer = (Int(Rnd() * diceStyle))
+        Dim die2 As Integer = (Int(Rnd() * diceStyle))
 
-        ' mechCount may not be needed
-        Dim mechCount As Integer = MainForm.ListBoxMechs.Items.Count
-        Dim die1 As Integer = (Int(Rnd() * 6) + 1)
-        Dim die2 As Integer = (Int(Rnd() * 6) + 1)
+        Dim diceSet As New Dice(die1, die2)
 
-        Dim rollTotal As Integer = (die1 + die2) + modifier
+        Return diceSet
 
-        ' The number needs to be returned at -2 as, arrays are 0 based, and the lowest
-        ' possible number is (usually) 2. so instead of running 2-12, it needs to run 0-10
-        Return (rollTotal - 2)
     End Function
 
-    Public Function setDiceStyle(ByVal diceType As Integer)
+    Public Function setDiceStyle(ByVal diceType As Integer) As Integer
 
         Dim prompt As String = "Please enter the dice style you want"
         Dim title As String = "Dice style"
@@ -115,4 +109,106 @@ Module UtilityModule
             Return 6
         End If
     End Function
+
+    Public Function checkOutOfBounds(ByVal total As Integer, ByVal mechCount As Integer) As Integer
+
+        ' if the player is no longer cheating
+        If (total <= mechCount) And (MainForm.LabelJoke.Text <> "") Then
+
+            MainForm.LabelJoke.Text = ""
+        End If
+
+        ' if the count of roll total has gone beyond the total number of mechs
+        If (total > mechCount) Then
+
+            MainForm.LabelJoke.Text = "dishonorable".ToUpper
+
+            total = mechCount
+        End If
+
+        Return total
+    End Function
+
+    Public Sub clearForm(ByVal i As Integer)
+
+        ' this was made into a switch case, as I wasn't sure if I would
+        ' want to clear out less information under particular situations
+        ' so I set it up so that it could be expanded if needed.
+
+        Select Case i
+            Case 0
+                MainForm.ComboBoxBook.Text = ""
+                MainForm.ComboBoxFaction.Text = ""
+                MainForm.ComboBoxTech.Text = ""
+                MainForm.ComboBoxWeight.Text = ""
+                MainForm.ListBoxMechs.Items.Clear()
+
+                MainForm.ToolStripStatusLabelDebugCounter.Text = ""
+                MainForm.ToolStripStatusLabelDiceRoll.Text = "Roll: "
+                MainForm.TextBoxModifier.Text = ""
+            Case Else
+                MessageBox.Show("Internal Error, clearForm case passed incorrect value.", "ERROR")
+        End Select
+    End Sub
+
+    Public Sub indexChange(ByVal x As Integer)
+
+        Select Case x
+            ' Book Change
+            Case 0
+
+                MainForm.ComboBoxFaction.Items.Clear()
+                MainForm.selectedBook = MainForm.ComboBoxBook.SelectedIndex
+
+                For i As Integer = 0 To ((MainForm.bookList(MainForm.selectedBook).factionList.Count) - 1)
+
+                    Dim tempName As String = MainForm.bookList(MainForm.selectedBook).factionList(i).Name
+                    MainForm.ComboBoxFaction.Items.Add(tempName)
+                Next
+
+                ' Faction Change
+            Case 1
+
+                MainForm.ComboBoxTech.Items.Clear()
+                MainForm.selectedFaction = MainForm.ComboBoxFaction.SelectedIndex
+
+                For i As Integer = 0 To ((MainForm.bookList(MainForm.selectedBook).factionList(MainForm.selectedFaction).techList.Count) - 1)
+
+                    Dim tempName As String = MainForm.bookList(MainForm.selectedBook).factionList(MainForm.selectedFaction).techList(i).Name
+                    MainForm.ComboBoxTech.Items.Add(tempName)
+                Next
+
+                ' Tech Change
+            Case 2
+
+                MainForm.ComboBoxWeight.Items.Clear()
+                MainForm.selectedTech = MainForm.ComboBoxTech.SelectedIndex
+
+                For i As Integer = 0 To ((MainForm.bookList(MainForm.selectedBook).factionList(MainForm.selectedFaction).techList(MainForm.selectedTech) _
+                                          .WeightList.Count) - 1)
+
+                    Dim tempName As String = MainForm.bookList(MainForm.selectedBook).factionList(MainForm.selectedFaction).techList(MainForm.selectedTech) _
+                                             .WeightList(i).Name
+                    MainForm.ComboBoxWeight.Items.Add(tempName)
+                Next
+
+                ' Weight Change
+            Case 3
+
+                MainForm.ListBoxMechs.Items.Clear()
+                MainForm.selectedWeight = MainForm.ComboBoxWeight.SelectedIndex
+
+                For i As Integer = 0 To ((MainForm.bookList(MainForm.selectedBook).factionList(MainForm.selectedFaction).techList(MainForm.selectedTech) _
+                                          .WeightList(MainForm.selectedWeight).mechList.Count) - 1)
+
+                    Dim tempName As String = MainForm.bookList(MainForm.selectedBook).factionList(MainForm.selectedFaction).techList(MainForm.selectedTech) _
+                                             .WeightList(MainForm.selectedWeight).mechList(i).Name
+                    MainForm.ListBoxMechs.Items.Add(tempName)
+                Next
+
+            Case Else
+
+                MessageBox.Show("INTERNAL ERROR: indexChange was passed incorrect value.", "ERROR")
+        End Select
+    End Sub
 End Module
