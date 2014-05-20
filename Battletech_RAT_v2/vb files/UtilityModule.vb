@@ -93,4 +93,25 @@ Module UtilityModule
         ' possible number is (usually) 2. so instead of running 2-12, it needs to run 0-10
         Return (rollTotal - 2)
     End Function
+
+    Public Function setDiceStyle(ByVal diceType As Integer)
+
+        Dim prompt As String = "Please enter the dice style you want"
+        Dim title As String = "Dice style"
+        Dim defaultValue As String = diceType.ToString()
+        Dim value As Object
+
+        value = InputBox(prompt, title, defaultValue)
+        Dim usersVal = Integer.Parse(value)
+
+        ' If the value is greater than 0, set the new number
+        If usersVal > 0 Then
+
+            Return usersVal
+        Else
+
+            ' Else, set it to the default dice style (a d6)
+            Return 6
+        End If
+    End Function
 End Module
