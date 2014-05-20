@@ -1,6 +1,8 @@
 ﻿Public Class MainForm
 
     Public bookList As New LinkedList(Of Book)
+    Dim diceStyle As Integer = 6
+
     Dim selectedBook As Integer
     Dim selectedFaction As Integer
     Dim selectedTech As Integer
@@ -99,6 +101,32 @@
         End If
 
         ListBoxMechs.SelectedIndex = diceTotal
+
+    End Sub
+
+    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+
+        Me.Close()
+    End Sub
+
+    Private Sub SetDiceTypeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SetDiceTypeToolStripMenuItem.Click
+
+        Dim prompt As String = "Please enter the dice style you want"
+        Dim title As String = "Dice style"
+        Dim defaultValue As String = diceStyle.ToString()
+        Dim value As Object
+
+        value = InputBox(prompt, title, defaultValue)
+
+        ' If the value is greater than 0, set the new number
+        If Integer.Parse(value) > 0 Then
+
+            diceStyle = Integer.Parse(value)
+        Else
+
+            ' Else, set it to the default dice style (a d6)
+            diceStyle = 6
+        End If
 
     End Sub
 End Class

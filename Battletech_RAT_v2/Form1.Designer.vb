@@ -37,7 +37,12 @@ Partial Class MainForm
         Me.TextBoxModifier = New System.Windows.Forms.TextBox()
         Me.LabelModifier = New System.Windows.Forms.Label()
         Me.LabelJoke = New System.Windows.Forms.Label()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SetDiceTypeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip1.SuspendLayout()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'ListBoxMechs
@@ -45,15 +50,15 @@ Partial Class MainForm
         Me.ListBoxMechs.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ListBoxMechs.FormattingEnabled = True
-        Me.ListBoxMechs.Location = New System.Drawing.Point(184, 25)
+        Me.ListBoxMechs.Location = New System.Drawing.Point(184, 35)
         Me.ListBoxMechs.Name = "ListBoxMechs"
-        Me.ListBoxMechs.Size = New System.Drawing.Size(172, 277)
+        Me.ListBoxMechs.Size = New System.Drawing.Size(172, 290)
         Me.ListBoxMechs.TabIndex = 0
         '
         'ComboBoxFaction
         '
         Me.ComboBoxFaction.FormattingEnabled = True
-        Me.ComboBoxFaction.Location = New System.Drawing.Point(12, 70)
+        Me.ComboBoxFaction.Location = New System.Drawing.Point(12, 91)
         Me.ComboBoxFaction.Name = "ComboBoxFaction"
         Me.ComboBoxFaction.Size = New System.Drawing.Size(152, 21)
         Me.ComboBoxFaction.TabIndex = 1
@@ -61,7 +66,7 @@ Partial Class MainForm
         'ComboBoxTech
         '
         Me.ComboBoxTech.FormattingEnabled = True
-        Me.ComboBoxTech.Location = New System.Drawing.Point(12, 110)
+        Me.ComboBoxTech.Location = New System.Drawing.Point(12, 131)
         Me.ComboBoxTech.Name = "ComboBoxTech"
         Me.ComboBoxTech.Size = New System.Drawing.Size(152, 21)
         Me.ComboBoxTech.TabIndex = 2
@@ -69,7 +74,7 @@ Partial Class MainForm
         'ComboBoxWeight
         '
         Me.ComboBoxWeight.FormattingEnabled = True
-        Me.ComboBoxWeight.Location = New System.Drawing.Point(12, 150)
+        Me.ComboBoxWeight.Location = New System.Drawing.Point(12, 171)
         Me.ComboBoxWeight.Name = "ComboBoxWeight"
         Me.ComboBoxWeight.Size = New System.Drawing.Size(152, 21)
         Me.ComboBoxWeight.TabIndex = 3
@@ -77,7 +82,7 @@ Partial Class MainForm
         'LabelFaction
         '
         Me.LabelFaction.AutoSize = True
-        Me.LabelFaction.Location = New System.Drawing.Point(12, 54)
+        Me.LabelFaction.Location = New System.Drawing.Point(12, 75)
         Me.LabelFaction.Name = "LabelFaction"
         Me.LabelFaction.Size = New System.Drawing.Size(45, 13)
         Me.LabelFaction.TabIndex = 4
@@ -86,7 +91,7 @@ Partial Class MainForm
         'LabelTech
         '
         Me.LabelTech.AutoSize = True
-        Me.LabelTech.Location = New System.Drawing.Point(12, 94)
+        Me.LabelTech.Location = New System.Drawing.Point(12, 115)
         Me.LabelTech.Name = "LabelTech"
         Me.LabelTech.Size = New System.Drawing.Size(35, 13)
         Me.LabelTech.TabIndex = 5
@@ -95,7 +100,7 @@ Partial Class MainForm
         'LabelWeight
         '
         Me.LabelWeight.AutoSize = True
-        Me.LabelWeight.Location = New System.Drawing.Point(13, 134)
+        Me.LabelWeight.Location = New System.Drawing.Point(13, 155)
         Me.LabelWeight.Name = "LabelWeight"
         Me.LabelWeight.Size = New System.Drawing.Size(44, 13)
         Me.LabelWeight.TabIndex = 6
@@ -104,7 +109,7 @@ Partial Class MainForm
         'StatusStrip1
         '
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabelDebugCounter})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 310)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 334)
         Me.StatusStrip1.Name = "StatusStrip1"
         Me.StatusStrip1.Size = New System.Drawing.Size(368, 22)
         Me.StatusStrip1.TabIndex = 7
@@ -119,7 +124,7 @@ Partial Class MainForm
         'ComboBoxBook
         '
         Me.ComboBoxBook.FormattingEnabled = True
-        Me.ComboBoxBook.Location = New System.Drawing.Point(12, 30)
+        Me.ComboBoxBook.Location = New System.Drawing.Point(12, 51)
         Me.ComboBoxBook.Name = "ComboBoxBook"
         Me.ComboBoxBook.Size = New System.Drawing.Size(152, 21)
         Me.ComboBoxBook.TabIndex = 8
@@ -127,7 +132,7 @@ Partial Class MainForm
         'LabelBook
         '
         Me.LabelBook.AutoSize = True
-        Me.LabelBook.Location = New System.Drawing.Point(12, 12)
+        Me.LabelBook.Location = New System.Drawing.Point(12, 35)
         Me.LabelBook.Name = "LabelBook"
         Me.LabelBook.Size = New System.Drawing.Size(35, 13)
         Me.LabelBook.TabIndex = 9
@@ -136,7 +141,7 @@ Partial Class MainForm
         'ButtonRoll
         '
         Me.ButtonRoll.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.ButtonRoll.Location = New System.Drawing.Point(103, 279)
+        Me.ButtonRoll.Location = New System.Drawing.Point(103, 303)
         Me.ButtonRoll.Name = "ButtonRoll"
         Me.ButtonRoll.Size = New System.Drawing.Size(75, 23)
         Me.ButtonRoll.TabIndex = 10
@@ -146,7 +151,7 @@ Partial Class MainForm
         'TextBoxModifier
         '
         Me.TextBoxModifier.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.TextBoxModifier.Location = New System.Drawing.Point(12, 281)
+        Me.TextBoxModifier.Location = New System.Drawing.Point(12, 305)
         Me.TextBoxModifier.Name = "TextBoxModifier"
         Me.TextBoxModifier.Size = New System.Drawing.Size(85, 20)
         Me.TextBoxModifier.TabIndex = 11
@@ -155,7 +160,7 @@ Partial Class MainForm
         '
         Me.LabelModifier.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.LabelModifier.AutoSize = True
-        Me.LabelModifier.Location = New System.Drawing.Point(13, 265)
+        Me.LabelModifier.Location = New System.Drawing.Point(13, 289)
         Me.LabelModifier.Name = "LabelModifier"
         Me.LabelModifier.Size = New System.Drawing.Size(71, 13)
         Me.LabelModifier.TabIndex = 12
@@ -170,11 +175,39 @@ Partial Class MainForm
         Me.LabelJoke.Size = New System.Drawing.Size(0, 13)
         Me.LabelJoke.TabIndex = 13
         '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(368, 24)
+        Me.MenuStrip1.TabIndex = 14
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'FileToolStripMenuItem
+        '
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SetDiceTypeToolStripMenuItem, Me.ExitToolStripMenuItem})
+        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.FileToolStripMenuItem.Text = "File"
+        '
+        'ExitToolStripMenuItem
+        '
+        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem.Text = "Exit"
+        '
+        'SetDiceTypeToolStripMenuItem
+        '
+        Me.SetDiceTypeToolStripMenuItem.Name = "SetDiceTypeToolStripMenuItem"
+        Me.SetDiceTypeToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SetDiceTypeToolStripMenuItem.Text = "Set dice type"
+        '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(368, 332)
+        Me.ClientSize = New System.Drawing.Size(368, 356)
         Me.Controls.Add(Me.LabelJoke)
         Me.Controls.Add(Me.LabelModifier)
         Me.Controls.Add(Me.TextBoxModifier)
@@ -182,6 +215,7 @@ Partial Class MainForm
         Me.Controls.Add(Me.LabelBook)
         Me.Controls.Add(Me.ComboBoxBook)
         Me.Controls.Add(Me.StatusStrip1)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.LabelWeight)
         Me.Controls.Add(Me.LabelTech)
         Me.Controls.Add(Me.LabelFaction)
@@ -189,10 +223,13 @@ Partial Class MainForm
         Me.Controls.Add(Me.ComboBoxTech)
         Me.Controls.Add(Me.ComboBoxFaction)
         Me.Controls.Add(Me.ListBoxMechs)
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "MainForm"
         Me.Text = "Battletech RAT v2"
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -212,5 +249,9 @@ Partial Class MainForm
     Friend WithEvents TextBoxModifier As System.Windows.Forms.TextBox
     Friend WithEvents LabelModifier As System.Windows.Forms.Label
     Friend WithEvents LabelJoke As System.Windows.Forms.Label
+    Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
+    Friend WithEvents FileToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ExitToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents SetDiceTypeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
