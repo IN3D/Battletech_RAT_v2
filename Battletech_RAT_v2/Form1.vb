@@ -20,9 +20,19 @@
         For i As Integer = 0 To ((bookList(selectedBook).factionList.Count) - 1)
 
             Dim tempName As String = bookList(selectedBook).factionList(i).Name
-
             ComboBoxFaction.Items.Add(tempName)
         Next
+
+        ' If the other comboBoxes have been filled, clear them out on a book change
+        If selectedFaction <> -1 And selectedTech <> -1 And selectedWeight <> -1 Then
+
+            ComboBoxFaction.Text = ""
+            ComboBoxTech.Text = ""
+            ComboBoxWeight.Text = ""
+
+            ' Clean out the list of mechs
+            ListBoxMechs.Items.Clear()
+        End If
     End Sub
 
     Private Sub ComboBoxFaction_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxFaction.SelectedIndexChanged
@@ -33,7 +43,6 @@
         For i As Integer = 0 To ((bookList(selectedBook).factionList(selectedFaction).techList.Count) - 1)
 
             Dim tempName As String = bookList(selectedBook).factionList(selectedFaction).techList(i).Name
-
             ComboBoxTech.Items.Add(tempName)
         Next
     End Sub
@@ -48,7 +57,6 @@
 
             Dim tempName As String = bookList(selectedBook).factionList(selectedFaction).techList(selectedTech) _
                                      .WeightList(i).Name
-
             ComboBoxWeight.Items.Add(tempName)
         Next
     End Sub
@@ -63,10 +71,10 @@
 
             Dim tempName As String = bookList(selectedBook).factionList(selectedFaction).techList(selectedTech) _
                                      .WeightList(selectedWeight).mechList(i).Name
-
             ListBoxMechs.Items.Add(tempName)
         Next
 
+        ' FOR DEBUG: CAN BE REMOVED FOR RELEASE
         ToolStripStatusLabelDebugCounter.Text = ListBoxMechs.Items.Count.ToString()
     End Sub
 

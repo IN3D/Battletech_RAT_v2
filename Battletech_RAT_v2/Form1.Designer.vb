@@ -33,6 +33,9 @@ Partial Class MainForm
         Me.ToolStripStatusLabelDebugCounter = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ComboBoxBook = New System.Windows.Forms.ComboBox()
         Me.LabelBook = New System.Windows.Forms.Label()
+        Me.ButtonRoll = New System.Windows.Forms.Button()
+        Me.TextBoxModifier = New System.Windows.Forms.TextBox()
+        Me.LabelModifier = New System.Windows.Forms.Label()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -129,11 +132,42 @@ Partial Class MainForm
         Me.LabelBook.TabIndex = 9
         Me.LabelBook.Text = "Book:"
         '
+        'ButtonRoll
+        '
+        Me.ButtonRoll.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.ButtonRoll.Location = New System.Drawing.Point(103, 279)
+        Me.ButtonRoll.Name = "ButtonRoll"
+        Me.ButtonRoll.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonRoll.TabIndex = 10
+        Me.ButtonRoll.Text = "Roll"
+        Me.ButtonRoll.UseVisualStyleBackColor = True
+        '
+        'TextBoxModifier
+        '
+        Me.TextBoxModifier.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.TextBoxModifier.Location = New System.Drawing.Point(12, 281)
+        Me.TextBoxModifier.Name = "TextBoxModifier"
+        Me.TextBoxModifier.Size = New System.Drawing.Size(85, 20)
+        Me.TextBoxModifier.TabIndex = 11
+        '
+        'LabelModifier
+        '
+        Me.LabelModifier.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.LabelModifier.AutoSize = True
+        Me.LabelModifier.Location = New System.Drawing.Point(13, 265)
+        Me.LabelModifier.Name = "LabelModifier"
+        Me.LabelModifier.Size = New System.Drawing.Size(71, 13)
+        Me.LabelModifier.TabIndex = 12
+        Me.LabelModifier.Text = "Dice modifier:"
+        '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(368, 332)
+        Me.Controls.Add(Me.LabelModifier)
+        Me.Controls.Add(Me.TextBoxModifier)
+        Me.Controls.Add(Me.ButtonRoll)
         Me.Controls.Add(Me.LabelBook)
         Me.Controls.Add(Me.ComboBoxBook)
         Me.Controls.Add(Me.StatusStrip1)
@@ -163,5 +197,8 @@ Partial Class MainForm
     Friend WithEvents ToolStripStatusLabelDebugCounter As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents ComboBoxBook As System.Windows.Forms.ComboBox
     Friend WithEvents LabelBook As System.Windows.Forms.Label
+    Friend WithEvents ButtonRoll As System.Windows.Forms.Button
+    Friend WithEvents TextBoxModifier As System.Windows.Forms.TextBox
+    Friend WithEvents LabelModifier As System.Windows.Forms.Label
 
 End Class
