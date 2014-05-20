@@ -76,4 +76,21 @@ Module UtilityModule
             MainForm.ComboBoxBook.Items.Add(tempName)
         Next
     End Sub
+
+    Public Function rollDice()
+
+        Dim modifier As Integer
+        Integer.TryParse(MainForm.TextBoxModifier.Text, modifier)
+
+        ' mechCount may not be needed
+        Dim mechCount As Integer = MainForm.ListBoxMechs.Items.Count
+        Dim die1 As Integer = (Int(Rnd() * 6) + 1)
+        Dim die2 As Integer = (Int(Rnd() * 6) + 1)
+
+        Dim rollTotal As Integer = (die1 + die2) + modifier
+
+        ' The number needs to be returned at -2 as, arrays are 0 based, and the lowest
+        ' possible number is (usually) 2. so instead of running 2-12, it needs to run 0-10
+        Return (rollTotal - 2)
+    End Function
 End Module

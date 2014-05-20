@@ -78,4 +78,27 @@
         ToolStripStatusLabelDebugCounter.Text = ListBoxMechs.Items.Count.ToString()
     End Sub
 
+    Private Sub ButtonRoll_Click(sender As Object, e As EventArgs) Handles ButtonRoll.Click
+
+        Dim diceTotal As Integer = rollDice()
+
+        Dim jokes = {"DISHONORABLE", "DEZGRA", "STRAVAG CHEATER"}
+
+        ' MechWarrior 3 Joke ;)
+        If ((LabelJoke.Text <> "") And (diceTotal <= (ListBoxMechs.Items.Count))) Then
+
+            LabelJoke.Text = ""
+        ElseIf diceTotal >= (ListBoxMechs.Items.Count) Then
+
+            LabelJoke.Text = jokes((Int(Rnd() * 3)))
+        End If
+
+        If diceTotal > ListBoxMechs.Items.Count Then
+
+            diceTotal = ((ListBoxMechs.Items.Count) - 1)
+        End If
+
+        ListBoxMechs.SelectedIndex = diceTotal
+
+    End Sub
 End Class

@@ -36,6 +36,7 @@ Partial Class MainForm
         Me.ButtonRoll = New System.Windows.Forms.Button()
         Me.TextBoxModifier = New System.Windows.Forms.TextBox()
         Me.LabelModifier = New System.Windows.Forms.Label()
+        Me.LabelJoke = New System.Windows.Forms.Label()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -44,9 +45,9 @@ Partial Class MainForm
         Me.ListBoxMechs.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ListBoxMechs.FormattingEnabled = True
-        Me.ListBoxMechs.Location = New System.Drawing.Point(184, 12)
+        Me.ListBoxMechs.Location = New System.Drawing.Point(184, 25)
         Me.ListBoxMechs.Name = "ListBoxMechs"
-        Me.ListBoxMechs.Size = New System.Drawing.Size(172, 290)
+        Me.ListBoxMechs.Size = New System.Drawing.Size(172, 277)
         Me.ListBoxMechs.TabIndex = 0
         '
         'ComboBoxFaction
@@ -160,11 +161,21 @@ Partial Class MainForm
         Me.LabelModifier.TabIndex = 12
         Me.LabelModifier.Text = "Dice modifier:"
         '
+        'LabelJoke
+        '
+        Me.LabelJoke.AutoSize = True
+        Me.LabelJoke.ForeColor = System.Drawing.Color.Red
+        Me.LabelJoke.Location = New System.Drawing.Point(181, 9)
+        Me.LabelJoke.Name = "LabelJoke"
+        Me.LabelJoke.Size = New System.Drawing.Size(0, 13)
+        Me.LabelJoke.TabIndex = 13
+        '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(368, 332)
+        Me.Controls.Add(Me.LabelJoke)
         Me.Controls.Add(Me.LabelModifier)
         Me.Controls.Add(Me.TextBoxModifier)
         Me.Controls.Add(Me.ButtonRoll)
@@ -200,5 +211,6 @@ Partial Class MainForm
     Friend WithEvents ButtonRoll As System.Windows.Forms.Button
     Friend WithEvents TextBoxModifier As System.Windows.Forms.TextBox
     Friend WithEvents LabelModifier As System.Windows.Forms.Label
+    Friend WithEvents LabelJoke As System.Windows.Forms.Label
 
 End Class
