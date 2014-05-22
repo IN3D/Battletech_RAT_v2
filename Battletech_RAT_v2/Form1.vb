@@ -85,4 +85,9 @@
         ' clean out everything
         clearForm(0)
     End Sub
+
+    Private Sub OpenUnitMakerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenUnitMakerToolStripMenuItem.Click
+
+
+    End Sub
 End Class
