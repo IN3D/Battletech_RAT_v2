@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Battletech: Random Assignment Table v2.0
+    
+    ==Created==
+    on: 5/22/14
+    by: Eric Hopkins
+    
+    ==Last Modified==
+    on: 5/22/14
+    by: Eric Hopkins
+    
+    This file contains the tables found in Total Chaos
+-->
+<book name="Total Chaos">
+	<faction name="Mercenaries/Militia">
+		<tech name="default">
+			<weight name="light">
+				<mech>STG-3G Stinger</mech>
+				<mech>LCT-1V Locust</mech>
+				<mech>WSP-1S Wasp</mech>
+				<mech>VLK-QA Valkyrie</mech>
+				<mech>COM-2DR Commando</mech>
+				<mech>WSP-3M Wasp</mech>
+				<mech>EGL-2M Eagle</mech>
+				<mech>DRT-6S Dart</mech>
+				<mech>PNT-10K Panther</mech>
+				<mech>VLK-QD Valkyrie</mech>
+				<mech>FLC-5P Falcon</mech>
+				<mech>SCB-9A Scarabus</mech>
+				<mech>HMR-3C Hammer</mech>
+				<mech>WLF-2 Wolfhound</mech>
+				<mech>GRM-01B Garm</mech>
+				<mech>NTK-2Q Night Hawk</mech>
+				<mech>FNHK-9K1A Falcon Hawk</mech>
+				<mech>TLN-5W Talon</mech>
+				<mech>Puma</mech>
+			</weight>
+			<weight name="medium">
+				<mech>VL-2T Vulcan</mech>
+				<mech>HBK-4P Hunchback</mech>
+				<mech>CLNT-3-U Clint</mech>
+				<mech>PXH-1 Phoenix Hawk</mech>
+				<mech>HCT-5S Hatchetman</mech>
+				<mech>CN9-D Centurion</mech>
+				<mech>DV-6MR Dervish</mech>
+				<mech>PXH-3D Phoenix Hawk</mech>
+				<mech>NGS-5S Nightsky</mech>
+				<mech>SHD-5M Shadow Hawk</mech>
+				<mech>HBK-5N Hunchback</mech>
+				<mech>CLN-7W Chameleon</mech>
+				<mech>CNS-5M Chronus</mech>
+				<mech>APL-1M Apollo</mech>
+				<mech>SR1-0 Strider</mech>
+				<mech>TR2 Wraith</mech>
+				<mech>FS9-0 Firestarter</mech>
+				<mech>BJ2-0 Blackjack</mech>
+				<mech>Ryoken</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>RFL-3N Rifleman</mech>
+				<mech>QKD-4H Quickdraw</mech>
+				<mech>AXM-1N Axeman</mech>
+				<mech>ARC-2R Archer</mech>
+				<mech>JM6-DD JagerMech</mech>
+				<mech>OTL-9R Ostsol</mech>
+				<mech>YMN-6Y Yeoman</mech>
+				<mech>RFL-5M Rifleman</mech>
+				<mech>HRC-LS-9001 Hercules</mech>
+				<mech>ON1-M Orion</mech>
+				<mech>TMP-3M Tempest</mech>
+				<mech>GHR-5J Grasshopper</mech>
+				<mech>BNDR-01AR Bandersnatch</mech>
+				<mech>WR-DG-02FC War Dog</mech>
+				<mech>ARC-9M Archer</mech>
+				<mech>EXC-B2 Excalibur</mech>
+				<mech>P1 Perseus</mech>
+				<mech>HEP-4H Helepolis</mech>
+				<mech>Mad Cat</mech>
+			</weight>
+			<weight name="assault">
+				<mech>VTR-9B Victor</mech>
+				<mech>STK-3F Stalker</mech>
+				<mech>BNC-3MR Banshee</mech>
+				<mech>CGR-SB Charger</mech>
+				<mech>LGB-13C Longbow</mech>
+				<mech>ZEU-9S Zeus</mech>
+				<mech>LGB-7V Longbow</mech>
+				<mech>AWS-9Q Awesome</mech>
+				<mech>ALB-3U Albatross</mech>
+				<mech>STK-5M Stalker</mech>
+				<mech>BLR-3M BattleMaster</mech>
+				<mech>HGN-732 Highlander</mech>
+				<mech>MR-V3 Cerberus</mech>
+				<mech>BNC-5S Banshee</mech>
+				<mech>GUN-1ERD Gunslinger</mech>
+				<mech>SRC-3C Sirocco</mech>
+				<mech>BRZ-A3 Berserker</mech>
+				<mech>TI-2PA Titan II</mech>
+				<mech>Masakari</mech>
+			</weight>
+		</tech>
+	</faction>
+	<faction name="Word of Blake">
+		<tech name="default">
+			<weight name="light">
+				<mech>STG-3R Stinger</mech>
+				<mech>THE-N2 Thorn</mech>
+				<mech>JKR-9R Jackrabbit</mech>
+				<mech>EGL-2M Eagle</mech>
+				<mech>MCY-102 Mercury</mech>
+				<mech>JKR-9W Jackrabbit</mech>
+				<mech>RDS-2B Redshift</mech>
+				<mech>LCT-5W Locust</mech>
+				<mech>HER-3S1 Hermes</mech>
+				<mech>NXS1-B Nexus</mech>
+				<mech>ZPH-2A Tarantula</mech>
+				<mech>OTT-9CS Ostscout</mech>
+				<mech>MON-76 Mongoose</mech>
+				<mech>JA-KL-1532 Jackal</mech>
+				<mech>GUR-4G Gurkha</mech>
+				<mech>FNHK-9K1B Falcon Hawk</mech>
+				<mech>HSR-950-D Hussar</mech>
+				<mech>HER-4WB Hermes</mech>
+				<mech>C-MK-0 Malak</mech>
+			</weight>
+			<weight name="medium">
+				<mech>WVR-6M Wolverine</mech>
+				<mech>VL-6C Vulcan</mech>
+				<mech>INI-02 Initiate</mech>
+				<mech>HER-5SR Hermes II</mech>
+				<mech>BCN-3R Bucaneer</mech>
+				<mech>APL-1M Apollo</mech>
+				<mech>TBT-7M Trebuchet</mech>
+				<mech>B1-HND Bloodhound</mech>
+				<mech>BLF-21 Blue Flame</mech>
+				<mech>RJN-101-C Raijin</mech>
+				<mech>OSP-26 Osprey</mech>
+				<mech>SCP-1C Scorpion</mech>
+				<mech>KW2-LHW Lineholder</mech>
+				<mech>LGH-4Y Lightray</mech>
+				<mech>CRB-45 Crab</mech>
+				<mech>GRM-R-PR30 Grim Reaper</mech>
+				<mech>GRF-6CS Griffin</mech>
+				<mech>C-EID-001 Eidolon (Yao Lien)</mech>
+				<mech>C-PRT-0 Preta</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>RFL-3N Rifleman</mech>
+				<mech>CHP-1N2 Champion</mech>
+				<mech>CRD-7W Crusader</mech>
+				<mech>QKD-5MR Quickdraw</mech>
+				<mech>GHR-5J Grasshopper</mech>
+				<mech>LNC25-08 Lancelot</mech>
+				<mech>GLH-3D Galahad</mech>
+				<mech>EXT-4D Exterminator</mech>
+				<mech>ON2-M Orion</mech>
+				<mech>WHF-3B White Flame</mech>
+				<mech>GLT-6WB Guillotine</mech>
+				<mech>BL-9-KNT Black Knight</mech>
+				<mech>EXC-B2 Excalibur</mech>
+				<mech>DRG-6FC Dragon Fire</mech>
+				<mech>TYM-1B Toyama</mech>
+				<mech>ST-9C Shootist</mech>
+				<mech>P1 Perseus</mech>
+				<mech>C-GRG-0 Gregori</mech>
+				<mech>C-DVA-0 Deva</mech>
+			</weight>
+			<weight name="assault">
+				<mech>THG-10E Thug</mech>
+				<mech>LGB-13C Longbow</mech>
+				<mech>STK-6M Stalker</mech>
+				<mech>AWS-9Q Awesome</mech>
+				<mech>SPT-N3 Spartan</mech>
+				<mech>GRN-D-01 Grand Crusader</mech>
+				<mech>VKG-3W Viking</mech>
+				<mech>ALB-3UR Albatross</mech>
+				<mech>CRK-5005-1 Crockett</mech>
+				<mech>LGC-01 Legacy</mech>
+				<mech>GOL-5W Goliath</mech>
+				<mech>ZEU-10WB Zeus</mech>
+				<mech>T-IT-N11M Grand Titan</mech>
+				<mech>EMP-6M Emperor</mech>
+				<mech>SRC-3C Sirocco</mech>
+				<mech>VQR-2A Vanquisher</mech>
+				<mech>KGC-005R King Crab</mech>
+				<mech>AS7-D-H Atlas II</mech>
+				<mech>C-SRP-0 Seraph</mech>
+			</weight>
+		</tech>
+	</faction>
+	<faction name="Word of Blake: Shadow Divisions">
+		<tech name="default">
+			<weight name="light">
+				<mech>LCT-5W Locust</mech>
+				<mech>MCY-104 Mercury</mech>
+				<mech>RDS-3A Red Shift</mech>
+				<mech>NXS2-A Nexus II</mech>
+				<mech>HSR-500-D Hussar</mech>
+				<mech>NXS2-B Nexus II</mech>
+				<mech>C-MK-0 Malak</mech>
+				<mech>HER-4M Hermes</mech>
+				<mech>GUR-8G Gurkha</mech>
+				<mech>OTT-10CS Ostscout</mech>
+				<mech>C-MK-0 Malak</mech>
+			</weight>
+			<weight name="medium">
+				<mech>INI-04 Initiate</mech>
+				<mech>BLF-40 Blue Flame</mech>
+				<mech>BCN-6W Buccaneer</mech>
+				<mech>CRB-45 Crab</mech>
+				<mech>LGH-6W Lightray</mech>
+				<mech>RJN-200-A Raijin II</mech>
+				<mech>C-PRT-0 Preta</mech>
+				<mech>SCP-12C Scorpion</mech>
+				<mech>GRF-6CS Griffin</mech>
+				<mech>SHD-11CS Shadow Hawk</mech>
+				<mech>RJN-200-C Raijin II</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>LNC25-06 Lancelot</mech>
+				<mech>OSR-5W Ostroc</mech>
+				<mech>GLT-6WB Guillotine</mech>
+				<mech>EXC-D1 Excalibur</mech>
+				<mech>WHF-3C White Flame</mech>
+				<mech>C-GRG-0 Gregori</mech>
+				<mech>C-DVA-0 Deva</mech>
+				<mech>TYM-1C Toyama</mech>
+				<mech>DRG-6FC Dragon Fire</mech>
+				<mech>MAD-9W Marauder</mech>
+				<mech>P1 Perseus</mech>
+			</weight>
+			<weight name="assault">
+				<mech>SPT-N3 Spartan</mech>
+				<mech>LGC-04WVR Legacy</mech>
+				<mech>GOL-5W Goliath</mech>
+				<mech>VKG-3W Viking</mech>
+				<mech>GRN-D-04 Grand Crusader</mech>
+				<mech>C-SPR-0 Seraph</mech>
+				<mech>VQR-5V Vanquisher</mech>
+				<mech>EMP-6M Emperor</mech>
+				<mech>C-ANG-0 Archangel</mech>
+				<mech>MAD-5W Marauder II</mech>
+				<mech>KGC-008 King Crab</mech>
+			</weight>
+		</tech>
+	</faction>
+</book>
