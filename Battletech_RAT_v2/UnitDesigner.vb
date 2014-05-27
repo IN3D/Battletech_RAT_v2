@@ -6,7 +6,7 @@
     Dim assaults As Integer
 
     ' Weight is used here because it holds a mech list
-    Public rootUnitList As LinkedList(Of Weight)
+    Public rootUnitList As New LinkedList(Of Weight)
 
     Private Sub ButtonAdd_Click(sender As Object, e As EventArgs) Handles ButtonAdd.Click
 
@@ -14,59 +14,74 @@
         Integer.TryParse(TextBoxMedium.Text, mediums)
         Integer.TryParse(TextBoxHeavy.Text, heavies)
         Integer.TryParse(TextBoxAssault.Text, assaults)
+        Dim index As Integer = ComboBoxUnit.SelectedIndex
 
         Dim i As Integer
 
-        If lights > 0 Then
-            i = 1
-            MainForm.ComboBoxWeight.SelectedIndex = 0
+        If index <> -1 Then
 
-            Do While i <= lights
+            If lights > 0 Then
+                i = 1
+                MainForm.ComboBoxWeight.SelectedIndex = 0
 
-                MainForm.ButtonRoll.PerformClick()
-                Me.ListBoxUnits.Items.Add(MainForm.ListBoxMechs.SelectedItem.ToString)
+                Do While i <= lights
 
-                i = (i + 1)
-            Loop
-        End If
+                    MainForm.ButtonRoll.PerformClick()
+                    rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
 
-        If mediums > 0 Then
-            i = 1
-            MainForm.ComboBoxWeight.SelectedIndex = 1
+                    i = (i + 1)
+                Loop
+            End If
 
-            Do While i <= mediums
+            If mediums > 0 Then
+                i = 1
+                MainForm.ComboBoxWeight.SelectedIndex = 1
 
-                MainForm.ButtonRoll.PerformClick()
-                Me.ListBoxUnits.Items.Add(MainForm.ListBoxMechs.SelectedItem.ToString)
+                Do While i <= mediums
 
-                i = (i + 1)
-            Loop
-        End If
+                    MainForm.ButtonRoll.PerformClick()
+                    rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
 
-        If heavies > 0 Then
-            i = 1
-            MainForm.ComboBoxWeight.SelectedIndex = 2
+                    i = (i + 1)
+                Loop
+            End If
 
-            Do While i <= heavies
+            If heavies > 0 Then
+                i = 1
+                MainForm.ComboBoxWeight.SelectedIndex = 2
 
-                MainForm.ButtonRoll.PerformClick()
-                Me.ListBoxUnits.Items.Add(MainForm.ListBoxMechs.SelectedItem.ToString)
+                Do While i <= heavies
 
-                i = (i + 1)
-            Loop
-        End If
+                    MainForm.ButtonRoll.PerformClick()
+                    rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
 
-        If assaults > 0 Then
-            i = 1
-            MainForm.ComboBoxWeight.SelectedIndex = 3
+                    i = (i + 1)
+                Loop
+            End If
 
-            Do While i <= assaults
+            If assaults > 0 Then
+                i = 1
+                MainForm.ComboBoxWeight.SelectedIndex = 3
 
-                MainForm.ButtonRoll.PerformClick()
-                Me.ListBoxUnits.Items.Add(MainForm.ListBoxMechs.SelectedItem.ToString)
+                Do While i <= assaults
 
-                i = (i + 1)
-            Loop
+                    MainForm.ButtonRoll.PerformClick()
+                    rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
+
+                    i = (i + 1)
+                Loop
+            End If
+
+            Me.ListBoxUnits.Items.Clear()
+
+            For Each Mech In rootUnitList(index).mechList
+
+                Me.ListBoxUnits.Items.Add(Mech.Name)
+            Next
+
+        Else
+
+            MessageBox.Show("Please select the unit that you're adding to.", "Error!")
         End If
     End Sub
 
@@ -80,5 +95,27 @@
         value = InputBox(prompt, title, defaultValue)
 
         rootUnitList.AddLast(New Weight(value))
+
+        ' update the combobox
+        Dim i As Integer
+        ComboBoxUnit.Items.Clear()
+
+        For Each unit In rootUnitList
+
+            ComboBoxUnit.Items.Add(rootUnitList(i).Name)
+            i = (i + 1)
+        Next
+    End Sub
+
+    Private Sub ComboBoxUnit_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxUnit.SelectedIndexChanged
+
+        Dim index As Integer = ComboBoxUnit.SelectedIndex
+
+        Me.ListBoxUnits.Items.Clear()
+
+        For Each Mech In rootUnitList(index).mechList
+
+            Me.ListBoxUnits.Items.Add(Mech.Name)
+        Next
     End Sub
 End Class
