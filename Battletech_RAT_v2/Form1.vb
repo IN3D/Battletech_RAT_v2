@@ -88,6 +88,6 @@
 
     Private Sub OpenUnitMakerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenUnitMakerToolStripMenuItem.Click
 
-
+        UnitDesigner.Show()
     End Sub
 End Class

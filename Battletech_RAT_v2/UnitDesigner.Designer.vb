@@ -23,15 +23,18 @@ Partial Class UnitDesigner
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBoxUnitStructure = New System.Windows.Forms.GroupBox()
-        Me.LabelLights = New System.Windows.Forms.Label()
-        Me.TextBoxLights = New System.Windows.Forms.TextBox()
-        Me.LabelMedium = New System.Windows.Forms.Label()
-        Me.TextBoxMedium = New System.Windows.Forms.TextBox()
-        Me.LabelHeavy = New System.Windows.Forms.Label()
-        Me.TextBoxHeavy = New System.Windows.Forms.TextBox()
-        Me.LabelAssault = New System.Windows.Forms.Label()
         Me.TextBoxAssault = New System.Windows.Forms.TextBox()
+        Me.LabelAssault = New System.Windows.Forms.Label()
+        Me.TextBoxHeavy = New System.Windows.Forms.TextBox()
+        Me.LabelHeavy = New System.Windows.Forms.Label()
+        Me.TextBoxMedium = New System.Windows.Forms.TextBox()
+        Me.LabelMedium = New System.Windows.Forms.Label()
+        Me.TextBoxLights = New System.Windows.Forms.TextBox()
+        Me.LabelLights = New System.Windows.Forms.Label()
         Me.ListBoxUnits = New System.Windows.Forms.ListBox()
+        Me.ComboBoxUnit = New System.Windows.Forms.ComboBox()
+        Me.ButtonAdd = New System.Windows.Forms.Button()
+        Me.ButtonUnit = New System.Windows.Forms.Button()
         Me.GroupBoxUnitStructure.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,60 +48,19 @@ Partial Class UnitDesigner
         Me.GroupBoxUnitStructure.Controls.Add(Me.LabelMedium)
         Me.GroupBoxUnitStructure.Controls.Add(Me.TextBoxLights)
         Me.GroupBoxUnitStructure.Controls.Add(Me.LabelLights)
-        Me.GroupBoxUnitStructure.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBoxUnitStructure.Location = New System.Drawing.Point(12, 19)
         Me.GroupBoxUnitStructure.Name = "GroupBoxUnitStructure"
         Me.GroupBoxUnitStructure.Size = New System.Drawing.Size(156, 150)
         Me.GroupBoxUnitStructure.TabIndex = 0
         Me.GroupBoxUnitStructure.TabStop = False
         Me.GroupBoxUnitStructure.Text = "Unit Structure"
         '
-        'LabelLights
+        'TextBoxAssault
         '
-        Me.LabelLights.AutoSize = True
-        Me.LabelLights.Location = New System.Drawing.Point(6, 22)
-        Me.LabelLights.Name = "LabelLights"
-        Me.LabelLights.Size = New System.Drawing.Size(38, 13)
-        Me.LabelLights.TabIndex = 0
-        Me.LabelLights.Text = "Lights:"
-        '
-        'TextBoxLights
-        '
-        Me.TextBoxLights.Location = New System.Drawing.Point(65, 19)
-        Me.TextBoxLights.Name = "TextBoxLights"
-        Me.TextBoxLights.Size = New System.Drawing.Size(85, 20)
-        Me.TextBoxLights.TabIndex = 1
-        '
-        'LabelMedium
-        '
-        Me.LabelMedium.AutoSize = True
-        Me.LabelMedium.Location = New System.Drawing.Point(6, 54)
-        Me.LabelMedium.Name = "LabelMedium"
-        Me.LabelMedium.Size = New System.Drawing.Size(47, 13)
-        Me.LabelMedium.TabIndex = 2
-        Me.LabelMedium.Text = "Medium:"
-        '
-        'TextBoxMedium
-        '
-        Me.TextBoxMedium.Location = New System.Drawing.Point(65, 51)
-        Me.TextBoxMedium.Name = "TextBoxMedium"
-        Me.TextBoxMedium.Size = New System.Drawing.Size(85, 20)
-        Me.TextBoxMedium.TabIndex = 3
-        '
-        'LabelHeavy
-        '
-        Me.LabelHeavy.AutoSize = True
-        Me.LabelHeavy.Location = New System.Drawing.Point(6, 87)
-        Me.LabelHeavy.Name = "LabelHeavy"
-        Me.LabelHeavy.Size = New System.Drawing.Size(41, 13)
-        Me.LabelHeavy.TabIndex = 4
-        Me.LabelHeavy.Text = "Heavy:"
-        '
-        'TextBoxHeavy
-        '
-        Me.TextBoxHeavy.Location = New System.Drawing.Point(65, 84)
-        Me.TextBoxHeavy.Name = "TextBoxHeavy"
-        Me.TextBoxHeavy.Size = New System.Drawing.Size(85, 20)
-        Me.TextBoxHeavy.TabIndex = 5
+        Me.TextBoxAssault.Location = New System.Drawing.Point(65, 118)
+        Me.TextBoxAssault.Name = "TextBoxAssault"
+        Me.TextBoxAssault.Size = New System.Drawing.Size(85, 20)
+        Me.TextBoxAssault.TabIndex = 7
         '
         'LabelAssault
         '
@@ -109,31 +71,101 @@ Partial Class UnitDesigner
         Me.LabelAssault.TabIndex = 6
         Me.LabelAssault.Text = "Assault:"
         '
-        'TextBoxAssault
+        'TextBoxHeavy
         '
-        Me.TextBoxAssault.Location = New System.Drawing.Point(65, 118)
-        Me.TextBoxAssault.Name = "TextBoxAssault"
-        Me.TextBoxAssault.Size = New System.Drawing.Size(85, 20)
-        Me.TextBoxAssault.TabIndex = 7
+        Me.TextBoxHeavy.Location = New System.Drawing.Point(65, 84)
+        Me.TextBoxHeavy.Name = "TextBoxHeavy"
+        Me.TextBoxHeavy.Size = New System.Drawing.Size(85, 20)
+        Me.TextBoxHeavy.TabIndex = 5
+        '
+        'LabelHeavy
+        '
+        Me.LabelHeavy.AutoSize = True
+        Me.LabelHeavy.Location = New System.Drawing.Point(6, 87)
+        Me.LabelHeavy.Name = "LabelHeavy"
+        Me.LabelHeavy.Size = New System.Drawing.Size(41, 13)
+        Me.LabelHeavy.TabIndex = 4
+        Me.LabelHeavy.Text = "Heavy:"
+        '
+        'TextBoxMedium
+        '
+        Me.TextBoxMedium.Location = New System.Drawing.Point(65, 51)
+        Me.TextBoxMedium.Name = "TextBoxMedium"
+        Me.TextBoxMedium.Size = New System.Drawing.Size(85, 20)
+        Me.TextBoxMedium.TabIndex = 3
+        '
+        'LabelMedium
+        '
+        Me.LabelMedium.AutoSize = True
+        Me.LabelMedium.Location = New System.Drawing.Point(6, 54)
+        Me.LabelMedium.Name = "LabelMedium"
+        Me.LabelMedium.Size = New System.Drawing.Size(47, 13)
+        Me.LabelMedium.TabIndex = 2
+        Me.LabelMedium.Text = "Medium:"
+        '
+        'TextBoxLights
+        '
+        Me.TextBoxLights.Location = New System.Drawing.Point(65, 19)
+        Me.TextBoxLights.Name = "TextBoxLights"
+        Me.TextBoxLights.Size = New System.Drawing.Size(85, 20)
+        Me.TextBoxLights.TabIndex = 1
+        '
+        'LabelLights
+        '
+        Me.LabelLights.AutoSize = True
+        Me.LabelLights.Location = New System.Drawing.Point(6, 22)
+        Me.LabelLights.Name = "LabelLights"
+        Me.LabelLights.Size = New System.Drawing.Size(38, 13)
+        Me.LabelLights.TabIndex = 0
+        Me.LabelLights.Text = "Lights:"
         '
         'ListBoxUnits
         '
         Me.ListBoxUnits.FormattingEnabled = True
-        Me.ListBoxUnits.Location = New System.Drawing.Point(229, 12)
+        Me.ListBoxUnits.Location = New System.Drawing.Point(255, 46)
         Me.ListBoxUnits.Name = "ListBoxUnits"
         Me.ListBoxUnits.Size = New System.Drawing.Size(191, 212)
         Me.ListBoxUnits.TabIndex = 1
+        '
+        'ComboBoxUnit
+        '
+        Me.ComboBoxUnit.FormattingEnabled = True
+        Me.ComboBoxUnit.Location = New System.Drawing.Point(255, 19)
+        Me.ComboBoxUnit.Name = "ComboBoxUnit"
+        Me.ComboBoxUnit.Size = New System.Drawing.Size(191, 21)
+        Me.ComboBoxUnit.TabIndex = 2
+        '
+        'ButtonAdd
+        '
+        Me.ButtonAdd.Location = New System.Drawing.Point(174, 48)
+        Me.ButtonAdd.Name = "ButtonAdd"
+        Me.ButtonAdd.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonAdd.TabIndex = 3
+        Me.ButtonAdd.Text = "Add"
+        Me.ButtonAdd.UseVisualStyleBackColor = True
+        '
+        'ButtonUnit
+        '
+        Me.ButtonUnit.Location = New System.Drawing.Point(174, 19)
+        Me.ButtonUnit.Name = "ButtonUnit"
+        Me.ButtonUnit.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonUnit.TabIndex = 4
+        Me.ButtonUnit.Text = "New Unit"
+        Me.ButtonUnit.UseVisualStyleBackColor = True
         '
         'UnitDesigner
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(432, 235)
+        Me.ClientSize = New System.Drawing.Size(454, 270)
+        Me.Controls.Add(Me.ButtonUnit)
+        Me.Controls.Add(Me.ButtonAdd)
+        Me.Controls.Add(Me.ComboBoxUnit)
         Me.Controls.Add(Me.ListBoxUnits)
         Me.Controls.Add(Me.GroupBoxUnitStructure)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "UnitDesigner"
-        Me.Text = "UnitDesigner"
+        Me.Text = "Unit Designer"
         Me.GroupBoxUnitStructure.ResumeLayout(False)
         Me.GroupBoxUnitStructure.PerformLayout()
         Me.ResumeLayout(False)
@@ -149,4 +181,7 @@ Partial Class UnitDesigner
     Friend WithEvents TextBoxLights As System.Windows.Forms.TextBox
     Friend WithEvents LabelLights As System.Windows.Forms.Label
     Friend WithEvents ListBoxUnits As System.Windows.Forms.ListBox
+    Friend WithEvents ComboBoxUnit As System.Windows.Forms.ComboBox
+    Friend WithEvents ButtonAdd As System.Windows.Forms.Button
+    Friend WithEvents ButtonUnit As System.Windows.Forms.Button
 End Class
