@@ -37,6 +37,8 @@ Partial Class UnitDesigner
         Me.ButtonUnit = New System.Windows.Forms.Button()
         Me.ButtonMoveUp = New System.Windows.Forms.Button()
         Me.ButtonMoveDown = New System.Windows.Forms.Button()
+        Me.ButtonDelete = New System.Windows.Forms.Button()
+        Me.ButtonReRoll = New System.Windows.Forms.Button()
         Me.GroupBoxUnitStructure.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -173,11 +175,31 @@ Partial Class UnitDesigner
         Me.ButtonMoveDown.Text = "▼"
         Me.ButtonMoveDown.UseVisualStyleBackColor = True
         '
+        'ButtonDelete
+        '
+        Me.ButtonDelete.Location = New System.Drawing.Point(174, 135)
+        Me.ButtonDelete.Name = "ButtonDelete"
+        Me.ButtonDelete.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonDelete.TabIndex = 7
+        Me.ButtonDelete.Text = "Delete"
+        Me.ButtonDelete.UseVisualStyleBackColor = True
+        '
+        'ButtonReRoll
+        '
+        Me.ButtonReRoll.Location = New System.Drawing.Point(174, 223)
+        Me.ButtonReRoll.Name = "ButtonReRoll"
+        Me.ButtonReRoll.Size = New System.Drawing.Size(75, 35)
+        Me.ButtonReRoll.TabIndex = 8
+        Me.ButtonReRoll.Text = "Reroll Selected"
+        Me.ButtonReRoll.UseVisualStyleBackColor = True
+        '
         'UnitDesigner
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(454, 270)
+        Me.Controls.Add(Me.ButtonReRoll)
+        Me.Controls.Add(Me.ButtonDelete)
         Me.Controls.Add(Me.ButtonMoveDown)
         Me.Controls.Add(Me.ButtonMoveUp)
         Me.Controls.Add(Me.ButtonUnit)
@@ -208,4 +230,6 @@ Partial Class UnitDesigner
     Friend WithEvents ButtonUnit As System.Windows.Forms.Button
     Friend WithEvents ButtonMoveUp As System.Windows.Forms.Button
     Friend WithEvents ButtonMoveDown As System.Windows.Forms.Button
+    Friend WithEvents ButtonDelete As System.Windows.Forms.Button
+    Friend WithEvents ButtonReRoll As System.Windows.Forms.Button
 End Class
