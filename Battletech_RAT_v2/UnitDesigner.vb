@@ -294,4 +294,37 @@
             MessageBox.Show("Please select (or reselect) the mech you want re-rolled!", "ERROR")
         End If
     End Sub
+
+    Private Sub ButtonDeleteUnit_Click(sender As Object, e As EventArgs) Handles ButtonDeleteUnit.Click
+
+        Dim result = MessageBox.Show("Are you sure, this will remove the unit and all the mechs in it?", "Delete?", MessageBoxButtons.YesNo)
+
+        If result = DialogResult.Yes And ComboBoxUnit.Items.Count <> 0 Then
+
+            Try
+
+                Dim index As Integer = ComboBoxUnit.SelectedIndex
+                Dim unitToRemove As Weight = rootUnitList.ElementAt(index)
+
+                ' clear out all mechs in the unit
+                rootUnitList.ElementAt(index).mechList.Clear()
+
+                rootUnitList.Remove(unitToRemove)
+
+                ' set text back to nothing to avoid confusion
+                ComboBoxUnit.Text = ""
+
+                ' repopulate the combobox
+                ComboBoxUnit.Items.Clear()
+                Dim i As Integer = 0
+                For Each unit In rootUnitList
+
+                    ComboBoxUnit.Items.Add(rootUnitList(i).Name)
+                    i = (i + 1)
+                Next
+            Catch ex As Exception
+
+            End Try
+        End If
+    End Sub
 End Class

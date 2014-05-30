@@ -1,6 +1,6 @@
 ﻿Public Class Mech
 
-    Protected pilot As Pilot
+    Protected pilot As New Pilot(Nothing, Nothing, Nothing)
     Property Name As String
 
     Public Sub New(ByVal value As String)
@@ -28,7 +28,7 @@
     Public Overrides Function ToString() As String
 
         ' ensure that pilot contains something
-        If (pilot.Name = "") Then
+        If (Me.pilot.Name = Nothing) Then
 
             Return Name
         Else

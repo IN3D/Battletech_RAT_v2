@@ -39,6 +39,7 @@ Partial Class UnitDesigner
         Me.ButtonMoveDown = New System.Windows.Forms.Button()
         Me.ButtonDelete = New System.Windows.Forms.Button()
         Me.ButtonReRoll = New System.Windows.Forms.Button()
+        Me.ButtonDeleteUnit = New System.Windows.Forms.Button()
         Me.GroupBoxUnitStructure.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -141,7 +142,7 @@ Partial Class UnitDesigner
         '
         'ButtonAdd
         '
-        Me.ButtonAdd.Location = New System.Drawing.Point(174, 48)
+        Me.ButtonAdd.Location = New System.Drawing.Point(174, 77)
         Me.ButtonAdd.Name = "ButtonAdd"
         Me.ButtonAdd.Size = New System.Drawing.Size(75, 23)
         Me.ButtonAdd.TabIndex = 3
@@ -159,7 +160,7 @@ Partial Class UnitDesigner
         '
         'ButtonMoveUp
         '
-        Me.ButtonMoveUp.Location = New System.Drawing.Point(174, 77)
+        Me.ButtonMoveUp.Location = New System.Drawing.Point(174, 106)
         Me.ButtonMoveUp.Name = "ButtonMoveUp"
         Me.ButtonMoveUp.Size = New System.Drawing.Size(75, 23)
         Me.ButtonMoveUp.TabIndex = 5
@@ -168,7 +169,7 @@ Partial Class UnitDesigner
         '
         'ButtonMoveDown
         '
-        Me.ButtonMoveDown.Location = New System.Drawing.Point(174, 106)
+        Me.ButtonMoveDown.Location = New System.Drawing.Point(174, 135)
         Me.ButtonMoveDown.Name = "ButtonMoveDown"
         Me.ButtonMoveDown.Size = New System.Drawing.Size(75, 23)
         Me.ButtonMoveDown.TabIndex = 6
@@ -177,7 +178,7 @@ Partial Class UnitDesigner
         '
         'ButtonDelete
         '
-        Me.ButtonDelete.Location = New System.Drawing.Point(174, 135)
+        Me.ButtonDelete.Location = New System.Drawing.Point(174, 164)
         Me.ButtonDelete.Name = "ButtonDelete"
         Me.ButtonDelete.Size = New System.Drawing.Size(75, 23)
         Me.ButtonDelete.TabIndex = 7
@@ -193,11 +194,21 @@ Partial Class UnitDesigner
         Me.ButtonReRoll.Text = "Reroll Selected"
         Me.ButtonReRoll.UseVisualStyleBackColor = True
         '
+        'ButtonDeleteUnit
+        '
+        Me.ButtonDeleteUnit.Location = New System.Drawing.Point(174, 48)
+        Me.ButtonDeleteUnit.Name = "ButtonDeleteUnit"
+        Me.ButtonDeleteUnit.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonDeleteUnit.TabIndex = 9
+        Me.ButtonDeleteUnit.Text = "Del Unit"
+        Me.ButtonDeleteUnit.UseVisualStyleBackColor = True
+        '
         'UnitDesigner
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(454, 270)
+        Me.Controls.Add(Me.ButtonDeleteUnit)
         Me.Controls.Add(Me.ButtonReRoll)
         Me.Controls.Add(Me.ButtonDelete)
         Me.Controls.Add(Me.ButtonMoveDown)
@@ -232,4 +243,5 @@ Partial Class UnitDesigner
     Friend WithEvents ButtonMoveDown As System.Windows.Forms.Button
     Friend WithEvents ButtonDelete As System.Windows.Forms.Button
     Friend WithEvents ButtonReRoll As System.Windows.Forms.Button
+    Friend WithEvents ButtonDeleteUnit As System.Windows.Forms.Button
 End Class
