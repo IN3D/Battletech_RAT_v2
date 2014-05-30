@@ -118,4 +118,64 @@
             Me.ListBoxUnits.Items.Add(Mech.Name)
         Next
     End Sub
+
+    Private Sub ButtonMoveUp_Click(sender As Object, e As EventArgs) Handles ButtonMoveUp.Click
+
+        Try
+            Dim unitIndex As Integer = ComboBoxUnit.SelectedIndex
+            Dim index As Integer = ListBoxUnits.SelectedIndex
+            Dim tempName As String = rootUnitList.ElementAt(unitIndex).mechList.ElementAt(index).Name
+            Dim tempMech As Mech = rootUnitList.ElementAt(unitIndex).mechList.ElementAt(index)
+            Dim targetmech As Mech = rootUnitList.ElementAt(unitIndex).mechList.ElementAt(index - 1)
+            Dim target As LinkedListNode(Of Mech) = rootUnitList.ElementAt(unitIndex).mechList.Find(targetmech)
+
+
+            rootUnitList.ElementAt(unitIndex).mechList.Remove(tempMech)
+            rootUnitList.ElementAt(unitIndex).mechList.AddBefore(target, New Mech(tempName))
+
+            ListBoxUnits.Items.Clear()
+
+            For Each Mech In rootUnitList(unitIndex).mechList
+
+                Me.ListBoxUnits.Items.Add(Mech.Name)
+            Next
+
+            ' set the index back on the previously selected mech
+            ListBoxUnits.SelectedIndex = (index - 1)
+
+        Catch ex As Exception
+
+            MessageBox.Show("Error, you can't move a mech out of the list!", "ERROR")
+        End Try
+    End Sub
+
+    Private Sub ButtonMoveDown_Click(sender As Object, e As EventArgs) Handles ButtonMoveDown.Click
+
+        Try
+            Dim unitIndex As Integer = ComboBoxUnit.SelectedIndex
+            Dim index As Integer = ListBoxUnits.SelectedIndex
+            Dim tempName As String = rootUnitList.ElementAt(unitIndex).mechList.ElementAt(index).Name
+            Dim tempMech As Mech = rootUnitList.ElementAt(unitIndex).mechList.ElementAt(index)
+            Dim targetmech As Mech = rootUnitList.ElementAt(unitIndex).mechList.ElementAt(index + 1)
+            Dim target As LinkedListNode(Of Mech) = rootUnitList.ElementAt(unitIndex).mechList.Find(targetmech)
+
+            rootUnitList.ElementAt(unitIndex).mechList.Remove(tempMech)
+            rootUnitList.ElementAt(unitIndex).mechList.AddAfter(target, New Mech(tempName))
+
+            ' TODO: Make a method for this for cleaner code
+            ListBoxUnits.Items.Clear()
+
+            For Each Mech In rootUnitList(unitIndex).mechList
+
+                Me.ListBoxUnits.Items.Add(Mech.Name)
+            Next
+
+            ' set the index back to the previously selected mech
+            ListBoxUnits.SelectedIndex = (index + 1)
+
+        Catch ex As Exception
+
+        End Try
+
+    End Sub
 End Class

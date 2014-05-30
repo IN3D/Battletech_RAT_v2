@@ -142,7 +142,9 @@
     <Content Include="xml\Field Manual Lyran Alliance.xml" />
     <Content Include="xml\Field Manual Mercenaries Revised.xml" />
     <Content Include="xml\Field Manual Mercenaries.xml" />
-    <Content Include="xml\Field Manual Northwind Highlanders.xml" />
+    <Content Include="xml\Field Manual Northwind Highlanders.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="xml\Field Manual Periphery.xml" />
     <Content Include="xml\Field Manual Warden Clans.xml" />
     <Content Include="xml\Total Warfare.xml" />

@@ -35,6 +35,8 @@ Partial Class UnitDesigner
         Me.ComboBoxUnit = New System.Windows.Forms.ComboBox()
         Me.ButtonAdd = New System.Windows.Forms.Button()
         Me.ButtonUnit = New System.Windows.Forms.Button()
+        Me.ButtonMoveUp = New System.Windows.Forms.Button()
+        Me.ButtonMoveDown = New System.Windows.Forms.Button()
         Me.GroupBoxUnitStructure.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -153,11 +155,31 @@ Partial Class UnitDesigner
         Me.ButtonUnit.Text = "New Unit"
         Me.ButtonUnit.UseVisualStyleBackColor = True
         '
+        'ButtonMoveUp
+        '
+        Me.ButtonMoveUp.Location = New System.Drawing.Point(174, 77)
+        Me.ButtonMoveUp.Name = "ButtonMoveUp"
+        Me.ButtonMoveUp.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonMoveUp.TabIndex = 5
+        Me.ButtonMoveUp.Text = "▲"
+        Me.ButtonMoveUp.UseVisualStyleBackColor = True
+        '
+        'ButtonMoveDown
+        '
+        Me.ButtonMoveDown.Location = New System.Drawing.Point(174, 106)
+        Me.ButtonMoveDown.Name = "ButtonMoveDown"
+        Me.ButtonMoveDown.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonMoveDown.TabIndex = 6
+        Me.ButtonMoveDown.Text = "▼"
+        Me.ButtonMoveDown.UseVisualStyleBackColor = True
+        '
         'UnitDesigner
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(454, 270)
+        Me.Controls.Add(Me.ButtonMoveDown)
+        Me.Controls.Add(Me.ButtonMoveUp)
         Me.Controls.Add(Me.ButtonUnit)
         Me.Controls.Add(Me.ButtonAdd)
         Me.Controls.Add(Me.ComboBoxUnit)
@@ -184,4 +206,6 @@ Partial Class UnitDesigner
     Friend WithEvents ComboBoxUnit As System.Windows.Forms.ComboBox
     Friend WithEvents ButtonAdd As System.Windows.Forms.Button
     Friend WithEvents ButtonUnit As System.Windows.Forms.Button
+    Friend WithEvents ButtonMoveUp As System.Windows.Forms.Button
+    Friend WithEvents ButtonMoveDown As System.Windows.Forms.Button
 End Class
