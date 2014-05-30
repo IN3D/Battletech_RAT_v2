@@ -19,9 +19,10 @@
 
         ' There's no way to set a value to null in vb, so
         ' I just made the pilot skills really terrible
+        ' EDIT: maybe nothing works?
         Me.pilot.Name = ""
-        Me.pilot.GunnerySkill = 8
-        Me.pilot.PilotSkill = 9
+        Me.pilot.GunnerySkill = Nothing
+        Me.pilot.PilotSkill = Nothing
     End Sub
 
     Public Overrides Function ToString() As String
@@ -32,7 +33,7 @@
             Return Name
         Else
 
-            Return Name & ": " & pilot.Name & " (" & pilot.GunnerySkill & "/" & pilot.PilotSkill & ")"
+            Return Name & ": " & pilot.Name & " (" & pilot.GunnerySkill.ToString & "/" & pilot.PilotSkill.ToString & ")"
         End If
     End Function
 End Class

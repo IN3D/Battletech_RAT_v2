@@ -115,7 +115,7 @@
 
         For Each Mech In rootUnitList(index).mechList
 
-            Me.ListBoxUnits.Items.Add(Mech.Name)
+            Me.ListBoxUnits.Items.Add(Mech.ToString)
         Next
     End Sub
 End Class
