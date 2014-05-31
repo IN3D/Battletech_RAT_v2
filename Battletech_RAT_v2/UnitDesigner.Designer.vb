@@ -40,6 +40,7 @@ Partial Class UnitDesigner
         Me.ButtonDelete = New System.Windows.Forms.Button()
         Me.ButtonReRoll = New System.Windows.Forms.Button()
         Me.ButtonDeleteUnit = New System.Windows.Forms.Button()
+        Me.ButtonAddPilot = New System.Windows.Forms.Button()
         Me.GroupBoxUnitStructure.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -126,16 +127,21 @@ Partial Class UnitDesigner
         '
         'ListBoxUnits
         '
+        Me.ListBoxUnits.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ListBoxUnits.FormattingEnabled = True
-        Me.ListBoxUnits.Location = New System.Drawing.Point(255, 46)
+        Me.ListBoxUnits.Location = New System.Drawing.Point(259, 46)
         Me.ListBoxUnits.Name = "ListBoxUnits"
         Me.ListBoxUnits.Size = New System.Drawing.Size(191, 212)
         Me.ListBoxUnits.TabIndex = 1
         '
         'ComboBoxUnit
         '
+        Me.ComboBoxUnit.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ComboBoxUnit.FormattingEnabled = True
-        Me.ComboBoxUnit.Location = New System.Drawing.Point(255, 19)
+        Me.ComboBoxUnit.Location = New System.Drawing.Point(259, 19)
         Me.ComboBoxUnit.Name = "ComboBoxUnit"
         Me.ComboBoxUnit.Size = New System.Drawing.Size(191, 21)
         Me.ComboBoxUnit.TabIndex = 2
@@ -203,11 +209,21 @@ Partial Class UnitDesigner
         Me.ButtonDeleteUnit.Text = "Del Unit"
         Me.ButtonDeleteUnit.UseVisualStyleBackColor = True
         '
+        'ButtonAddPilot
+        '
+        Me.ButtonAddPilot.Location = New System.Drawing.Point(174, 193)
+        Me.ButtonAddPilot.Name = "ButtonAddPilot"
+        Me.ButtonAddPilot.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonAddPilot.TabIndex = 10
+        Me.ButtonAddPilot.Text = "+Pilot"
+        Me.ButtonAddPilot.UseVisualStyleBackColor = True
+        '
         'UnitDesigner
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(454, 270)
+        Me.ClientSize = New System.Drawing.Size(462, 270)
+        Me.Controls.Add(Me.ButtonAddPilot)
         Me.Controls.Add(Me.ButtonDeleteUnit)
         Me.Controls.Add(Me.ButtonReRoll)
         Me.Controls.Add(Me.ButtonDelete)
@@ -218,7 +234,7 @@ Partial Class UnitDesigner
         Me.Controls.Add(Me.ComboBoxUnit)
         Me.Controls.Add(Me.ListBoxUnits)
         Me.Controls.Add(Me.GroupBoxUnitStructure)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.MinimumSize = New System.Drawing.Size(478, 308)
         Me.Name = "UnitDesigner"
         Me.Text = "Unit Designer"
         Me.GroupBoxUnitStructure.ResumeLayout(False)
@@ -244,4 +260,5 @@ Partial Class UnitDesigner
     Friend WithEvents ButtonDelete As System.Windows.Forms.Button
     Friend WithEvents ButtonReRoll As System.Windows.Forms.Button
     Friend WithEvents ButtonDeleteUnit As System.Windows.Forms.Button
+    Friend WithEvents ButtonAddPilot As System.Windows.Forms.Button
 End Class

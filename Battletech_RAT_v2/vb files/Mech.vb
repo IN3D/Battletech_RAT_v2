@@ -8,6 +8,18 @@
         Name = value
     End Sub
 
+    Public Sub New(ByVal mech As Mech)
+
+        Me.Name = mech.Name
+
+        If (mech.pilot.Name <> Nothing) Then
+
+            Me.pilot.Name = mech.pilot.Name
+            Me.pilot.GunnerySkill = mech.pilot.GunnerySkill
+            Me.pilot.PilotSkill = mech.pilot.PilotSkill
+        End If
+    End Sub
+
     Public Sub addPilot(ByRef pilotPassed As Pilot)
 
         Me.pilot.Name = pilotPassed.Name

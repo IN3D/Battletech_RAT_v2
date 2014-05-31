@@ -131,7 +131,7 @@
 
 
             rootUnitList.ElementAt(unitIndex).mechList.Remove(tempMech)
-            rootUnitList.ElementAt(unitIndex).mechList.AddBefore(target, New Mech(tempName))
+            rootUnitList.ElementAt(unitIndex).mechList.AddBefore(target, New Mech(tempMech))
 
             Me.resetListBox()
 
@@ -156,7 +156,7 @@
             Dim target As LinkedListNode(Of Mech) = rootUnitList.ElementAt(unitIndex).mechList.Find(targetmech)
 
             rootUnitList.ElementAt(unitIndex).mechList.Remove(tempMech)
-            rootUnitList.ElementAt(unitIndex).mechList.AddAfter(target, New Mech(tempName))
+            rootUnitList.ElementAt(unitIndex).mechList.AddAfter(target, New Mech(tempMech))
 
             Me.resetListBox()
 
@@ -169,14 +169,14 @@
 
     End Sub
 
-    Protected Sub resetListBox()
+    Public Sub resetListBox()
         Dim index As Integer = ComboBoxUnit.SelectedIndex
 
         ListBoxUnits.Items.Clear()
 
         For Each Mech In rootUnitList(index).mechList
 
-            Me.ListBoxUnits.Items.Add(Mech.Name)
+            Me.ListBoxUnits.Items.Add(Mech.ToString())
         Next
     End Sub
 
@@ -326,5 +326,12 @@
 
             End Try
         End If
+    End Sub
+
+    Private Sub ButtonAddPilot_Click(sender As Object, e As EventArgs) Handles ButtonAddPilot.Click
+
+        PilotAdditionForm.Show()
+
+
     End Sub
 End Class
