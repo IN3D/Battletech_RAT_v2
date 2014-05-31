@@ -41,7 +41,11 @@ Partial Class UnitDesigner
         Me.ButtonReRoll = New System.Windows.Forms.Button()
         Me.ButtonDeleteUnit = New System.Windows.Forms.Button()
         Me.ButtonAddPilot = New System.Windows.Forms.Button()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.RadioButtonLtoH = New System.Windows.Forms.RadioButton()
+        Me.RadioButtonHtoL = New System.Windows.Forms.RadioButton()
         Me.GroupBoxUnitStructure.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBoxUnitStructure
@@ -218,11 +222,46 @@ Partial Class UnitDesigner
         Me.ButtonAddPilot.Text = "+Pilot"
         Me.ButtonAddPilot.UseVisualStyleBackColor = True
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.RadioButtonHtoL)
+        Me.GroupBox1.Controls.Add(Me.RadioButtonLtoH)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 175)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(156, 67)
+        Me.GroupBox1.TabIndex = 11
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Default Order"
+        '
+        'RadioButtonLtoH
+        '
+        Me.RadioButtonLtoH.AutoSize = True
+        Me.RadioButtonLtoH.Location = New System.Drawing.Point(6, 41)
+        Me.RadioButtonLtoH.Name = "RadioButtonLtoH"
+        Me.RadioButtonLtoH.Size = New System.Drawing.Size(119, 17)
+        Me.RadioButtonLtoH.TabIndex = 0
+        Me.RadioButtonLtoH.TabStop = True
+        Me.RadioButtonLtoH.Text = "Lightest to Heaviest"
+        Me.RadioButtonLtoH.UseVisualStyleBackColor = True
+        '
+        'RadioButtonHtoL
+        '
+        Me.RadioButtonHtoL.AutoSize = True
+        Me.RadioButtonHtoL.Checked = True
+        Me.RadioButtonHtoL.Location = New System.Drawing.Point(6, 18)
+        Me.RadioButtonHtoL.Name = "RadioButtonHtoL"
+        Me.RadioButtonHtoL.Size = New System.Drawing.Size(119, 17)
+        Me.RadioButtonHtoL.TabIndex = 1
+        Me.RadioButtonHtoL.TabStop = True
+        Me.RadioButtonHtoL.Text = "Heaviest to Lightest"
+        Me.RadioButtonHtoL.UseVisualStyleBackColor = True
+        '
         'UnitDesigner
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(462, 270)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.ButtonAddPilot)
         Me.Controls.Add(Me.ButtonDeleteUnit)
         Me.Controls.Add(Me.ButtonReRoll)
@@ -239,6 +278,8 @@ Partial Class UnitDesigner
         Me.Text = "Unit Designer"
         Me.GroupBoxUnitStructure.ResumeLayout(False)
         Me.GroupBoxUnitStructure.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -261,4 +302,7 @@ Partial Class UnitDesigner
     Friend WithEvents ButtonReRoll As System.Windows.Forms.Button
     Friend WithEvents ButtonDeleteUnit As System.Windows.Forms.Button
     Friend WithEvents ButtonAddPilot As System.Windows.Forms.Button
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents RadioButtonHtoL As System.Windows.Forms.RadioButton
+    Friend WithEvents RadioButtonLtoH As System.Windows.Forms.RadioButton
 End Class
