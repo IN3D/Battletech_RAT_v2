@@ -725,4 +725,665 @@
 			</weight>
 		</tech>
 	</faction>
+	<faction name="Clan Jade Falcon">
+		<tech name="Front Line">
+			<weight name="light">
+				<mech>Hellion Prime</mech>
+				<mech>Cougar Prime</mech>
+				<mech>Adder A</mech>
+				<mech>Adder Prime</mech>
+				<mech>Kit Fox D</mech>
+				<mech>Kit Fox Prime</mech>
+				<mech>Fire Moth Prime</mech>
+				<mech>Fire Moth A</mech>
+				<mech>Fire Falcon A</mech>
+				<mech>Mist Lynx D</mech>
+				<mech>Fire Falcon Prime</mech>
+			</weight>
+			<weight name="medium">
+				<mech>Ice Ferret Prime</mech>
+				<mech>Viper B</mech>
+				<mech>Viper C</mech>
+				<mech>Nova D</mech>
+				<mech>Nova Prime</mech>
+				<mech>Stormcrow Prime</mech>
+				<mech>Black Lanner Prime</mech>
+				<mech>Stormcrow A</mech>
+				<mech>Black Lanner C</mech>
+				<mech>Grendel Prime</mech>
+				<mech>Phantom Prime</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>Linebacker Prime</mech>
+				<mech>Mad Dog C</mech>
+				<mech>Mad Dog Prime</mech>
+				<mech>Hellbringer B</mech>
+				<mech>Summoner Prime</mech>
+				<mech>Summoner D</mech>
+				<mech>Hellbringer Prime</mech>
+				<mech>Night Gyr Prime</mech>
+				<mech>Timber Wolf A</mech>
+				<mech>Summoner B</mech>
+				<mech>Night Gyr A</mech>
+			</weight>
+			<weight name="assault">
+				<mech>Gargoyle Prime</mech>
+				<mech>Executioner A</mech>
+				<mech>Executioner Prime</mech>
+				<mech>Turkina B</mech>
+				<mech>Turkina Prime</mech>
+				<mech>Warhawk Prime</mech>
+				<mech>Warhawk B</mech>
+				<mech>Dire Wolf Prime</mech>
+				<mech>Dire Wolf A</mech>
+				<mech>Naga Prime</mech>
+				<mech>Mad Cat Mk II</mech>
+			</weight>
+		</tech>
+		<tech name="Second Line">
+			<weight name="light">
+				<mech>Mist Lynx Prime</mech>
+				<mech>THE-N Thorn</mech>
+				<mech>Howler</mech>
+				<mech>Kit Fox Prime</mech>
+				<mech>Locust IIC</mech>
+				<mech>Locust IIC</mech>
+				<mech>Jenner IIC</mech>
+				<mech>Spirit</mech>
+				<mech>MON-66 Mongoose</mech>
+				<mech>Incubus</mech>
+				<mech>Horned Owl</mech>
+			</weight>
+			<weight name="medium">
+				<mech>STN-3L Sentinel</mech>
+				<mech>Nova Prime</mech>
+				<mech>STN-3 Sentinel</mech>
+				<mech>Shadow Hawk IIC</mech>
+				<mech>Conjurer</mech>
+				<mech>Conjurer</mech>
+				<mech>Griffin IIC</mech>
+				<mech>Viper Prime</mech>
+				<mech>Hunchback IIC</mech>
+				<mech>Pinion</mech>
+				<mech>KTO-19 Kintaro</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>Timber Wolf Prime</mech>
+				<mech>Mad Dog Prime</mech>
+				<mech>Summoner C</mech>
+				<mech>EXT-4D Exterminator</mech>
+				<mech>Glass Spider</mech>
+				<mech>Glass Spider</mech>
+				<mech>Rifleman IIC</mech>
+				<mech>FLS-8K Flashman</mech>
+				<mech>Hellbringer A</mech>
+				<mech>Summoner Prime</mech>
+			</weight>
+			<weight name="assault">
+				<mech>Stone Rhino</mech>
+				<mech>Warhawk Prime</mech>
+				<mech>THG-11E Thug</mech>
+				<mech>Phoenix Hawk IIC</mech>
+				<mech>Phoenix Hawk IIC</mech>
+				<mech>Warhammer IIC</mech>
+				<mech>Warhammer IIC</mech>
+				<mech>Bane</mech>
+				<mech>Bane</mech>
+				<mech>HGN-732 Highlander</mech>
+				<mech>Marauder IIC</mech>
+			</weight>
+		</tech>
+	</faction>
+	<faction name="Clan Star Adder">
+		<tech name="Front Line">
+			<weight name="light">
+				<mech>Hellion B</mech>
+				<mech>Kit Fox D</mech>
+				<mech>Kit Fox H</mech>
+				<mech>Adder C</mech>
+				<mech>Fire Moth D</mech>
+				<mech>Adder A</mech>
+				<mech>Adder H</mech>
+				<mech>Fire Moth Prime</mech>
+				<mech>Hankyu Prime</mech>
+				<mech>Kit Fox E</mech>
+				<mech>Hankyu C</mech>
+			</weight>
+			<weight name="medium">
+				<mech>Pouncer Prime</mech>
+				<mech>Huntsman H</mech>
+				<mech>Nova H</mech>
+				<mech>Viper H</mech>
+				<mech>Grendel A</mech>
+				<mech>Nova Prime</mech>
+				<mech>Stormcrow B</mech>
+				<mech>Stormcrow Prime</mech>
+				<mech>Stormcrow H</mech>
+				<mech>Viper E</mech>
+				<mech>Viper Prime</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>Cauldron-Born B</mech>
+				<mech>Mad Dog H</mech>
+				<mech>Mad Dog Prime</mech>
+				<mech>Mad Dog D</mech>
+				<mech>Timber Wolf D</mech>
+				<mech>Cauldron-Born A</mech>
+				<mech>Night Gyr Prime</mech>
+				<mech>Nova Cat D</mech>
+				<mech>Cauldron-Born H</mech>
+				<mech>Timber Wolf Prime</mech>
+				<mech>Cauldron-Born C</mech>
+			</weight>
+			<weight name="assault">
+				<mech>Blood Asp C</mech>
+				<mech>Executioner A</mech>
+				<mech>Warhawk C</mech>
+				<mech>Blood Asp Prime</mech>
+				<mech>Blood Asp A</mech>
+				<mech>Kingfisher H</mech>
+				<mech>Gargoyle D</mech>
+				<mech>Warhawk H</mech>
+				<mech>Dire Wolf H</mech>
+				<mech>Blood Asp E</mech>
+				<mech>Savage Coyote C</mech>
+			</weight>
+		</tech>
+		<tech name="Second Line">
+			<weight name="light">
+				<mech>Locust IIC 4</mech>
+				<mech>Locust IIC</mech>
+				<mech>Locust IIC 3</mech>
+				<mech>Jenner IIC</mech>
+				<mech>Horned Owl</mech>
+				<mech>Jenner IIC 2</mech>
+				<mech>Incubus</mech>
+				<mech>Horned Owl 2</mech>
+				<mech>Howler</mech>
+				<mech>Pack Hunter</mech>
+				<mech>Firefly C</mech>
+			</weight>
+			<weight name="medium">
+				<mech>Hoplite C</mech>
+				<mech>Shadow Hawk IIC 3</mech>
+				<mech>Great Wyrm</mech>
+				<mech>Griffin IIC 4</mech>
+				<mech>Hunchback IIC</mech>
+				<mech>Shadow Hawk IIC 2</mech>
+				<mech>Conjurer</mech>
+				<mech>Wyvern IIC</mech>
+				<mech>Vapor Eagle</mech>
+				<mech>Griffin IIC 3</mech>
+				<mech>Clint IIC</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>Rifleman IIC 3</mech>
+				<mech>Predator</mech>
+				<mech>Grizzly</mech>
+				<mech>Hellfire</mech>
+				<mech>Rifleman IIC</mech>
+				<mech>Glass Spider</mech>
+				<mech>Burrock</mech>
+				<mech>Hellfire 2</mech>
+				<mech>Glass Spider 2</mech>
+				<mech>Black Python</mech>
+				<mech>Guillotine IIC</mech>
+			</weight>
+			<weight name="assault">
+				<mech>Annihilator C</mech>
+				<mech>Bane 3</mech>
+				<mech>Marauder IIC 3</mech>
+				<mech>Blood Kite</mech>
+				<mech>Marauder IIC 3</mech>
+				<mech>Blood Kite</mech>
+				<mech>Marauder IIC 2</mech>
+				<mech>Warhammer IIC 2</mech>
+				<mech>Highlander IIC</mech>
+				<mech>Warhammer IIC 3</mech>
+				<mech>Phoenix Hawk IIC 3</mech>
+				<mech>Shogun C</mech>
+				<mech>Imp C</mech>
+			</weight>
+		</tech>
+	</faction>
+	<faction name="Clan Wolf">
+		<tech name="Front Line">
+			<weight name="light">
+				<mech>Fire Moth H</mech>
+				<mech>Kit Fox Prime</mech>
+				<mech>Adder C</mech>
+				<mech>Adder B</mech>
+				<mech>Mist Lynx Prime</mech>
+				<mech>Adder Prime</mech>
+				<mech>Kit Fox H</mech>
+				<mech>Adder A</mech>
+				<mech>Mist Lynx A</mech>
+				<mech>Kit Fox A</mech>
+				<mech>Hankyu D</mech>
+			</weight>
+			<weight name="medium">
+				<mech>Ice Ferret D</mech>
+				<mech>Pouncer Prime</mech>
+				<mech>Phantom Prime</mech>
+				<mech>Ice Ferret A</mech>
+				<mech>Stormcrow Prime</mech>
+				<mech>Ice Ferret B</mech>
+				<mech>Nova Prime</mech>
+				<mech>Pouncer D</mech>
+				<mech>Phantom C</mech>
+				<mech>Viper A</mech>
+				<mech>Shadow Cat Prime</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>Timber Wolf D</mech>
+				<mech>Linebacker A</mech>
+				<mech>Summoner D</mech>
+				<mech>Timber Wolf B</mech>
+				<mech>Linebacker B</mech>
+				<mech>Timber Wolf Prime</mech>
+				<mech>Timber Wolf A</mech>
+				<mech>Linebacker Prime</mech>
+				<mech>Linebacker C</mech>
+				<mech>Timber Wolf C</mech>
+				<mech>Mad Dog Prime</mech>
+			</weight>
+			<weight name="assault">
+				<mech>Warhawk Prime</mech>
+				<mech>Dire Wolf H</mech>
+				<mech>Gargoyle H</mech>
+				<mech>Dire Wolf Prime</mech>
+				<mech>Gargoyle A</mech>
+				<mech>Dire Wolf A</mech>
+				<mech>Warhawk C</mech>
+				<mech>Dire Wolf C</mech>
+				<mech>Kingfisher D</mech>
+				<mech>Warhawk B</mech>
+				<mech>Dire Wolf S</mech>
+			</weight>
+		</tech>
+		<tech name="Second Line">
+			<weight name="light">
+				<mech>Jenner IIC</mech>
+				<mech>MON-66 Mongoose</mech>
+				<mech>THE-N Thorn</mech>
+				<mech>Incubus</mech>
+				<mech>Locust IIC 4</mech>
+				<mech>Icestorm</mech>
+				<mech>Jenner IIC</mech>
+				<mech>Locust IIC 4</mech>
+				<mech>Icestorm</mech>
+				<mech>Locust IIC 5</mech>
+				<mech>Adder D</mech>
+			</weight>
+			<weight name="medium">
+				<mech>Hunchback IIC</mech>
+				<mech>Conjurer</mech>
+				<mech>Griffin IIC</mech>
+				<mech>CRB-27 Crab</mech>
+				<mech>Lobo</mech>
+				<mech>Lobo</mech>
+				<mech>Shadow Hawk IIC</mech>
+				<mech>Griffin IIC 2</mech>
+				<mech>Shadow Hawk IIC</mech>
+				<mech>Griffin IIC 2</mech>
+				<mech>Pouncer D</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>EXT-4D Exterminator</mech>
+				<mech>FLS-8K Flashman</mech>
+				<mech>Glass Spider</mech>
+				<mech>Orion IIC</mech>
+				<mech>Rifleman IIC</mech>
+				<mech>Orion IIC</mech>
+				<mech>Glass Spider 2</mech>
+				<mech>BL-6-KNT Black Knight</mech>
+				<mech>Rifleman IIC</mech>
+				<mech>Glass Spider 2</mech>
+				<mech>Linebacker Prime</mech>
+			</weight>
+			<weight name="assault">
+				<mech>Supernova</mech>
+				<mech>Phoenix Hawk IIC</mech>
+				<mech>Naga Prime</mech>
+				<mech>CRK-5003-1 Crockett</mech>
+				<mech>Naga A</mech>
+				<mech>Warhammer IIC</mech>
+				<mech>Supernova</mech>
+				<mech>THG-11E Thug</mech>
+				<mech>Marauder IIC</mech>
+				<mech>KGC-000 King Crab</mech>
+				<mech>Supernova</mech>
+			</weight>
+		</tech>
+	</faction>
+	<faction name="Clan Cloud Cobra">
+		<tech name="Front Line">
+			<weight name="light">
+				<mech>Hankyu C</mech>
+				<mech>Adder A</mech>
+				<mech>Adder E</mech>
+				<mech>Adder H</mech>
+				<mech>Fire Moth D</mech>
+				<mech>Kit Fox H</mech>
+				<mech>Adder Prime</mech>
+				<mech>Kit Fox E</mech>
+				<mech>Kit Fox A</mech>
+				<mech>Mist Lynx C</mech>
+				<mech>Fire Falcon H</mech>
+			</weight>
+			<weight name="medium">
+				<mech>Phantom H</mech>
+				<mech>Stormcrow B</mech>
+				<mech>Shadow Cat C</mech>
+				<mech>Viper B</mech>
+				<mech>Stalking Spider</mech>
+				<mech>Stormcrow Prime</mech>
+				<mech>Viper H</mech>
+				<mech>Battle Cobra Prime</mech>
+				<mech>Nova A</mech>
+				<mech>Crimson Langur Prime</mech>
+				<mech>Pouncer H</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>Night Gyr C</mech>
+				<mech>Mad Dog Prime</mech>
+				<mech>Timber Wolf E</mech>
+				<mech>Night Gyr E</mech>
+				<mech>Cauldron-Born B</mech>
+				<mech>Mad Dog H</mech>
+				<mech>Summoner C</mech>
+				<mech>Mad Dog D</mech>
+				<mech>Timber Wolf D</mech>
+				<mech>Cauldron-Born H</mech>
+				<mech>Linebacker A</mech>
+			</weight>
+			<weight name="assault">
+				<mech>Executioner H</mech>
+				<mech>Savage Coyote C</mech>
+				<mech>Warhawk H</mech>
+				<mech>Warhawk C</mech>
+				<mech>Executioner A</mech>
+				<mech>Gargoyle D</mech>
+				<mech>Blood Asp A</mech>
+				<mech>Gargoyle C</mech>
+				<mech>Blood Asp E</mech>
+				<mech>Dire Wolf Prime</mech>
+				<mech>Turkina B</mech>
+			</weight>
+		</tech>
+		<tech name="Second Line">
+			<weight name="light">
+				<mech>Firefly C</mech>
+				<mech>Pack Hunter</mech>
+				<mech>Solitaire</mech>
+				<mech>Jenner IIC 2</mech>
+				<mech>Jenner IIC 4</mech>
+				<mech>Incubus</mech>
+				<mech>Horned Owl</mech>
+				<mech>Jenner IIC</mech>
+				<mech>Locust IIC 2</mech>
+				<mech>Incubus 2</mech>
+				<mech>Howler</mech>
+			</weight>
+			<weight name="medium">
+				<mech>Clint IIC</mech>
+				<mech>Rabid Coyote</mech>
+				<mech>Shadow Hawk IIC 2</mech>
+				<mech>Vapor Eagle</mech>
+				<mech>Stalking Spider</mech>
+				<mech>Great Wyrm</mech>
+				<mech>Griffin IIC 3</mech>
+				<mech>Hunchback IIC</mech>
+				<mech>Stalking Spider 2</mech>
+				<mech>Vapor Eagle</mech>
+				<mech>Wyvern IIC</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>Black Python</mech>
+				<mech>Thresher</mech>
+				<mech>Hellfire 2</mech>
+				<mech>Hellfire</mech>
+				<mech>Glass Spider</mech>
+				<mech>Rifleman IIC</mech>
+				<mech>Black Python</mech>
+				<mech>Guillotine IIC</mech>
+				<mech>Glass Spider 2</mech>
+				<mech>Rifleman IIC 4</mech>
+				<mech>Grizzly</mech>
+			</weight>
+			<weight name="assault">
+				<mech>Bane</mech>
+				<mech>Stone Rhino</mech>
+				<mech>Bane 3</mech>
+				<mech>Warhammer IIC 3</mech>
+				<mech>Marauder IIC</mech>
+				<mech>Supernova</mech>
+				<mech>Highlander IIC</mech>
+				<mech>Phoenix Hawk IIC 3</mech>
+				<mech>Blood Kite</mech>
+				<mech>Marauder IIC 2</mech>
+				<mech>Kodiak</mech>
+			</weight>
+		</tech>
+	</faction>
+	<faction name="Clan Coyote">
+		<tech name="Front Line">
+			<weight name="light">
+				<mech>Hankyu C</mech>
+				<mech>Fire Falcon E</mech>
+				<mech>Adder E</mech>
+				<mech>Mist Lynx C</mech>
+				<mech>Adder A</mech>
+				<mech>Adder Prime</mech>
+				<mech>Fire Moth Prime</mech>
+				<mech>Hellion C</mech>
+				<mech>Mist Lynx B</mech>
+				<mech>Fire Moth D</mech>
+				<mech>Kit Fox H</mech>
+			</weight>
+			<weight name="medium">
+				<mech>Pouncer E</mech>
+				<mech>Stormcrow E</mech>
+				<mech>Viper B</mech>
+				<mech>Viper A</mech>
+				<mech>Stormcrow B</mech>
+				<mech>Stormcrow Prime</mech>
+				<mech>Stormcrow D</mech>
+				<mech>Nova Prime</mech>
+				<mech>Nova E</mech>
+				<mech>Ice Ferret Prime</mech>
+				<mech>Rabid Coyote</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>Summoner H</mech>
+				<mech>Mad Dog D</mech>
+				<mech>Timber Wolf C</mech>
+				<mech>Summoner D</mech>
+				<mech>Hellbringer Prime</mech>
+				<mech>Timber Wolf Prime</mech>
+				<mech>Timber Wolf A</mech>
+				<mech>Summoner Prime</mech>
+				<mech>Timber Wolf E</mech>
+				<mech>Hellbringer C</mech>
+				<mech>Linebacker E</mech>
+			</weight>
+			<weight name="assault">
+				<mech>Turkina Prime</mech>
+				<mech>Gargoyle D</mech>
+				<mech>Savage Coyote C</mech>
+				<mech>Gargoyle A</mech>
+				<mech>Dire Wolf A</mech>
+				<mech>Savage Coyote Prime</mech>
+				<mech>Savage Coyote A</mech>
+				<mech>Dire Wolf Prime</mech>
+				<mech>Warhawk C</mech>
+				<mech>Savage Coyote B</mech>
+				<mech>Kingfisher C</mech>
+			</weight>
+		</tech>
+		<tech name="Second Line">
+			<weight name="light">
+				<mech>Pack Hunter</mech>
+				<mech>Piranha</mech>
+				<mech>Incubus 2</mech>
+				<mech>Locust IIC 5</mech>
+				<mech>Locust IIC</mech>
+				<mech>UrbanMech IIC</mech>
+				<mech>Incubus</mech>
+				<mech>Jenner IIC</mech>
+				<mech>Horned Owl</mech>
+				<mech>Jenner IIC 2</mech>
+				<mech>Adder Prime</mech>
+			</weight>
+			<weight name="medium">
+				<mech>Hoplite C</mech>
+				<mech>Lobo</mech>
+				<mech>Griffin IIC 3</mech>
+				<mech>Wyvern IIC</mech>
+				<mech>Rabid Coyote</mech>
+				<mech>Conjurer</mech>
+				<mech>Griffin IIC 4</mech>
+				<mech>Vapor Eagle</mech>
+				<mech>Great Wyrm</mech>
+				<mech>Clint IIC</mech>
+				<mech>Stormcrow Prime</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>Timber Wolf Prime</mech>
+				<mech>Grizzly</mech>
+				<mech>Guillotine IIC</mech>
+				<mech>Glass Spider</mech>
+				<mech>Rifleman IIC 4</mech>
+				<mech>Guillotine IIC</mech>
+				<mech>Rifleman IIC</mech>
+				<mech>Glass Spider 2</mech>
+				<mech>Rifleman IIC</mech>
+				<mech>Black Python</mech>
+				<mech>Bowman</mech>
+			</weight>
+			<weight name="assault">
+				<mech>Gargoyle A</mech>
+				<mech>Imp C</mech>
+				<mech>Supernova</mech>
+				<mech>Canis</mech>
+				<mech>Warhammer IIC</mech>
+				<mech>Canis</mech>
+				<mech>Highlander IIC</mech>
+				<mech>Phoenix Hawk IIC</mech>
+				<mech>Warhammer IIC 4</mech>
+				<mech>Kodiak</mech>
+				<mech>Shogun C</mech>
+			</weight>
+		</tech>
+	</faction>
+	<faction name="Clan Diamond Shark">
+		<tech name="Front Line">
+			<weight name="light">
+				<mech>Hellion Prime</mech>
+				<mech>Adder B</mech>
+				<mech>Hankyu Prime</mech>
+				<mech>Fire Moth Prime</mech>
+				<mech>hankyu C</mech>
+				<mech>Adder Prime</mech>
+				<mech>Hellion A</mech>
+				<mech>Mist Lynx Prime</mech>
+				<mech>Hellion B</mech>
+				<mech>Mist Lynx A</mech>
+				<mech>Adder A</mech>
+			</weight>
+			<weight name="medium">
+				<mech>Hunchback IIC</mech>
+				<mech>Nova A</mech>
+				<mech>Ice Ferret Prime</mech>
+				<mech>Grendel Prime</mech>
+				<mech>Stormcrow Prime</mech>
+				<mech>Grendel A</mech>
+				<mech>Nova Prime</mech>
+				<mech>Grendel B</mech>
+				<mech>Ice Ferret D</mech>
+				<mech>Shadow Cat Prime</mech>
+				<mech>Huntsman Prime</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>Timber Wolf Prime</mech>
+				<mech>Cauldron-Born Prime</mech>
+				<mech>Summoner D</mech>
+				<mech>Cauldron-Born A</mech>
+				<mech>Mad Dog B</mech>
+				<mech>Mad Dog A</mech>
+				<mech>Cauldron-Born B</mech>
+				<mech>Cauldron-Born H</mech>
+				<mech>Hellbringer Prime</mech>
+				<mech>Mad Dog Prime</mech>
+				<mech>Nova Cat Prime</mech>
+			</weight>
+			<weight name="assault">
+				<mech>Warhawk H</mech>
+				<mech>Executioner A</mech>
+				<mech>Dire WOlf S</mech>
+				<mech>Warhawk C</mech>
+				<mech>Gargoyle A</mech>
+				<mech>Warhawk Prime</mech>
+				<mech>Gargoyle Prime</mech>
+				<mech>Executioner D</mech>
+				<mech>Dire Wolf C</mech>
+				<mech>Warhawk B</mech>
+				<mech>Dire Wolf A</mech>
+			</weight>
+		</tech>
+		<tech name="Second Line">
+			<weight name="light">
+				<mech>Solitaire</mech>
+				<mech>Piranha</mech>
+				<mech>Solitaire</mech>
+				<mech>Jenner IIC 2</mech>
+				<mech>MCY-97 Mercury</mech>
+				<mech>Solitarie</mech>
+				<mech>Incubus</mech>
+				<mech>THE-N Thorn</mech>
+				<mech>Jenner IIC</mech>
+				<mech>Piranha</mech>
+				<mech>Pack Hunter</mech>
+			</weight>
+			<weight name="medium">
+				<mech>Grendel A</mech>
+				<mech>Griffin IIC 3</mech>
+				<mech>Shadow Hawk IIC 3</mech>
+				<mech>Griffin IIC 4</mech>
+				<mech>CRB-27 Crab</mech>
+				<mech>Great Wyrm</mech>
+				<mech>Shadow Hawk IIC 4</mech>
+				<mech>Griffin IIC 3</mech>
+				<mech>Wyvern IIC</mech>
+				<mech>Griffin IIC 3</mech>
+				<mech>Grendel Prime</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>Ha Otoko</mech>
+				<mech>Predator</mech>
+				<mech>Ha Otoko</mech>
+				<mech>EXT-4D Exterminator</mech>
+				<mech>Rifleman IIC</mech>
+				<mech>Rifleman IIC 3</mech>
+				<mech>Glass Spider</mech>
+				<mech>Guillotine IIC</mech>
+				<mech>BMB-12D Bombardier</mech>
+				<mech>Glass Spider</mech>
+				<mech>Mad Dog A</mech>
+			</weight>
+			<weight name="assault">
+				<mech>Highlander IIC</mech>
+				<mech>Mad Cat Mk II</mech>
+				<mech>Bane</mech>
+				<mech>Warhammer IIC 3</mech>
+				<mech>Marauder IIC 2</mech>
+				<mech>Warhammer IIC 4</mech>
+				<mech>Mad Cat Mk II</mech>
+				<mech>Warhammer IIC 3</mech>
+				<mech>Mad Cat Mk II</mech>
+				<mech>Marauder IIC 2</mech>
+				<mech>Phoenix Hawk IIc</mech>
+			</weight>
+		</tech>
+	</faction>
 </book>
