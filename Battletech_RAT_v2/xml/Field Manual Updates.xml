@@ -2046,4 +2046,114 @@
 			</weight>
 		</tech>
 	</faction>
+	<faction name="Word of Blake">
+		<tech name="A">
+			<weight name="light">
+				<mech>HSR-500-D Hussar</mech>
+				<mech>HSR-400-D Hussar</mech>
+				<mech>RDS-2A Red Shift</mech>
+				<mech>MON-76 Mongoose</mech>
+				<mech>MCY-102 Mercury</mech>
+				<mech>GUR-2G Gurkha</mech>
+				<mech>MCY-97 Mercury</mech>
+				<mech>LCT-5M Locust</mech>
+				<mech>NXS1-B Nexus</mech>
+				<mech>ZPH-1A Tarantula</mech>
+				<mech>OTT-9CS Ostscout</mech>
+			</weight>
+			<weight name="medium">
+				<mech>HER-5C Hermes</mech>
+				<mech>BJ2-0 Blackjack</mech>
+				<mech>CRB-30 Crab</mech>
+				<mech>BLF-21 Blue Flame</mech>
+				<mech>RJN101-C Raijin</mech>
+				<mech>INI-02 Initiate</mech>
+				<mech>LGH-4W Lightray</mech>
+				<mech>GRF-6CS Griffin</mech>
+				<mech>SHD-7CS Shadow Hawk</mech>
+				<mech>BCN-3R Buccaneer</mech>
+				<mech>WVE-10N Wyvern</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>P1 Perseus</mech>
+				<mech>MAD-5L Marauder</mech>
+				<mech>CHP-3P Champion</mech>
+				<mech>EXT-5E Exterminator</mech>
+				<mech>WHF-3B White Flame</mech>
+				<mech>TYM-1A Toyama</mech>
+				<mech>TDR-9M Thunderbolt</mech>
+				<mech>BL-9-KNT Black Knight</mech>
+				<mech>BMB-14C Bombardier</mech>
+				<mech>CDR-7L Crusader</mech>
+				<mech>RFL-7M Rifleman</mech>
+			</weight>
+			<weight name="assault">
+				<mech>BLR-5M BattleMaster</mech>
+				<mech>VQR-2B Vanquisher</mech>
+				<mech>LGC-01 Legacy</mech>
+				<mech>T-IT-N10M Grand Titan</mech>
+				<mech>HGN-736 Highlander</mech>
+				<mech>CRK-5003-1 Crockett</mech>
+				<mech>VQR-2A Vanquisher</mech>
+				<mech>THG-12E Thug</mech>
+				<mech>GND-D-01 Grand Crusader</mech>
+				<mech>KGC-005 King Crab</mech>
+				<mech>LGC-02 Legacy</mech>
+			</weight>
+		</tech>
+		<tech name="B">
+			<weight name="light">
+				<mech>JA-KL-1532 Jackal</mech>
+				<mech>NXS1-A Nexus</mech>
+				<mech>STG-5R Stinger</mech>
+				<mech>MCY-99 Mercury</mech>
+				<mech>MON-66 Mongoose</mech>
+				<mech>HER-3S Hermes</mech>
+				<mech>THE-N Thorn</mech>
+				<mech>SDR-7M Spider</mech>
+				<mech>LCT-3M Locust</mech>
+				<mech>WSP-3L Wasp</mech>
+				<mech>HSR-200-D Hussar</mech>
+			</weight>
+			<weight name="medium">
+				<mech>BCN-3R Buccaneer</mech>
+				<mech>KTO-21 Kintaro</mech>
+				<mech>STN-3L Sentinel</mech>
+				<mech>HUR-WO-R4L Huron Warrior</mech>
+				<mech>GRM-R-PR29 Grim Reaper</mech>
+				<mech>CRB-27 Crab</mech>
+				<mech>CDA-3M Cicada</mech>
+				<mech>RJN101-A Raijin</mech>
+				<mech>TR1 Wraith</mech>
+				<mech>GRF-3M Griffin</mech>
+				<mech>WVE-9N Wyvern</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>ST-8A Shootist</mech>
+				<mech>ARC-8M Archer</mech>
+				<mech>BL-6-KNT Black Knight</mech>
+				<mech>TMP-3M Tempest</mech>
+				<mech>ON1-M Orion</mech>
+				<mech>CDR-5M Crusader</mech>
+				<mech>CHP-1N Champion</mech>
+				<mech>MAD-5M Marauder</mech>
+				<mech>GLT-3N Guillotine</mech>
+				<mech>WHM-7M Warhammer</mech>
+				<mech>WR-DG-02FC War Dog</mech>
+			</weight>
+			<weight name="assault">
+				<mech>ALB-3U Albatross</mech>
+				<mech>GRN-D-01 Grand Crusader</mech>
+				<mech>KGC-000 King Crab</mech>
+				<mech>AWS-9M Awesome</mech>
+				<mech>THG-11E Thug</mech>
+				<mech>HGN-732 Highlander</mech>
+				<mech>STK-5M Stalker</mech>
+				<mech>CRK-5003-1 Crockett</mech>
+				<mech>LGB-7Q Longbow</mech>
+				<mech>MR-5V Cerberus</mech>
+				<mech>KGC-001 King Crab</mech>
+			</weight>
+		</tech>
+	</faction>
 </book>
