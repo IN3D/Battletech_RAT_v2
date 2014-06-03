@@ -1936,4 +1936,114 @@
 			</weight>
 		</tech>
 	</faction>
+	<faction name="Comstar">
+		<tech name="A">
+			<weight name="light">
+				<mech>C-SK1 Cossack</mech>
+				<mech>NXS1-A Nexus</mech>
+				<mech>MON-66 Mongoose</mech>
+				<mech>THE-N Thorn</mech>
+				<mech>MCY-99 Mercury</mech>
+				<mech>OW-1 Owens</mech>
+				<mech>RTX1-0 Raptor</mech>
+				<mech>HSR-500-D Hussar</mech>
+				<mech>NXS1-A Nexus</mech>
+				<mech>HER-1S Hermes</mech>
+				<mech>HSR-200-D Hussar</mech>
+			</weight>
+			<weight name="medium">
+				<mech>BEO-12 Beowulf</mech>
+				<mech>CLNT-2-3U Clint</mech>
+				<mech>TSN-1C Tessen</mech>
+				<mech>BJ2-0 Blackjack</mech>
+				<mech>CRB-27 Crab</mech>
+				<mech>STN-3L Sentinel</mech>
+				<mech>GRM-R-PR29 Grim Reaper</mech>
+				<mech>FS9-0 Firestarter</mech>
+				<mech>KTO-19 Kintaro</mech>
+				<mech>RJN101-A Raijin</mech>
+				<mech>END-6Q Enfield</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>JM6-D3 JagerMech III</mech>
+				<mech>SJA-7D Shugenja</mech>
+				<mech>BL-6-KNT Black Knight</mech>
+				<mech>ST-8A Shootist</mech>
+				<mech>GLT-3N Guillotine</mech>
+				<mech>AV1-0 Avatar</mech>
+				<mech>LNC25-01 Lancelot</mech>
+				<mech>EXC-B2 Excalibur</mech>
+				<mech>FLS-8K Flashman</mech>
+				<mech>EXT-5E Exterminator</mech>
+				<mech>HEL-C Helios</mech>
+			</weight>
+			<weight name="assault">
+				<mech>VKG-2F Viking</mech>
+				<mech>NSR-9J Nightstar</mech>
+				<mech>TDK-7X Thunder Hawk</mech>
+				<mech>KGC-000 King Crab</mech>
+				<mech>THG-11E Thug</mech>
+				<mech>HGN-732 Highlander</mech>
+				<mech>CRK-5003-1 Crockett</mech>
+				<mech>SPT-N2 Spartan</mech>
+				<mech>AS7-K Atlas</mech>
+				<mech>PLG-3Z Pillager</mech>
+				<mech>OBK-M10 O-Bakemono</mech>
+			</weight>
+		</tech>
+		<tech name="B">
+			<weight name="light">
+				<mech>HSR-400-D Hussar</mech>
+				<mech>FS9-S Firestarter</mech>
+				<mech>MON-66 Mongoose</mech>
+				<mech>UM-R63 UrbanMech</mech>
+				<mech>MCY-99 Mercury</mech>
+				<mech>OW-1 Owens</mech>
+				<mech>HER-1S Hermes</mech>
+				<mech>THE-N Thorn</mech>
+				<mech>HSR-200-D Hussar</mech>
+				<mech>MON-66 Mongoose</mech>
+				<mech>NXS1-A Nexus</mech>
+			</weight>
+			<weight name="medium">
+				<mech>WVE-8N Wyvern</mech>
+				<mech>CLNT-2-3U Clint</mech>
+				<mech>STN-3L Sentinel</mech>
+				<mech>GRM-R-PR29 Grim Reaper</mech>
+				<mech>CRB-27 Crab</mech>
+				<mech>WVE-5N Wyvern</mech>
+				<mech>HBK-5N Hunchback</mech>
+				<mech>ASN-23 Assassin</mech>
+				<mech>FS9-0 Firestarter</mech>
+				<mech>KTO-19 Kintaro</mech>
+				<mech>RJN101-A Raijin</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>BL-9-KNT Black Knight</mech>
+				<mech>AV1-0 Avatar</mech>
+				<mech>BMB-12D Bombardier</mech>
+				<mech>BL-6-KNT Black Knight</mech>
+				<mech>LNC25-01 Lancelot</mech>
+				<mech>GLT-3N Guillotine</mech>
+				<mech>FLS-8K Flashman</mech>
+				<mech>CHP-1N Champion</mech>
+				<mech>EXT-4D Exterminator</mech>
+				<mech>ST-8A Shootist</mech>
+				<mech>EXC-B2 Excalibur</mech>
+			</weight>
+			<weight name="assault">
+				<mech>KGC-001 King Crab</mech>
+				<mech>STK-5M Stalker</mech>
+				<mech>CRK-5003-1 Crockett</mech>
+				<mech>LGB-7Q Longbow</mech>
+				<mech>THG-11E Thug</mech>
+				<mech>HGN-732 Highlander</mech>
+				<mech>CRK-5003-1 Crockett</mech>
+				<mech>AS7-K Atlas</mech>
+				<mech>KGC-000 King Crab</mech>
+				<mech>CP-11-A Cyclops</mech>
+				<mech>SPT-N2 Spartan</mech>
+			</weight>
+		</tech>
+	</faction>
 </book>
