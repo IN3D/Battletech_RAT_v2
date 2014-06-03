@@ -245,6 +245,7 @@ Partial Class MainForm
         Me.Controls.Add(Me.ComboBoxFaction)
         Me.Controls.Add(Me.ListBoxMechs)
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.MinimumSize = New System.Drawing.Size(384, 425)
         Me.Name = "MainForm"
         Me.Text = "Battletech RAT v2"
         Me.StatusStrip1.ResumeLayout(False)
