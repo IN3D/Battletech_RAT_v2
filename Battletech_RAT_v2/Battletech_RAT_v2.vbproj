@@ -155,6 +155,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="xml\Field Manual Periphery.xml" />
+    <Content Include="xml\Field Manual Updates.xml" />
     <Content Include="xml\Field Manual Warden Clans.xml" />
     <Content Include="xml\Total Warfare.xml" />
     <Content Include="xml\War of 3039.xml" />
