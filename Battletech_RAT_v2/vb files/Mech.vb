@@ -37,6 +37,21 @@
         Me.pilot.PilotSkill = Nothing
     End Sub
 
+    Public Function getPilotName() As String
+
+        Return Me.pilot.Name
+    End Function
+
+    Public Function getPilotGunnery() As Integer
+
+        Return Me.pilot.GunnerySkill
+    End Function
+
+    Public Function getPilotPiloting() As Integer
+
+        Return Me.pilot.PilotSkill
+    End Function
+
     Public Overrides Function ToString() As String
 
         ' ensure that pilot contains something

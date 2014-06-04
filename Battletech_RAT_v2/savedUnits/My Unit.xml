@@ -1,0 +1,8 @@
+<root name="My Unit">
+  <unit name="1st Lance">
+    <mech pilot="John Doe" gunnery="3" piloting="4">QKD-5M Quickdraw</mech>
+    <mech pilot="James Doe" gunnery="4" piloting="5">CN9-A Centurion</mech>
+    <mech pilot="Jane Doe" gunnery="4" piloting="5">CN9-D Centurion</mech>
+    <mech pilot="Bill Doe" gunnery="5" piloting="5">COM-2D Commando</mech>
+  </unit>
+</root>

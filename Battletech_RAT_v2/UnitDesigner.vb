@@ -1,4 +1,5 @@
 ﻿Imports System.IO
+Imports System.Xml
 
 Public Class UnitDesigner
 
@@ -525,5 +526,100 @@ Public Class UnitDesigner
 
             MessageBox.Show("ERROR: File was not saved!")
         End Try
+    End Sub
+
+    Private Sub SaveToXMLToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveToXMLToolStripMenuItem.Click
+
+
+        Try
+            Dim contact As XDocument =
+            <?xml version="1.0" encoding="UTF-8"?>
+            <root name=<%= Model.OverallUnitName %>>
+                <%= From units In Model.rootUnitList
+                    Select <unit name=<%= units.Name %>>
+                               <%= From mechs In units.mechList
+                       Select <mech pilot=<%= mechs.getPilotName %> gunnery=<%= mechs.getPilotGunnery %> piloting=<%= mechs.getPilotPiloting %>><%= mechs.Name %></mech>
+                               %>
+                           </unit>
+                %>
+            </root>
+
+            Try
+
+                Using writer As StreamWriter = New StreamWriter("../../savedUnits/" + Model.OverallUnitName + ".xml")
+                    writer.Write(contact)
+                End Using
+            Catch ex As Exception
+
+                MessageBox.Show("ERROR: Failed to write XML Document")
+            End Try
+        Catch ex As Exception
+
+            MessageBox.Show("ERROR: Failed to create XML Document")
+        End Try
+
+
+    End Sub
+
+    Private Sub LoadXMLToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LoadXMLToolStripMenuItem.Click
+
+        Dim stream As Stream = Nothing
+        Dim openFileDialog As New OpenFileDialog()
+        Dim xmlDoc As XmlDocument
+        xmlDoc = New XmlDocument()
+
+        Dim nodeList As XmlNodeList
+        Dim node As XmlNode
+
+        openFileDialog.InitialDirectory = "../../savedUnits"
+        openFileDialog.Filter = "xml files (*.xml)|*.xml"
+        openFileDialog.FilterIndex = 0
+        openFileDialog.RestoreDirectory = True
+
+        If openFileDialog.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
+
+            Try
+                stream = openFileDialog.OpenFile()
+                If (stream IsNot Nothing) Then
+
+                    xmlDoc.Load(stream)
+
+                    nodeList = xmlDoc.SelectNodes("/root")
+
+                    For Each node In nodeList
+
+                        Model.OverallUnitName = node.ParentNode.Attributes.GetNamedItem("name").Value
+
+                        For i As Integer = 0 To ((node.ChildNodes.Count) - 1)
+
+                            Dim pilotName As String = Nothing
+                            Dim pilotGunnery As Integer = Nothing
+                            Dim pilotPiloting As Integer = Nothing
+
+                            If (node.ChildNodes(i).Attributes.GetNamedItem("pilot").Value <> Nothing) Then
+
+                                pilotName = node.ChildNodes(i).Attributes.GetNamedItem("pilot").Value
+                            End If
+
+                            If (node.ChildNodes(i).Attributes.GetNamedItem("gunnery").Value <> Nothing) Then
+
+                                pilotGunnery = node.ChildNodes(i).Attributes.GetNamedItem("gunnery").Value
+                            End If
+
+                            If (node.ChildNodes(i).Attributes.GetNamedItem("piloting").Value <> Nothing) Then
+
+                                pilotPiloting = node.ChildNodes(i).Attributes.GetNamedItem("piloting").Value
+                            End If
+
+
+
+                        Next
+                    Next
+                End If
+            Catch ex As Exception
+
+            End Try
+        End If
+
     End Sub
 End Class
