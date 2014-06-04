@@ -3,6 +3,8 @@ Imports System.IO
 
 Module UtilityModule
 
+    Dim diceRandom As New System.Random(CType(System.DateTime.Now.Ticks Mod System.Int32.MaxValue, Integer))
+
     Public Sub LoadXML(ByVal fileDirectory As String)
 
         Try
@@ -77,10 +79,17 @@ Module UtilityModule
         Next
     End Sub
 
+    Private Function getRandomNumber(ByVal low As Integer, ByVal high As Integer) As Integer
+
+        Return diceRandom.Next(low, high + 1)
+    End Function
+
     Public Function rollDice(ByVal diceStyle As Integer) As Dice
 
-        Dim die1 As Integer = (Int(Rnd() * diceStyle))
-        Dim die2 As Integer = (Int(Rnd() * diceStyle))
+        'Dim die1 As Integer = (Int(Rnd() * diceStyle))
+        'Dim die2 As Integer = (Int(Rnd() * diceStyle))
+        Dim die1 As Integer = getRandomNumber(0, diceStyle - 1)
+        Dim die2 As Integer = getRandomNumber(0, diceStyle - 1)
 
         Dim diceSet As New Dice(die1, die2)
 

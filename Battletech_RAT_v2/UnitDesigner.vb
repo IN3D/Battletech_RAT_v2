@@ -19,123 +19,129 @@ Public Class UnitDesigner
 
         If index <> -1 Then
 
-            If RadioButtonHtoL.Checked = True Then
+            Try
 
-                If assaults > 0 Then
-                    i = 1
-                    MainForm.ComboBoxWeight.SelectedIndex = 3
+                If RadioButtonHtoL.Checked = True Then
 
-                    Do While i <= assaults
+                    If assaults > 0 Then
+                        i = 1
+                        MainForm.ComboBoxWeight.SelectedIndex = 3
 
-                        MainForm.ButtonRoll.PerformClick()
-                        Model.rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
+                        Do While i <= assaults
 
-                        i = (i + 1)
-                    Loop
+                            MainForm.ButtonRoll.PerformClick()
+                            Model.rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
+
+                            i = (i + 1)
+                        Loop
+                    End If
+
+                    If heavies > 0 Then
+                        i = 1
+                        MainForm.ComboBoxWeight.SelectedIndex = 2
+
+                        Do While i <= heavies
+
+                            MainForm.ButtonRoll.PerformClick()
+                            Model.rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
+
+                            i = (i + 1)
+                        Loop
+                    End If
+
+                    If mediums > 0 Then
+                        i = 1
+                        MainForm.ComboBoxWeight.SelectedIndex = 1
+
+                        Do While i <= mediums
+
+                            MainForm.ButtonRoll.PerformClick()
+                            Model.rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
+
+                            i = (i + 1)
+                        Loop
+                    End If
+
+                    If lights > 0 Then
+                        i = 1
+                        MainForm.ComboBoxWeight.SelectedIndex = 0
+
+                        Do While i <= lights
+
+                            MainForm.ButtonRoll.PerformClick()
+                            Model.rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
+
+                            i = (i + 1)
+                        Loop
+                    End If
+
+                ElseIf RadioButtonLtoH.Checked = True Then
+
+                    If lights > 0 Then
+                        i = 1
+                        MainForm.ComboBoxWeight.SelectedIndex = 0
+
+                        Do While i <= lights
+
+                            MainForm.ButtonRoll.PerformClick()
+                            Model.rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
+
+                            i = (i + 1)
+                        Loop
+                    End If
+
+                    If mediums > 0 Then
+                        i = 1
+                        MainForm.ComboBoxWeight.SelectedIndex = 1
+
+                        Do While i <= mediums
+
+                            MainForm.ButtonRoll.PerformClick()
+                            Model.rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
+
+                            i = (i + 1)
+                        Loop
+                    End If
+
+                    If heavies > 0 Then
+                        i = 1
+                        MainForm.ComboBoxWeight.SelectedIndex = 2
+
+                        Do While i <= heavies
+
+                            MainForm.ButtonRoll.PerformClick()
+                            Model.rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
+
+                            i = (i + 1)
+                        Loop
+                    End If
+
+                    If assaults > 0 Then
+                        i = 1
+                        MainForm.ComboBoxWeight.SelectedIndex = 3
+
+                        Do While i <= assaults
+
+                            MainForm.ButtonRoll.PerformClick()
+                            Model.rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
+
+                            i = (i + 1)
+                        Loop
+                    End If
                 End If
 
-                If heavies > 0 Then
-                    i = 1
-                    MainForm.ComboBoxWeight.SelectedIndex = 2
-
-                    Do While i <= heavies
-
-                        MainForm.ButtonRoll.PerformClick()
-                        Model.rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
-
-                        i = (i + 1)
-                    Loop
-                End If
-
-                If mediums > 0 Then
-                    i = 1
-                    MainForm.ComboBoxWeight.SelectedIndex = 1
-
-                    Do While i <= mediums
-
-                        MainForm.ButtonRoll.PerformClick()
-                        Model.rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
-
-                        i = (i + 1)
-                    Loop
-                End If
-
-                If lights > 0 Then
-                    i = 1
-                    MainForm.ComboBoxWeight.SelectedIndex = 0
-
-                    Do While i <= lights
-
-                        MainForm.ButtonRoll.PerformClick()
-                        Model.rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
-
-                        i = (i + 1)
-                    Loop
-                End If
-
-            ElseIf RadioButtonLtoH.Checked = True Then
-
-                If lights > 0 Then
-                    i = 1
-                    MainForm.ComboBoxWeight.SelectedIndex = 0
-
-                    Do While i <= lights
-
-                        MainForm.ButtonRoll.PerformClick()
-                        Model.rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
-
-                        i = (i + 1)
-                    Loop
-                End If
-
-                If mediums > 0 Then
-                    i = 1
-                    MainForm.ComboBoxWeight.SelectedIndex = 1
-
-                    Do While i <= mediums
-
-                        MainForm.ButtonRoll.PerformClick()
-                        Model.rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
-
-                        i = (i + 1)
-                    Loop
-                End If
-
-                If heavies > 0 Then
-                    i = 1
-                    MainForm.ComboBoxWeight.SelectedIndex = 2
-
-                    Do While i <= heavies
-
-                        MainForm.ButtonRoll.PerformClick()
-                        Model.rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
-
-                        i = (i + 1)
-                    Loop
-                End If
-
-                If assaults > 0 Then
-                    i = 1
-                    MainForm.ComboBoxWeight.SelectedIndex = 3
-
-                    Do While i <= assaults
-
-                        MainForm.ButtonRoll.PerformClick()
-                        Model.rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
-
-                        i = (i + 1)
-                    Loop
-                End If
-            End If
 
 
+                Me.ListBoxUnits.Items.Clear()
 
-            Me.ListBoxUnits.Items.Clear()
+                For Each Mech In Model.rootUnitList(index).mechList
 
-            For Each Mech In Model.rootUnitList(index).mechList
+                    Me.ListBoxUnits.Items.Add(Mech.Name)
+                Next
+            Catch ex As Exception
 
-                Me.ListBoxUnits.Items.Add(Mech.Name)
-            Next
+                MessageBox.Show("An error occurred trying to add units, please try again.")
+            End Try
 
         Else
 
@@ -244,13 +250,18 @@ Public Class UnitDesigner
 
         If result = DialogResult.Yes Then
 
-            Dim unitIndex As Integer = ComboBoxUnit.SelectedIndex
-            Dim index As Integer = ListBoxUnits.SelectedIndex
-            Dim targetMech As Mech = Model.rootUnitList.ElementAt(unitIndex).mechList.ElementAt(index)
+            Try
 
-            Model.rootUnitList.ElementAt(unitIndex).mechList.Remove(targetMech)
+                Dim unitIndex As Integer = ComboBoxUnit.SelectedIndex
+                Dim index As Integer = ListBoxUnits.SelectedIndex
+                Dim targetMech As Mech = Model.rootUnitList.ElementAt(unitIndex).mechList.ElementAt(index)
 
-            Me.resetListBox()
+                Model.rootUnitList.ElementAt(unitIndex).mechList.Remove(targetMech)
+
+                Me.resetListBox()
+            Catch ex As Exception
+                MessageBox.Show("Could not delete the selected unit")
+            End Try
         End If
     End Sub
 
