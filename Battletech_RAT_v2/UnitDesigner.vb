@@ -1,4 +1,6 @@
-﻿Public Class UnitDesigner
+﻿Imports System.IO
+
+Public Class UnitDesigner
 
     Dim lights As Integer
     Dim mediums As Integer
@@ -143,9 +145,9 @@
 
     Private Sub ButtonUnit_Click(sender As Object, e As EventArgs) Handles ButtonUnit.Click
 
-        Dim prompt As String = "Please enter this units name"
-        Dim title As String = "Unit Name"
-        Dim defaultValue As String = "1st Somerset Strikers"
+        Dim prompt As String = "Please enter this divisions name"
+        Dim title As String = "Division Name"
+        Dim defaultValue As String = "1st Lance"
         Dim value As String
 
         value = InputBox(prompt, title, defaultValue)
@@ -402,5 +404,52 @@
             ComboBoxUnit.Items.Add(Model.rootUnitList(i).Name)
             i = (i + 1)
         Next
+    End Sub
+
+    Private Sub OverallUnitNameToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OverallUnitNameToolStripMenuItem.Click
+
+        Dim prompt As String = "Please enter this units overall name"
+        Dim title As String = "Unit Name"
+        Dim defaultValue As String = Model.OverallUnitName
+        Dim value As String
+
+        value = InputBox(prompt, title, defaultValue)
+        Model.OverallUnitName = value
+    End Sub
+
+    Private Sub SaveToHTMLToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveToHTMLToolStripMenuItem.Click
+
+        Using writer As StreamWriter = New StreamWriter(Model.OverallUnitName + ".html")
+            writer.WriteLine("<!DOCTYPE html>")
+            writer.WriteLine("<html>")
+            writer.WriteLine("<head lang=""en"">")
+            writer.WriteLine("<meta charset=""UTF-8"">")
+            writer.WriteLine("<title>" + Model.OverallUnitName + "</title>")
+            writer.WriteLine("</head>")
+            writer.WriteLine("<body>")
+            writer.WriteLine("<h1>" + Model.OverallUnitName + "</h1>")
+
+            Dim i As Integer = 0
+            For Each unit In Model.rootUnitList
+
+                writer.WriteLine("<h2>" + Model.rootUnitList(i).Name + "</h2>")
+                writer.WriteLine("<table>")
+
+                Dim x As Integer = 0
+                For Each Mech In Model.rootUnitList(i).mechList
+
+                    writer.WriteLine("<tr><td>" + Model.rootUnitList(i).mechList(x).ToString + "</td></tr>")
+
+                    x = (x + 1)
+                Next
+                i = (i + 1)
+                writer.WriteLine("</table>")
+            Next
+
+            writer.WriteLine("</body>")
+            writer.WriteLine("</html>")
+        End Using
+
+        MessageBox.Show("saved successfully")
     End Sub
 End Class

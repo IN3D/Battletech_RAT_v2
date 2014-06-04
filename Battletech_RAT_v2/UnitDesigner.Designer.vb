@@ -42,10 +42,16 @@ Partial Class UnitDesigner
         Me.ButtonDeleteUnit = New System.Windows.Forms.Button()
         Me.ButtonAddPilot = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.RadioButtonLtoH = New System.Windows.Forms.RadioButton()
         Me.RadioButtonHtoL = New System.Windows.Forms.RadioButton()
+        Me.RadioButtonLtoH = New System.Windows.Forms.RadioButton()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.SetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OverallUnitNameToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SaveToHTMLToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GroupBoxUnitStructure.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBoxUnitStructure
@@ -58,7 +64,7 @@ Partial Class UnitDesigner
         Me.GroupBoxUnitStructure.Controls.Add(Me.LabelMedium)
         Me.GroupBoxUnitStructure.Controls.Add(Me.TextBoxLights)
         Me.GroupBoxUnitStructure.Controls.Add(Me.LabelLights)
-        Me.GroupBoxUnitStructure.Location = New System.Drawing.Point(12, 19)
+        Me.GroupBoxUnitStructure.Location = New System.Drawing.Point(12, 27)
         Me.GroupBoxUnitStructure.Name = "GroupBoxUnitStructure"
         Me.GroupBoxUnitStructure.Size = New System.Drawing.Size(156, 150)
         Me.GroupBoxUnitStructure.TabIndex = 0
@@ -135,9 +141,9 @@ Partial Class UnitDesigner
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ListBoxUnits.FormattingEnabled = True
-        Me.ListBoxUnits.Location = New System.Drawing.Point(259, 46)
+        Me.ListBoxUnits.Location = New System.Drawing.Point(259, 54)
         Me.ListBoxUnits.Name = "ListBoxUnits"
-        Me.ListBoxUnits.Size = New System.Drawing.Size(191, 212)
+        Me.ListBoxUnits.Size = New System.Drawing.Size(191, 199)
         Me.ListBoxUnits.TabIndex = 1
         '
         'ComboBoxUnit
@@ -145,14 +151,14 @@ Partial Class UnitDesigner
         Me.ComboBoxUnit.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ComboBoxUnit.FormattingEnabled = True
-        Me.ComboBoxUnit.Location = New System.Drawing.Point(259, 19)
+        Me.ComboBoxUnit.Location = New System.Drawing.Point(259, 27)
         Me.ComboBoxUnit.Name = "ComboBoxUnit"
         Me.ComboBoxUnit.Size = New System.Drawing.Size(191, 21)
         Me.ComboBoxUnit.TabIndex = 2
         '
         'ButtonAdd
         '
-        Me.ButtonAdd.Location = New System.Drawing.Point(174, 77)
+        Me.ButtonAdd.Location = New System.Drawing.Point(174, 85)
         Me.ButtonAdd.Name = "ButtonAdd"
         Me.ButtonAdd.Size = New System.Drawing.Size(75, 23)
         Me.ButtonAdd.TabIndex = 3
@@ -161,7 +167,7 @@ Partial Class UnitDesigner
         '
         'ButtonUnit
         '
-        Me.ButtonUnit.Location = New System.Drawing.Point(174, 19)
+        Me.ButtonUnit.Location = New System.Drawing.Point(174, 27)
         Me.ButtonUnit.Name = "ButtonUnit"
         Me.ButtonUnit.Size = New System.Drawing.Size(75, 23)
         Me.ButtonUnit.TabIndex = 4
@@ -170,7 +176,7 @@ Partial Class UnitDesigner
         '
         'ButtonMoveUp
         '
-        Me.ButtonMoveUp.Location = New System.Drawing.Point(174, 106)
+        Me.ButtonMoveUp.Location = New System.Drawing.Point(174, 114)
         Me.ButtonMoveUp.Name = "ButtonMoveUp"
         Me.ButtonMoveUp.Size = New System.Drawing.Size(75, 23)
         Me.ButtonMoveUp.TabIndex = 5
@@ -179,7 +185,7 @@ Partial Class UnitDesigner
         '
         'ButtonMoveDown
         '
-        Me.ButtonMoveDown.Location = New System.Drawing.Point(174, 135)
+        Me.ButtonMoveDown.Location = New System.Drawing.Point(174, 143)
         Me.ButtonMoveDown.Name = "ButtonMoveDown"
         Me.ButtonMoveDown.Size = New System.Drawing.Size(75, 23)
         Me.ButtonMoveDown.TabIndex = 6
@@ -188,7 +194,7 @@ Partial Class UnitDesigner
         '
         'ButtonDelete
         '
-        Me.ButtonDelete.Location = New System.Drawing.Point(174, 164)
+        Me.ButtonDelete.Location = New System.Drawing.Point(174, 172)
         Me.ButtonDelete.Name = "ButtonDelete"
         Me.ButtonDelete.Size = New System.Drawing.Size(75, 23)
         Me.ButtonDelete.TabIndex = 7
@@ -197,7 +203,7 @@ Partial Class UnitDesigner
         '
         'ButtonReRoll
         '
-        Me.ButtonReRoll.Location = New System.Drawing.Point(174, 223)
+        Me.ButtonReRoll.Location = New System.Drawing.Point(174, 231)
         Me.ButtonReRoll.Name = "ButtonReRoll"
         Me.ButtonReRoll.Size = New System.Drawing.Size(75, 35)
         Me.ButtonReRoll.TabIndex = 8
@@ -206,7 +212,7 @@ Partial Class UnitDesigner
         '
         'ButtonDeleteUnit
         '
-        Me.ButtonDeleteUnit.Location = New System.Drawing.Point(174, 48)
+        Me.ButtonDeleteUnit.Location = New System.Drawing.Point(174, 56)
         Me.ButtonDeleteUnit.Name = "ButtonDeleteUnit"
         Me.ButtonDeleteUnit.Size = New System.Drawing.Size(75, 23)
         Me.ButtonDeleteUnit.TabIndex = 9
@@ -215,7 +221,7 @@ Partial Class UnitDesigner
         '
         'ButtonAddPilot
         '
-        Me.ButtonAddPilot.Location = New System.Drawing.Point(174, 193)
+        Me.ButtonAddPilot.Location = New System.Drawing.Point(174, 201)
         Me.ButtonAddPilot.Name = "ButtonAddPilot"
         Me.ButtonAddPilot.Size = New System.Drawing.Size(75, 23)
         Me.ButtonAddPilot.TabIndex = 10
@@ -226,23 +232,12 @@ Partial Class UnitDesigner
         '
         Me.GroupBox1.Controls.Add(Me.RadioButtonHtoL)
         Me.GroupBox1.Controls.Add(Me.RadioButtonLtoH)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 175)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 183)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(156, 67)
         Me.GroupBox1.TabIndex = 11
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Default Order"
-        '
-        'RadioButtonLtoH
-        '
-        Me.RadioButtonLtoH.AutoSize = True
-        Me.RadioButtonLtoH.Location = New System.Drawing.Point(6, 41)
-        Me.RadioButtonLtoH.Name = "RadioButtonLtoH"
-        Me.RadioButtonLtoH.Size = New System.Drawing.Size(119, 17)
-        Me.RadioButtonLtoH.TabIndex = 0
-        Me.RadioButtonLtoH.TabStop = True
-        Me.RadioButtonLtoH.Text = "Lightest to Heaviest"
-        Me.RadioButtonLtoH.UseVisualStyleBackColor = True
         '
         'RadioButtonHtoL
         '
@@ -256,11 +251,57 @@ Partial Class UnitDesigner
         Me.RadioButtonHtoL.Text = "Heaviest to Lightest"
         Me.RadioButtonHtoL.UseVisualStyleBackColor = True
         '
+        'RadioButtonLtoH
+        '
+        Me.RadioButtonLtoH.AutoSize = True
+        Me.RadioButtonLtoH.Location = New System.Drawing.Point(6, 41)
+        Me.RadioButtonLtoH.Name = "RadioButtonLtoH"
+        Me.RadioButtonLtoH.Size = New System.Drawing.Size(119, 17)
+        Me.RadioButtonLtoH.TabIndex = 0
+        Me.RadioButtonLtoH.TabStop = True
+        Me.RadioButtonLtoH.Text = "Lightest to Heaviest"
+        Me.RadioButtonLtoH.UseVisualStyleBackColor = True
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SetToolStripMenuItem, Me.SaveToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(462, 24)
+        Me.MenuStrip1.TabIndex = 12
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'SetToolStripMenuItem
+        '
+        Me.SetToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OverallUnitNameToolStripMenuItem})
+        Me.SetToolStripMenuItem.Name = "SetToolStripMenuItem"
+        Me.SetToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.SetToolStripMenuItem.Text = "Set"
+        '
+        'OverallUnitNameToolStripMenuItem
+        '
+        Me.OverallUnitNameToolStripMenuItem.Name = "OverallUnitNameToolStripMenuItem"
+        Me.OverallUnitNameToolStripMenuItem.Size = New System.Drawing.Size(171, 22)
+        Me.OverallUnitNameToolStripMenuItem.Text = "Overall Unit Name"
+        '
+        'SaveToolStripMenuItem
+        '
+        Me.SaveToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToHTMLToolStripMenuItem})
+        Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(43, 20)
+        Me.SaveToolStripMenuItem.Text = "Save"
+        '
+        'SaveToHTMLToolStripMenuItem
+        '
+        Me.SaveToHTMLToolStripMenuItem.Name = "SaveToHTMLToolStripMenuItem"
+        Me.SaveToHTMLToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SaveToHTMLToolStripMenuItem.Text = "Save to HTML"
+        '
         'UnitDesigner
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(462, 270)
+        Me.ClientSize = New System.Drawing.Size(462, 273)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.ButtonAddPilot)
         Me.Controls.Add(Me.ButtonDeleteUnit)
@@ -273,6 +314,8 @@ Partial Class UnitDesigner
         Me.Controls.Add(Me.ComboBoxUnit)
         Me.Controls.Add(Me.ListBoxUnits)
         Me.Controls.Add(Me.GroupBoxUnitStructure)
+        Me.Controls.Add(Me.MenuStrip1)
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.MinimumSize = New System.Drawing.Size(478, 308)
         Me.Name = "UnitDesigner"
         Me.Text = "Unit Designer"
@@ -280,7 +323,10 @@ Partial Class UnitDesigner
         Me.GroupBoxUnitStructure.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents GroupBoxUnitStructure As System.Windows.Forms.GroupBox
@@ -305,4 +351,9 @@ Partial Class UnitDesigner
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents RadioButtonHtoL As System.Windows.Forms.RadioButton
     Friend WithEvents RadioButtonLtoH As System.Windows.Forms.RadioButton
+    Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
+    Friend WithEvents SetToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents OverallUnitNameToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents SaveToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents SaveToHTMLToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class
