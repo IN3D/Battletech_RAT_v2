@@ -49,6 +49,7 @@ Partial Class UnitDesigner
         Me.OverallUnitNameToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveToHTMLToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SetHTMLStyleToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GroupBoxUnitStructure.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
@@ -286,7 +287,7 @@ Partial Class UnitDesigner
         '
         'SaveToolStripMenuItem
         '
-        Me.SaveToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToHTMLToolStripMenuItem})
+        Me.SaveToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToHTMLToolStripMenuItem, Me.SetHTMLStyleToolStripMenuItem})
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
         Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(43, 20)
         Me.SaveToolStripMenuItem.Text = "Save"
@@ -296,6 +297,12 @@ Partial Class UnitDesigner
         Me.SaveToHTMLToolStripMenuItem.Name = "SaveToHTMLToolStripMenuItem"
         Me.SaveToHTMLToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SaveToHTMLToolStripMenuItem.Text = "Save to HTML"
+        '
+        'SetHTMLStyleToolStripMenuItem
+        '
+        Me.SetHTMLStyleToolStripMenuItem.Name = "SetHTMLStyleToolStripMenuItem"
+        Me.SetHTMLStyleToolStripMenuItem.Size = New System.Drawing.Size(154, 22)
+        Me.SetHTMLStyleToolStripMenuItem.Text = "Set HTML Style"
         '
         'UnitDesigner
         '
@@ -356,4 +363,5 @@ Partial Class UnitDesigner
     Friend WithEvents OverallUnitNameToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SaveToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SaveToHTMLToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents SetHTMLStyleToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

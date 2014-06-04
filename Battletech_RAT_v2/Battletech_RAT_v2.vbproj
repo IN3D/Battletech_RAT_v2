@@ -70,6 +70,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CssSelector.Designer.vb">
+      <DependentUpon>CssSelector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CssSelector.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,9 @@
     <Compile Include="vb files\Weight.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CssSelector.resx">
+      <DependentUpon>CssSelector.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -144,6 +153,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\davion.css" />
+    <Content Include="css\default.css" />
+    <Content Include="css\kurita.css" />
+    <Content Include="css\liao.css" />
+    <Content Include="css\marik.css" />
+    <Content Include="css\steiner.css" />
     <Content Include="xml\Field Manual Capellan Confederation.xml" />
     <Content Include="xml\Field Manual Crusader Clans.xml" />
     <Content Include="xml\Field Manual Draconis Combine.xml" />
@@ -160,6 +175,9 @@
     <Content Include="xml\Field Manual Warden Clans.xml" />
     <Content Include="xml\Total Warfare.xml" />
     <Content Include="xml\War of 3039.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="savedUnits\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -419,12 +419,32 @@ Public Class UnitDesigner
 
     Private Sub SaveToHTMLToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveToHTMLToolStripMenuItem.Click
 
-        Using writer As StreamWriter = New StreamWriter(Model.OverallUnitName + ".html")
+        Dim sheetToUse As String
+
+        Select Case Model.Style
+            Case 0
+                sheetToUse = "default"
+            Case 1
+                sheetToUse = "davion"
+            Case 2
+                sheetToUse = "kurita"
+            Case 3
+                sheetToUse = "liao"
+            Case 4
+                sheetToUse = "marik"
+            Case 5
+                sheetToUse = "steiner"
+            Case Else
+                sheetToUse = "default"
+        End Select
+
+        Using writer As StreamWriter = New StreamWriter("../../savedUnits/" + Model.OverallUnitName + ".html")
             writer.WriteLine("<!DOCTYPE html>")
             writer.WriteLine("<html>")
             writer.WriteLine("<head lang=""en"">")
             writer.WriteLine("<meta charset=""UTF-8"">")
             writer.WriteLine("<title>" + Model.OverallUnitName + "</title>")
+            writer.WriteLine("<link rel=""stylesheet"" type=""text/css"" href=""../css/" + sheetToUse + ".css"">")
             writer.WriteLine("</head>")
             writer.WriteLine("<body>")
             writer.WriteLine("<h1>" + Model.OverallUnitName + "</h1>")
@@ -451,5 +471,10 @@ Public Class UnitDesigner
         End Using
 
         MessageBox.Show("saved successfully")
+    End Sub
+
+    Private Sub SetHTMLStyleToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SetHTMLStyleToolStripMenuItem.Click
+
+        CssSelector.Show()
     End Sub
 End Class
