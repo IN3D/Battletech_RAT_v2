@@ -50,6 +50,8 @@ Partial Class UnitDesigner
         Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveToHTMLToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SetHTMLStyleToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SaveTotxtToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SaveToXMLToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GroupBoxUnitStructure.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
@@ -274,7 +276,7 @@ Partial Class UnitDesigner
         '
         'SetToolStripMenuItem
         '
-        Me.SetToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OverallUnitNameToolStripMenuItem})
+        Me.SetToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OverallUnitNameToolStripMenuItem, Me.SetHTMLStyleToolStripMenuItem})
         Me.SetToolStripMenuItem.Name = "SetToolStripMenuItem"
         Me.SetToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
         Me.SetToolStripMenuItem.Text = "Set"
@@ -287,7 +289,7 @@ Partial Class UnitDesigner
         '
         'SaveToolStripMenuItem
         '
-        Me.SaveToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToHTMLToolStripMenuItem, Me.SetHTMLStyleToolStripMenuItem})
+        Me.SaveToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToHTMLToolStripMenuItem, Me.SaveTotxtToolStripMenuItem, Me.SaveToXMLToolStripMenuItem})
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
         Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(43, 20)
         Me.SaveToolStripMenuItem.Text = "Save"
@@ -301,8 +303,20 @@ Partial Class UnitDesigner
         'SetHTMLStyleToolStripMenuItem
         '
         Me.SetHTMLStyleToolStripMenuItem.Name = "SetHTMLStyleToolStripMenuItem"
-        Me.SetHTMLStyleToolStripMenuItem.Size = New System.Drawing.Size(154, 22)
+        Me.SetHTMLStyleToolStripMenuItem.Size = New System.Drawing.Size(171, 22)
         Me.SetHTMLStyleToolStripMenuItem.Text = "Set HTML Style"
+        '
+        'SaveTotxtToolStripMenuItem
+        '
+        Me.SaveTotxtToolStripMenuItem.Name = "SaveTotxtToolStripMenuItem"
+        Me.SaveTotxtToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SaveTotxtToolStripMenuItem.Text = "Save to .txt"
+        '
+        'SaveToXMLToolStripMenuItem
+        '
+        Me.SaveToXMLToolStripMenuItem.Name = "SaveToXMLToolStripMenuItem"
+        Me.SaveToXMLToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SaveToXMLToolStripMenuItem.Text = "Save to XML"
         '
         'UnitDesigner
         '
@@ -364,4 +378,6 @@ Partial Class UnitDesigner
     Friend WithEvents SaveToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SaveToHTMLToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SetHTMLStyleToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents SaveTotxtToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents SaveToXMLToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

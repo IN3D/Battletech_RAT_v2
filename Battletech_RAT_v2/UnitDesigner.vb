@@ -449,43 +449,81 @@ Public Class UnitDesigner
                 sheetToUse = "default"
         End Select
 
-        Using writer As StreamWriter = New StreamWriter("../../savedUnits/" + Model.OverallUnitName + ".html")
-            writer.WriteLine("<!DOCTYPE html>")
-            writer.WriteLine("<html>")
-            writer.WriteLine("<head lang=""en"">")
-            writer.WriteLine("<meta charset=""UTF-8"">")
-            writer.WriteLine("<title>" + Model.OverallUnitName + "</title>")
-            writer.WriteLine("<link rel=""stylesheet"" type=""text/css"" href=""../css/" + sheetToUse + ".css"">")
-            writer.WriteLine("</head>")
-            writer.WriteLine("<body>")
-            writer.WriteLine("<h1>" + Model.OverallUnitName + "</h1>")
+        Try
 
-            Dim i As Integer = 0
-            For Each unit In Model.rootUnitList
+            Using writer As StreamWriter = New StreamWriter("../../savedUnits/" + Model.OverallUnitName + ".html")
+                writer.WriteLine("<!DOCTYPE html>")
+                writer.WriteLine("<html>")
+                writer.WriteLine("<head lang=""en"">")
+                writer.WriteLine("<meta charset=""UTF-8"">")
+                writer.WriteLine("<title>" + Model.OverallUnitName + "</title>")
+                writer.WriteLine("<link rel=""stylesheet"" type=""text/css"" href=""../css/" + sheetToUse + ".css"">")
+                writer.WriteLine("</head>")
+                writer.WriteLine("<body>")
+                writer.WriteLine("<h1>" + Model.OverallUnitName + "</h1>")
 
-                writer.WriteLine("<h2>" + Model.rootUnitList(i).Name + "</h2>")
-                writer.WriteLine("<table>")
+                Dim i As Integer = 0
+                For Each unit In Model.rootUnitList
 
-                Dim x As Integer = 0
-                For Each Mech In Model.rootUnitList(i).mechList
+                    writer.WriteLine("<h2>" + Model.rootUnitList(i).Name + "</h2>")
+                    writer.WriteLine("<table>")
 
-                    writer.WriteLine("<tr><td>" + Model.rootUnitList(i).mechList(x).ToString + "</td></tr>")
+                    Dim x As Integer = 0
+                    For Each Mech In Model.rootUnitList(i).mechList
 
-                    x = (x + 1)
+                        writer.WriteLine("<tr><td>" + Model.rootUnitList(i).mechList(x).ToString + "</td></tr>")
+
+                        x = (x + 1)
+                    Next
+                    i = (i + 1)
+                    writer.WriteLine("</table>")
                 Next
-                i = (i + 1)
-                writer.WriteLine("</table>")
-            Next
 
-            writer.WriteLine("</body>")
-            writer.WriteLine("</html>")
-        End Using
+                writer.WriteLine("</body>")
+                writer.WriteLine("</html>")
+            End Using
 
-        MessageBox.Show("saved successfully")
+            MessageBox.Show("saved successfully")
+        Catch ex As Exception
+
+            MessageBox.Show("ERROR: File was not saved!")
+        End Try
     End Sub
 
-    Private Sub SetHTMLStyleToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SetHTMLStyleToolStripMenuItem.Click
+    Private Sub SetHTMLStyleToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles SetHTMLStyleToolStripMenuItem.Click
 
         CssSelector.Show()
+    End Sub
+
+    Private Sub SaveTotxtToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveTotxtToolStripMenuItem.Click
+
+        Try
+
+            Using writer As StreamWriter = New StreamWriter("../../savedUnits/" + Model.OverallUnitName + ".txt")
+                writer.WriteLine(Model.OverallUnitName)
+                writer.WriteLine()
+
+                Dim i As Integer = 0
+                For Each unit In Model.rootUnitList
+
+                    writer.WriteLine(Model.rootUnitList(i).Name)
+
+                    Dim x As Integer = 0
+                    For Each Mech In Model.rootUnitList(i).mechList
+
+                        writer.WriteLine(" - " + Model.rootUnitList(i).mechList(x).Name)
+
+                        x = (x + 1)
+                    Next
+                    i = (i + 1)
+                    writer.WriteLine()
+                Next
+            End Using
+
+            MessageBox.Show("saved successfully")
+        Catch ex As Exception
+
+            MessageBox.Show("ERROR: File was not saved!")
+        End Try
     End Sub
 End Class
