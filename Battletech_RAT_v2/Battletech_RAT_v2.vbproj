@@ -108,6 +108,7 @@
     <Compile Include="vb files\Dice.vb" />
     <Compile Include="vb files\Faction.vb" />
     <Compile Include="vb files\Mech.vb" />
+    <Compile Include="vb files\Model.vb" />
     <Compile Include="vb files\Pilot.vb" />
     <Compile Include="vb files\Tech.vb" />
     <Compile Include="vb files\UtilityModule.vb" />

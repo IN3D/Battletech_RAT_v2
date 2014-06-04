@@ -5,9 +5,6 @@
     Dim heavies As Integer
     Dim assaults As Integer
 
-    ' Weight is used here because it holds a mech list
-    Public rootUnitList As New LinkedList(Of Weight)
-
     Private Sub ButtonAdd_Click(sender As Object, e As EventArgs) Handles ButtonAdd.Click
 
         Integer.TryParse(TextBoxLights.Text, lights)
@@ -29,7 +26,7 @@
                     Do While i <= assaults
 
                         MainForm.ButtonRoll.PerformClick()
-                        rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
+                        Model.rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
 
                         i = (i + 1)
                     Loop
@@ -42,7 +39,7 @@
                     Do While i <= heavies
 
                         MainForm.ButtonRoll.PerformClick()
-                        rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
+                        Model.rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
 
                         i = (i + 1)
                     Loop
@@ -55,7 +52,7 @@
                     Do While i <= mediums
 
                         MainForm.ButtonRoll.PerformClick()
-                        rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
+                        Model.rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
 
                         i = (i + 1)
                     Loop
@@ -68,7 +65,7 @@
                     Do While i <= lights
 
                         MainForm.ButtonRoll.PerformClick()
-                        rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
+                        Model.rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
 
                         i = (i + 1)
                     Loop
@@ -83,7 +80,7 @@
                     Do While i <= lights
 
                         MainForm.ButtonRoll.PerformClick()
-                        rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
+                        Model.rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
 
                         i = (i + 1)
                     Loop
@@ -96,7 +93,7 @@
                     Do While i <= mediums
 
                         MainForm.ButtonRoll.PerformClick()
-                        rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
+                        Model.rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
 
                         i = (i + 1)
                     Loop
@@ -109,7 +106,7 @@
                     Do While i <= heavies
 
                         MainForm.ButtonRoll.PerformClick()
-                        rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
+                        Model.rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
 
                         i = (i + 1)
                     Loop
@@ -122,7 +119,7 @@
                     Do While i <= assaults
 
                         MainForm.ButtonRoll.PerformClick()
-                        rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
+                        Model.rootUnitList(index).mechList.AddLast(New Mech(MainForm.ListBoxMechs.SelectedItem.ToString))
 
                         i = (i + 1)
                     Loop
@@ -133,7 +130,7 @@
 
             Me.ListBoxUnits.Items.Clear()
 
-            For Each Mech In rootUnitList(index).mechList
+            For Each Mech In Model.rootUnitList(index).mechList
 
                 Me.ListBoxUnits.Items.Add(Mech.Name)
             Next
@@ -153,15 +150,15 @@
 
         value = InputBox(prompt, title, defaultValue)
 
-        rootUnitList.AddLast(New Weight(value))
+        Model.rootUnitList.AddLast(New Weight(value))
 
         ' update the combobox
         Dim i As Integer
         ComboBoxUnit.Items.Clear()
 
-        For Each unit In rootUnitList
+        For Each unit In Model.rootUnitList
 
-            ComboBoxUnit.Items.Add(rootUnitList(i).Name)
+            ComboBoxUnit.Items.Add(Model.rootUnitList(i).Name)
             i = (i + 1)
         Next
     End Sub
@@ -172,7 +169,7 @@
 
         Me.ListBoxUnits.Items.Clear()
 
-        For Each Mech In rootUnitList(index).mechList
+        For Each Mech In Model.rootUnitList(index).mechList
 
             Me.ListBoxUnits.Items.Add(Mech.ToString)
         Next
@@ -183,14 +180,14 @@
         Try
             Dim unitIndex As Integer = ComboBoxUnit.SelectedIndex
             Dim index As Integer = ListBoxUnits.SelectedIndex
-            Dim tempName As String = rootUnitList.ElementAt(unitIndex).mechList.ElementAt(index).Name
-            Dim tempMech As Mech = rootUnitList.ElementAt(unitIndex).mechList.ElementAt(index)
-            Dim targetmech As Mech = rootUnitList.ElementAt(unitIndex).mechList.ElementAt(index - 1)
-            Dim target As LinkedListNode(Of Mech) = rootUnitList.ElementAt(unitIndex).mechList.Find(targetmech)
+            Dim tempName As String = Model.rootUnitList.ElementAt(unitIndex).mechList.ElementAt(index).Name
+            Dim tempMech As Mech = Model.rootUnitList.ElementAt(unitIndex).mechList.ElementAt(index)
+            Dim targetmech As Mech = Model.rootUnitList.ElementAt(unitIndex).mechList.ElementAt(index - 1)
+            Dim target As LinkedListNode(Of Mech) = Model.rootUnitList.ElementAt(unitIndex).mechList.Find(targetmech)
 
 
-            rootUnitList.ElementAt(unitIndex).mechList.Remove(tempMech)
-            rootUnitList.ElementAt(unitIndex).mechList.AddBefore(target, New Mech(tempMech))
+            Model.rootUnitList.ElementAt(unitIndex).mechList.Remove(tempMech)
+            Model.rootUnitList.ElementAt(unitIndex).mechList.AddBefore(target, New Mech(tempMech))
 
             Me.resetListBox()
 
@@ -209,13 +206,13 @@
         Try
             Dim unitIndex As Integer = ComboBoxUnit.SelectedIndex
             Dim index As Integer = ListBoxUnits.SelectedIndex
-            Dim tempName As String = rootUnitList.ElementAt(unitIndex).mechList.ElementAt(index).Name
-            Dim tempMech As Mech = rootUnitList.ElementAt(unitIndex).mechList.ElementAt(index)
-            Dim targetmech As Mech = rootUnitList.ElementAt(unitIndex).mechList.ElementAt(index + 1)
-            Dim target As LinkedListNode(Of Mech) = rootUnitList.ElementAt(unitIndex).mechList.Find(targetmech)
+            Dim tempName As String = Model.rootUnitList.ElementAt(unitIndex).mechList.ElementAt(index).Name
+            Dim tempMech As Mech = Model.rootUnitList.ElementAt(unitIndex).mechList.ElementAt(index)
+            Dim targetmech As Mech = Model.rootUnitList.ElementAt(unitIndex).mechList.ElementAt(index + 1)
+            Dim target As LinkedListNode(Of Mech) = Model.rootUnitList.ElementAt(unitIndex).mechList.Find(targetmech)
 
-            rootUnitList.ElementAt(unitIndex).mechList.Remove(tempMech)
-            rootUnitList.ElementAt(unitIndex).mechList.AddAfter(target, New Mech(tempMech))
+            Model.rootUnitList.ElementAt(unitIndex).mechList.Remove(tempMech)
+            Model.rootUnitList.ElementAt(unitIndex).mechList.AddAfter(target, New Mech(tempMech))
 
             Me.resetListBox()
 
@@ -233,7 +230,7 @@
 
         ListBoxUnits.Items.Clear()
 
-        For Each Mech In rootUnitList(index).mechList
+        For Each Mech In Model.rootUnitList(index).mechList
 
             Me.ListBoxUnits.Items.Add(Mech.ToString())
         Next
@@ -247,9 +244,9 @@
 
             Dim unitIndex As Integer = ComboBoxUnit.SelectedIndex
             Dim index As Integer = ListBoxUnits.SelectedIndex
-            Dim targetMech As Mech = rootUnitList.ElementAt(unitIndex).mechList.ElementAt(index)
+            Dim targetMech As Mech = Model.rootUnitList.ElementAt(unitIndex).mechList.ElementAt(index)
 
-            rootUnitList.ElementAt(unitIndex).mechList.Remove(targetMech)
+            Model.rootUnitList.ElementAt(unitIndex).mechList.Remove(targetMech)
 
             Me.resetListBox()
         End If
@@ -282,7 +279,7 @@
 
                         MainForm.ButtonRoll.PerformClick()
                         Dim tempName As String = MainForm.ListBoxMechs.SelectedItem.ToString()
-                        rootUnitList(index).mechList.ElementAt(unitIndex).Name = tempName
+                        Model.rootUnitList(index).mechList.ElementAt(unitIndex).Name = tempName
 
                         i = (i + 1)
                     Loop
@@ -299,7 +296,7 @@
 
                         MainForm.ButtonRoll.PerformClick()
                         Dim tempName As String = MainForm.ListBoxMechs.SelectedItem.ToString()
-                        rootUnitList(index).mechList.ElementAt(unitIndex).Name = tempName
+                        Model.rootUnitList(index).mechList.ElementAt(unitIndex).Name = tempName
 
                         i = (i + 1)
                     Loop
@@ -316,7 +313,7 @@
 
                         MainForm.ButtonRoll.PerformClick()
                         Dim tempName As String = MainForm.ListBoxMechs.SelectedItem.ToString()
-                        rootUnitList(index).mechList.ElementAt(unitIndex).Name = tempName
+                        Model.rootUnitList(index).mechList.ElementAt(unitIndex).Name = tempName
 
                         i = (i + 1)
                     Loop
@@ -333,7 +330,7 @@
 
                         MainForm.ButtonRoll.PerformClick()
                         Dim tempName As String = MainForm.ListBoxMechs.SelectedItem.ToString()
-                        rootUnitList(index).mechList.ElementAt(unitIndex).Name = tempName
+                        Model.rootUnitList(index).mechList.ElementAt(unitIndex).Name = tempName
 
                         i = (i + 1)
                     Loop
@@ -363,12 +360,12 @@
             Try
 
                 Dim index As Integer = ComboBoxUnit.SelectedIndex
-                Dim unitToRemove As Weight = rootUnitList.ElementAt(index)
+                Dim unitToRemove As Weight = Model.rootUnitList.ElementAt(index)
 
                 ' clear out all mechs in the unit
-                rootUnitList.ElementAt(index).mechList.Clear()
+                Model.rootUnitList.ElementAt(index).mechList.Clear()
 
-                rootUnitList.Remove(unitToRemove)
+                Model.rootUnitList.Remove(unitToRemove)
 
                 ' set text back to nothing to avoid confusion
                 ComboBoxUnit.Text = ""
@@ -376,9 +373,9 @@
                 ' repopulate the combobox
                 ComboBoxUnit.Items.Clear()
                 Dim i As Integer = 0
-                For Each unit In rootUnitList
+                For Each unit In Model.rootUnitList
 
-                    ComboBoxUnit.Items.Add(rootUnitList(i).Name)
+                    ComboBoxUnit.Items.Add(Model.rootUnitList(i).Name)
                     i = (i + 1)
                 Next
             Catch ex As Exception
@@ -392,5 +389,18 @@
         PilotAdditionForm.Show()
 
 
+    End Sub
+
+    Private Sub UnitDesigner_Load(sender As Object, e As EventArgs) Handles Me.Load
+
+        ' update the combobox
+        Dim i As Integer
+        ComboBoxUnit.Items.Clear()
+
+        For Each unit In Model.rootUnitList
+
+            ComboBoxUnit.Items.Add(Model.rootUnitList(i).Name)
+            i = (i + 1)
+        Next
     End Sub
 End Class

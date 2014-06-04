@@ -15,7 +15,7 @@
             ' create a pilot to be passed to the mech
             Dim pilot = New Pilot(name, piloting, gunnery)
 
-            UnitDesigner.rootUnitList.ElementAt(index).mechList.ElementAt(unitIndex).addPilot(pilot)
+            rootUnitList.ElementAt(index).mechList.ElementAt(unitIndex).addPilot(pilot)
 
             ' now refresh the list box
             UnitDesigner.resetListBox()
