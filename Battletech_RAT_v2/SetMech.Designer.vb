@@ -72,7 +72,7 @@ Partial Class SetMech
         '
         'ButtonSet
         '
-        Me.ButtonSet.Location = New System.Drawing.Point(335, 77)
+        Me.ButtonSet.Location = New System.Drawing.Point(362, 77)
         Me.ButtonSet.Name = "ButtonSet"
         Me.ButtonSet.Size = New System.Drawing.Size(75, 23)
         Me.ButtonSet.TabIndex = 4
@@ -120,7 +120,7 @@ Partial Class SetMech
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(427, 113)
+        Me.ClientSize = New System.Drawing.Size(449, 110)
         Me.Controls.Add(Me.LabelError)
         Me.Controls.Add(Me.TextBoxPilotPiloting)
         Me.Controls.Add(Me.TextBoxPilotGunnery)
@@ -131,6 +131,8 @@ Partial Class SetMech
         Me.Controls.Add(Me.LabelPilotGunnery)
         Me.Controls.Add(Me.LabelPilotName)
         Me.Controls.Add(Me.LabelMechName)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.MinimumSize = New System.Drawing.Size(465, 149)
         Me.Name = "SetMech"
         Me.Text = "Set Mech Details"
         Me.ResumeLayout(False)
