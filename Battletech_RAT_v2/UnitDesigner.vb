@@ -175,6 +175,7 @@ Public Class UnitDesigner
     Private Sub ComboBoxUnit_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxUnit.SelectedIndexChanged
 
         Dim index As Integer = ComboBoxUnit.SelectedIndex
+        Model.selectedUnit = index
 
         Me.ListBoxUnits.Items.Clear()
 
@@ -579,7 +580,7 @@ Public Class UnitDesigner
         If openFileDialog.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
 
             Try
-                stream = openFileDialog.OpenFile()
+                ' stream = openFileDialog.OpenFile()
                 Dim fileLoc = openFileDialog.FileName()
                 If (fileLoc IsNot Nothing) Then
 
@@ -602,20 +603,30 @@ Public Class UnitDesigner
                                 Dim pilotPiloting As Integer = Nothing
                                 Dim mechName As String = ""
 
-                                If (node.ChildNodes(i).ChildNodes(j).Attributes.GetNamedItem("pilot").Value <> Nothing) Then
+                                Try
 
                                     pilotName = node.ChildNodes(i).ChildNodes(j).Attributes.GetNamedItem("pilot").Value
-                                End If
+                                Catch ex As Exception
 
-                                If (node.ChildNodes(i).ChildNodes(j).Attributes.GetNamedItem("gunnery").Value <> Nothing) Then
+                                    pilotName = Nothing
+                                End Try
+
+                                Try
 
                                     pilotGunnery = node.ChildNodes(i).ChildNodes(j).Attributes.GetNamedItem("gunnery").Value
-                                End If
+                                Catch ex As Exception
 
-                                If (node.ChildNodes(i).ChildNodes(j).Attributes.GetNamedItem("piloting").Value <> Nothing) Then
+                                    pilotGunnery = Nothing
+                                End Try
+
+                                Try
 
                                     pilotPiloting = node.ChildNodes(i).ChildNodes(j).Attributes.GetNamedItem("piloting").Value
-                                End If
+                                Catch ex As Exception
+
+                                    pilotPiloting = Nothing
+                                End Try
+
 
                                 mechName = node.ChildNodes(i).ChildNodes(j).InnerText
 
@@ -648,5 +659,18 @@ Public Class UnitDesigner
             End Try
         End If
 
+    End Sub
+
+    Private Sub ListBoxUnits_DoubleClick(sender As Object, e As EventArgs) Handles ListBoxUnits.DoubleClick
+
+        SetMech.Show()
+
+        ' reset the ListBox to show the changes to the mech
+        ' resetListBox()
+    End Sub
+
+    Private Sub ListBoxUnits_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBoxUnits.SelectedIndexChanged
+
+        Model.selectedMech = ListBoxUnits.SelectedIndex
     End Sub
 End Class

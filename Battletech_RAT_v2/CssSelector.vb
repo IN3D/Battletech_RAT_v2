@@ -49,4 +49,12 @@
 
         Model.Style = 5
     End Sub
+
+    Private Sub ButtonSet_Click(sender As Object, e As EventArgs) Handles ButtonSet.Click
+
+        ' After I finished working on this, I made it so changing the
+        ' radiobuttons sets the style, so the set button actually just
+        ' closes the form.
+        Me.Close()
+    End Sub
 End Class

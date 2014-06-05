@@ -3,6 +3,9 @@
 Public Module Model
 
     Public Style As Integer = 0
+    Public selectedMech As Integer = 0
+    Public selectedUnit As Integer = 0
+
     Public OverallUnitName As String = "My Unit"
 
     ' Weight is used here because it holds a mech list
