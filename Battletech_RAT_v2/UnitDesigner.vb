@@ -580,44 +580,71 @@ Public Class UnitDesigner
 
             Try
                 stream = openFileDialog.OpenFile()
-                If (stream IsNot Nothing) Then
+                Dim fileLoc = openFileDialog.FileName()
+                If (fileLoc IsNot Nothing) Then
 
-                    xmlDoc.Load(stream)
+                    xmlDoc.Load(fileLoc)
 
                     nodeList = xmlDoc.SelectNodes("/root")
 
-                    For Each node In nodeList
+                    Model.OverallUnitName = nodeList.Item(0).Attributes.GetNamedItem("name").Value
 
-                        Model.OverallUnitName = node.ParentNode.Attributes.GetNamedItem("name").Value
+                    For Each node In nodeList
 
                         For i As Integer = 0 To ((node.ChildNodes.Count) - 1)
 
-                            Dim pilotName As String = Nothing
-                            Dim pilotGunnery As Integer = Nothing
-                            Dim pilotPiloting As Integer = Nothing
+                            Model.rootUnitList.AddLast(New Weight(node.ChildNodes(i).Attributes.GetNamedItem("name").Value))
 
-                            If (node.ChildNodes(i).Attributes.GetNamedItem("pilot").Value <> Nothing) Then
+                            For j As Integer = 0 To ((node.ChildNodes(i).ChildNodes.Count) - 1)
 
-                                pilotName = node.ChildNodes(i).Attributes.GetNamedItem("pilot").Value
-                            End If
+                                Dim pilotName As String = Nothing
+                                Dim pilotGunnery As Integer = Nothing
+                                Dim pilotPiloting As Integer = Nothing
+                                Dim mechName As String = ""
 
-                            If (node.ChildNodes(i).Attributes.GetNamedItem("gunnery").Value <> Nothing) Then
+                                If (node.ChildNodes(i).ChildNodes(j).Attributes.GetNamedItem("pilot").Value <> Nothing) Then
 
-                                pilotGunnery = node.ChildNodes(i).Attributes.GetNamedItem("gunnery").Value
-                            End If
+                                    pilotName = node.ChildNodes(i).ChildNodes(j).Attributes.GetNamedItem("pilot").Value
+                                End If
 
-                            If (node.ChildNodes(i).Attributes.GetNamedItem("piloting").Value <> Nothing) Then
+                                If (node.ChildNodes(i).ChildNodes(j).Attributes.GetNamedItem("gunnery").Value <> Nothing) Then
 
-                                pilotPiloting = node.ChildNodes(i).Attributes.GetNamedItem("piloting").Value
-                            End If
+                                    pilotGunnery = node.ChildNodes(i).ChildNodes(j).Attributes.GetNamedItem("gunnery").Value
+                                End If
 
+                                If (node.ChildNodes(i).ChildNodes(j).Attributes.GetNamedItem("piloting").Value <> Nothing) Then
 
+                                    pilotPiloting = node.ChildNodes(i).ChildNodes(j).Attributes.GetNamedItem("piloting").Value
+                                End If
 
+                                mechName = node.ChildNodes(i).ChildNodes(j).InnerText
+
+                                Model.rootUnitList(i).mechList.AddLast(New Mech(mechName))
+
+                                If pilotName <> Nothing And pilotGunnery <> Nothing And pilotPiloting <> Nothing Then
+
+                                    Dim pilot As New Pilot(pilotName, pilotPiloting, pilotGunnery)
+
+                                    rootUnitList(i).mechList(j).addPilot(pilot)
+                                End If
+                            Next
                         Next
                     Next
+
+                    ' update the combobox
+                    Dim x As Integer = 0
+                    ComboBoxUnit.Items.Clear()
+
+                    For Each unit In Model.rootUnitList
+
+                        ComboBoxUnit.Items.Add(Model.rootUnitList(x).Name)
+                        x = (x + 1)
+                    Next
+
                 End If
             Catch ex As Exception
 
+                MessageBox.Show("An error occurred reading in your XML file.")
             End Try
         End If
 

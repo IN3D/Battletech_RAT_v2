@@ -1,4 +1,4 @@
-<root name="My Unit">
+<root name="Different Name">
   <unit name="1st Lance">
     <mech pilot="John Doe" gunnery="3" piloting="4">QKD-5M Quickdraw</mech>
     <mech pilot="James Doe" gunnery="4" piloting="5">CN9-A Centurion</mech>
