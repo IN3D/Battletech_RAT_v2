@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    Battletech: Random Assignment Table v2.0
+    
+    ==Created==
+    on: 6/7/14
+    by: Eric Hopkins
+    
+    ==Last Modified==
+    on: 6/7/14
+    by: Eric Hopkins
+    
+    This file contains the tables found in Supplemental: Wars of Reaving
+-->
+<book name="Supplemental: Wars of Reaving">
+	<faction name="3072: Blood Spirit">
+		<tech name="default">
+			<weight name="light">
+				<mech>Howler</mech>
+				<mech>MON-66b Mongoose</mech>
+				<mech>Jenner IIC</mech>
+				<mech>Locust IIC</mech>
+				<mech>Horned Owl</mech>
+				<mech>Locust IIC</mech>
+				<mech>Incubus</mech>
+				<mech>MCY-99 Mercury</mech>
+				<mech>Incubus</mech>
+				<mech>Horned Owl</mech>
+				<mech>Piranha</mech>
+				<mech>Incubus</mech>
+				<mech>Mist Lynx</mech>
+				<mech>Incubus</mech>
+				<mech>Kit Fox</mech>
+				<mech>Adder</mech>
+				<mech>Kit Fox</mech>
+				<mech>Mist Lynx</mech>
+				<mech>Adder</mech>
+				<mech>Arctic Cheetha</mech>
+				<mech>Horned Owl</mech>
+			</weight>
+			<weight name="medium">
+				<mech>Griffin IIC 3</mech>
+				<mech>CRB-27b Crab</mech>
+				<mech>Vapor Eagle</mech>
+				<mech>Griffin IIC</mech>
+				<mech>Shadow Hawk IIC</mech>
+				<mech>Conjurer</mech>
+				<mech>Conjurer 2</mech>
+				<mech>Shadow Hawk IIC</mech>
+				<mech>Griffin IIC 4</mech>
+				<mech>CRB-27b Crab</mech>
+				<mech>Hunchback IIC</mech>
+				<mech>Stooping Hawk</mech>
+				<mech>Conjurer 3</mech>
+				<mech>Battle Cobra</mech>
+				<mech>Stooping Hawk</mech>
+				<mech>Nova</mech>
+				<mech>Crimson Langur</mech>
+				<mech>Crimson Langur</mech>
+				<mech>Stormcrow</mech>
+				<mech>Battle Cobra</mech>
+				<mech>Stooping Hawk</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>Glass Spider</mech>
+				<mech>Thresher</mech>
+				<mech>Rifleman IIC</mech>
+				<mech>BL-6b-KNT Black Knight</mech>
+				<mech>Thresher</mech>
+				<mech>Grizzly</mech>
+				<mech>Rifleman IIC</mech>
+				<mech>Grizzly</mech>
+				<mech>Rifleman IIC 3</mech>
+				<mech>Glass Spider</mech>
+				<mech>BL-6b Black Knight</mech>
+				<mech>Hellfire 2</mech>
+				<mech>Thresher</mech>
+				<mech>Mad Dog</mech>
+				<mech>Timber Wolf</mech>
+				<mech>Summoner</mech>
+				<mech>Crossbow</mech>
+				<mech>Crossbow</mech>
+				<mech>Grizzly</mech>
+				<mech>Crossbow</mech>
+				<mech>Rifleman IIC</mech>
+			</weight>
+			<weight name="assault">
+				<mech>HGN-732b Highlander</mech>
+				<mech>Marauder IIC</mech>
+				<mech>Phoenix Hawk IIC 3</mech>
+				<mech>Blood Kite 2</mech>
+				<mech>Blood Kite</mech>
+				<mech>Blood Kite 2</mech>
+				<mech>Blood Kite</mech>
+				<mech>CRK-5003-1b Crockett</mech>
+				<mech>Warhammer IIC</mech>
+				<mech>Warhammer IIC 3</mech>
+				<mech>Supernova</mech>
+				<mech>Blood Asp</mech>
+				<mech>Warhawk</mech>
+				<mech>Blood Kite</mech>
+				<mech>Kingfisher</mech>
+				<mech>Blood Kite</mech>
+				<mech>Kingfisher</mech>
+				<mech>Blood Kite</mech>
+				<mech>Warhawk</mech>
+				<mech>Blood Kite</mech>
+				<mech>Dire Wolf</mech>
+			</weight>
+		</tech>
+	</faction>
+	<faction name="3072: Cloud Cobra">
+		<tech name="default">
+			<weight name="light">
+				<mech>Pack Hunter</mech>
+				<mech>Solitaire</mech>
+				<mech>Jenner IIC</mech>
+				<mech>Locust IIC</mech>
+				<mech>Incubus</mech>
+				<mech>Horned Owl</mech>
+				<mech>Jenner IIC</mech>
+				<mech>Locust IIC</mech>
+				<mech>Incubus</mech>
+				<mech>Howler</mech>
+				<mech>Arcitic Cheetah</mech>
+				<mech>Adder</mech>
+				<mech>Adder</mech>
+				<mech>Adder</mech>
+				<mech>Fire Moth</mech>
+				<mech>Kit Fox</mech>
+				<mech>Kit Fox</mech>
+				<mech>Mist Lynx</mech>
+				<mech>Fire Falcon</mech>
+			</weight>
+			<weight name="medium">
+			</weight>
+			<weight name="heavy">
+			</weight>
+			<weight name="assault">
+			</weight>
+		</tech>
+	</faction>
+	<faction name="3072: Coyote">
+		<tech name="default">
+			<weight name="light">
+			</weight>
+			<weight name="medium">
+			</weight>
+			<weight name="heavy">
+			</weight>
+			<weight name="assault">
+			</weight>
+		</tech>
+	</faction>
+	<faction name="3072: Diamond Shark">
+		<tech name="default">
+			<weight name="light">
+			</weight>
+			<weight name="medium">
+			</weight>
+			<weight name="heavy">
+			</weight>
+			<weight name="assault">
+			</weight>
+		</tech>
+	</faction>
+	<faction name="3072: Fire Mandrill">
+		<tech name="default">
+			<weight name="light">
+			</weight>
+			<weight name="medium">
+			</weight>
+			<weight name="heavy">
+			</weight>
+			<weight name="assault">
+			</weight>
+		</tech>
+	</faction>
+	<faction name="3072: Ghost Bear">
+		<tech name="default">
+			<weight name="light">
+			</weight>
+			<weight name="medium">
+			</weight>
+			<weight name="heavy">
+			</weight>
+			<weight name="assault">
+			</weight>
+		</tech>
+	</faction>
+	<faction name="3072: Goliath Scorpion">
+		<tech name="default">
+			<weight name="light">
+			</weight>
+			<weight name="medium">
+			</weight>
+			<weight name="heavy">
+			</weight>
+			<weight name="assault">
+			</weight>
+		</tech>
+	</faction>
+	<faction name="3072: Hell's Horses">
+		<tech name="default">
+			<weight name="light">
+			</weight>
+			<weight name="medium">
+			</weight>
+			<weight name="heavy">
+			</weight>
+			<weight name="assault">
+			</weight>
+		</tech>
+	</faction>
+	<faction name="3072: Ice Hellion">
+		<tech name="default">
+			<weight name="light">
+			</weight>
+			<weight name="medium">
+			</weight>
+			<weight name="heavy">
+			</weight>
+			<weight name="assault">
+			</weight>
+		</tech>
+	</faction>
+	<faction name="3072: Jade Falcon">
+		<tech name="default">
+			<weight name="light">
+			</weight>
+			<weight name="medium">
+			</weight>
+			<weight name="heavy">
+			</weight>
+			<weight name="assault">
+			</weight>
+		</tech>
+	</faction>
+	<faction name="3072: Snow Raven">
+		<tech name="default">
+			<weight name="light">
+			</weight>
+			<weight name="medium">
+			</weight>
+			<weight name="heavy">
+			</weight>
+			<weight name="assault">
+			</weight>
+		</tech>
+	</faction>
+	<faction name="3072: Star Adder">
+		<tech name="default">
+			<weight name="light">
+			</weight>
+			<weight name="medium">
+			</weight>
+			<weight name="heavy">
+			</weight>
+			<weight name="assault">
+			</weight>
+		</tech>
+	</faction>
+	<faction name="3072: Steel Viper">
+		<tech name="default">
+			<weight name="light">
+			</weight>
+			<weight name="medium">
+			</weight>
+			<weight name="heavy">
+			</weight>
+			<weight name="assault">
+			</weight>
+		</tech>
+	</faction>
+	<faction name="3072: Wolf">
+		<tech name="default">
+			<weight name="light">
+			</weight>
+			<weight name="medium">
+			</weight>
+			<weight name="heavy">
+			</weight>
+			<weight name="assault">
+			</weight>
+		</tech>
+	</faction>
+	<faction name="3072: The Society">
+		<tech name="default">
+			<weight name="light">
+			</weight>
+			<weight name="medium">
+			</weight>
+			<weight name="heavy">
+			</weight>
+			<weight name="assault">
+			</weight>
+		</tech>
+	</faction>
+	<faction name="3072: Burrock/Dark Caste">
+		<tech name="default">
+			<weight name="light">
+			</weight>
+			<weight name="medium">
+			</weight>
+			<weight name="heavy">
+			</weight>
+			<weight name="assault">
+			</weight>
+		</tech>
+	</faction>
+	<faction name="3085: Cloud Cobra">
+		<tech name="default">
+			<weight name="light">
+			</weight>
+			<weight name="medium">
+			</weight>
+			<weight name="heavy">
+			</weight>
+			<weight name="assault">
+			</weight>
+		</tech>
+	</faction>
+	<faction name="3085: Coyote">
+		<tech name="default">
+			<weight name="light">
+			</weight>
+			<weight name="medium">
+			</weight>
+			<weight name="heavy">
+			</weight>
+			<weight name="assault">
+			</weight>
+		</tech>
+	</faction>
+	<faction name="3085: Star Adder">
+		<tech name="default">
+			<weight name="light">
+			</weight>
+			<weight name="medium">
+			</weight>
+			<weight name="heavy">
+			</weight>
+			<weight name="assault">
+			</weight>
+		</tech>
+	</faction>
+	<faction name="3085: Stone Lion">
+		<tech name="default">
+			<weight name="light">
+			</weight>
+			<weight name="medium">
+			</weight>
+			<weight name="heavy">
+			</weight>
+			<weight name="assault">
+			</weight>
+		</tech>
+	</faction>
+</book>
