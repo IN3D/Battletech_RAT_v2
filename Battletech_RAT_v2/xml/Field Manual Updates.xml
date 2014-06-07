@@ -4289,4 +4289,116 @@
 			</weight>
 		</tech>
 	</faction>
+	<faction name="Hansetic League">
+		<tech name="default">
+			<weight name="light">
+				<mech>FS9-H Firestarter</mech>
+				<mech>LCT-1E Locust</mech>
+				<mech>SDR-7M Spider</mech>
+				<mech>JR7-D Jenner</mech>
+				<mech>PNT-10K Panther</mech>
+				<mech>COM-5S Commando</mech>
+				<mech>FS9-H Firestarter</mech>
+				<mech>UM-R60 UrbanMech</mech>
+				<mech>OTT-7J Ostscout</mech>
+				<mech>JVN-10N Javelin</mech>
+				<mech>JR7-K Jenner</mech>
+			</weight>
+			<weight name="medium">
+				<mech>ASN-23 Assassin</mech>
+				<mech>WVR-6R Wolverine</mech>
+				<mech>VL-5S Vulcan</mech>
+				<mech>TBT-5S Trebuchet</mech>
+				<mech>HBK-4G Hunchback</mech>
+				<mech>CLNT-2-3T Clint</mech>
+				<mech>CN9-D Centurion</mech>
+				<mech>WTH-1 Whitworth</mech>
+				<mech>PXH-1 Phoenix Hawk</mech>
+				<mech>WHT-2 Whitworth</mech>
+				<mech>GRF-1N Griffin</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>RFL-3N Rifleman</mech>
+				<mech>CHP-1N Champion</mech>
+				<mech>CPLT-K2 Catapult</mech>
+				<mech>WHM-6R Warhammer</mech>
+				<mech>JM6-S JagerMech</mech>
+				<mech>GHR-5H Grasshopper</mech>
+				<mech>CRD-3R Crusader</mech>
+				<mech>QKD-4G Quickdraw</mech>
+				<mech>DRG-5N Dragon</mech>
+				<mech>ON1-K Orion</mech>
+				<mech>MAD-3R Marauder</mech>
+			</weight>
+			<weight name="assault">
+				<mech>ZEU-6S Zeus</mech>
+				<mech>LGB-7Q Longbow</mech>
+				<mech>CP-11-A Cyclops</mech>
+				<mech>AWS-8Q Awesome</mech>
+				<mech>VTR-9B Victor</mech>
+				<mech>BLR-1G BattleMaster</mech>
+				<mech>AS7-S Atlas</mech>
+				<mech>STK-3F Stalker</mech>
+				<mech>CGR-3K Charger</mech>
+				<mech>GOL-1H Goliath</mech>
+				<mech>BNC-5S Banshee</mech>
+			</weight>
+		</tech>
+	</faction>
+	<faction name="Castillian/Umayyad">
+		<tech name="default">
+			<weight name="light">
+				<mech>STG-3R Stinger</mech>
+				<mech>SDR-5V Spider</mech>
+				<mech>PNT-9R Panther</mech>
+				<mech>FS9-H Firestarter</mech>
+				<mech>COM-2D Commando</mech>
+				<mech>JR7-D Jenner</mech>
+				<mech>FS9-H Firestarter</mech>
+				<mech>UM-R60 UrbanMech</mech>
+				<mech>JVN-10N Javelin</mech>
+				<mech>WSP-1A Wasp</mech>
+				<mech>THE-S Thorn</mech>
+			</weight>
+			<weight name="medium">
+				<mech>WVR-6R Wolverine</mech>
+				<mech>HBK-4G Hunchback</mech>
+				<mech>VL-2T Vulcan</mech>
+				<mech>TBT-5S Trebuchet</mech>
+				<mech>BJ-1 Blackjack</mech>
+				<mech>CDA-2A Cicada</mech>
+				<mech>SHD-2H Shadow Hawk</mech>
+				<mech>WTH-1 Whitworth</mech>
+				<mech>CLNT-2-3T Clint</mech>
+				<mech>CN9-A Centurion</mech>
+				<mech>HER-2S Hermes II</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>QKD-4G Quickdraw</mech>
+				<mech>WHM-6R Warhammer</mech>
+				<mech>CPLT-A1 Catapult</mech>
+				<mech>ON1-K Orion</mech>
+				<mech>QKD-4G Quickdraw</mech>
+				<mech>GHR-5H Grasshopper</mech>
+				<mech>CPLT-C1 Catapult</mech>
+				<mech>GHR-5H Grasshopper</mech>
+				<mech>CPLT-A1 Catapult</mech>
+				<mech>JM6-S JagerMech</mech>
+				<mech>ARC-2R Archer</mech>
+			</weight>
+			<weight name="assault">
+				<mech>CGR-1A1 Charger</mech>
+				<mech>HGN-733 Highlander</mech>
+				<mech>VTR-9B Victor</mech>
+				<mech>AWS-8Q Awesome</mech>
+				<mech>STK-3F Stalker</mech>
+				<mech>BNC-3E Banshee</mech>
+				<mech>ZEU-6S Zeus</mech>
+				<mech>AS7-D Atlas</mech>
+				<mech>BLR-1G BattleMaster</mech>
+				<mech>CP-10-Z Cyclops</mech>
+				<mech>AWS-8Q Awesome</mech>
+			</weight>
+		</tech>
+	</faction>
 </book>
