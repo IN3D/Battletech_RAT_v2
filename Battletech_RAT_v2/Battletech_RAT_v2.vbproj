@@ -169,6 +169,7 @@
     <Content Include="css\marik.css" />
     <Content Include="css\steiner.css" />
     <Content Include="xml\Field Manual Capellan Confederation.xml" />
+    <Content Include="xml\Field Manual Comstar.xml" />
     <Content Include="xml\Field Manual Crusader Clans.xml" />
     <Content Include="xml\Field Manual Draconis Combine.xml" />
     <Content Include="xml\Field Manual Federated Suns.xml" />
@@ -180,8 +181,15 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="xml\Field Manual Periphery.xml" />
+    <Content Include="xml\Field Manual SLDF.xml" />
     <Content Include="xml\Field Manual Updates.xml" />
     <Content Include="xml\Field Manual Warden Clans.xml" />
+    <Content Include="xml\Historical Operation Klondike.xml" />
+    <Content Include="xml\Jihad Secrets.xml" />
+    <Content Include="xml\Supplemental Wars of Reaving.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="xml\Total Chaos.xml" />
     <Content Include="xml\Total Warfare.xml" />
     <Content Include="xml\War of 3039.xml" />
   </ItemGroup>
