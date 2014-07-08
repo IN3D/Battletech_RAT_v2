@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    Battletech: Random Assignment Table v2.0
+    
+    ==Created==
+    on: 7/8/14
+    by: Eric Hopkins
+    
+    ==Last Modified==
+    on: 7/8/14
+    by: Eric Hopkins
+    
+    This file contains the tables found in Interstellar Expeditions (Interstellar Players 3)
+-->
+<book name="Interstellar Expeditions">
+	<faction name="Escorpión Imperio">
+		<tech name="default">
+			<weight name="light">
+				<mech>EPT-C-1 Reptar</mech>
+				<mech>EPT-C-1 Reptar</mech>
+				<mech>WSP-1A Wasp</mech>
+				<mech>STG-3G Stinger</mech>
+				<mech>WSP-1A Wasp</mech>
+				<mech>LCT-1V Locust</mech>
+				<mech>UM-R60 UrbanMech</mech>
+				<mech>FS9-K Firestarter</mech>
+				<mech>THE-N Thorn</mech>
+				<mech>JKR-8T Jackrabbit</mech>
+				<mech>MON-66 Mongoose</mech>
+				<mech>TLN-5W Talon</mech>
+				<mech>HSR-200-D Hussar</mech>
+				<mech>Icestorm</mech>
+				<mech>Hellion</mech>
+				<mech>Commando IIC</mech>
+				<mech>Fire Moth</mech>
+				<mech>Horned Owl 4</mech>
+				<mech>Adder</mech>
+			</weight>
+			<weight name="medium">
+				<mech>ARA-S-1 Araña</mech>
+				<mech>ARA-S-1 Araña</mech>
+				<mech>SHD-1R Shadow Hawk</mech>
+				<mech>HBK-4P Hunchback</mech>
+				<mech>TBT-5S Trebuchet</mech>
+				<mech>WVR-6R Wolverine</mech>
+				<mech>SHD-2H Shadow Hawk</mech>
+				<mech>PXH-1 Phoenix Hawk</mech>
+				<mech>INI-02 Initiate</mech>
+				<mech>STN-3L Sentinel</mech>
+				<mech>LGH-4Y Lightray</mech>
+				<mech>WVE-5N Wyvern</mech>
+				<mech>LNX-9Q Lynx</mech>
+				<mech>Griffin IIC</mech>
+				<mech>Shadow Hawk IIC</mech>
+				<mech>Hunchback IIC</mech>
+				<mech>Mongrel</mech>
+				<mech>Ice Ferret</mech>
+				<mech>Stormcrow</mech>
+			</weight>
+			<weight name="heavy">
+				<mech>CPLT-C1 Catapult</mech>
+				<mech>ARC-2R Archer</mech>
+				<mech>RFL-1N Rifleman</mech>
+				<mech>CRD-3R Crusader</mech>
+				<mech>QKD-4G Quickdraw</mech>
+				<mech>RFL-3N Rifleman</mech>
+				<mech>WHM-6R Warhammer</mech>
+				<mech>GHR-5J Grasshopper</mech>
+				<mech>ON1-K Orion</mech>
+				<mech>GLT-3N Guillotine</mech>
+				<mech>LCN25-01 Lancelot</mech>
+				<mech>FLS-8K Flashman</mech>
+				<mech>BL-6-KNT Black Knight</mech>
+				<mech>Fire Scorpion</mech>
+				<mech>Galahad</mech>
+				<mech>Rifleman IIC</mech>
+				<mech>P1 Perseus</mech>
+				<mech>Hellbringer</mech>
+				<mech>Summoner</mech>
+			</weight>
+			<weight name="assault">
+				<mech>AWS-8Q Awesome</mech>
+				<mech>VTR-9B Victor</mech>
+				<mech>CGR-A1 Charger</mech>
+				<mech>STK-3H Stalker</mech>
+				<mech>AWS-8Q Awesome</mech>
+				<mech>BNC-3E Banshee</mech>
+				<mech>STK-3F Stalker</mech>
+				<mech>LGB-0W Longbow</mech>
+				<mech>GRN-D-04 Grand Crusader II</mech>
+				<mech>CRK-5003-2 Crockett</mech>
+				<mech>HGN-732 Highlander</mech>
+				<mech>THG-11E Thug</mech>
+				<mech>EMP-6A Emperor</mech>
+				<mech>Warhammer IIC</mech>
+				<mech>Marauder IIC</mech>
+				<mech>Bane 2</mech>
+				<mech>Stone Rhino 2</mech>
+				<mech>Gargoyle</mech>
+				<mech>Warhawk</mech>
+			</weight>
+		</tech>
+	</faction>
+</book>
