@@ -122,7 +122,7 @@
 				<mech>KGC-000 King Crab</mech>
 			</weight>
 		</tech>
-		<tecn name="C">
+		<tech name="C">
 			<weight name="light">
 				<mech>HSR-200D Hussar</mech>
 				<mech>FFL-3A Firefly</mech>
@@ -286,7 +286,7 @@
 				<mech>KGC-000 King Crab</mech>
 			</weight>
 		</tech>
-		<tecn name="C">
+		<tech name="C">
 			<weight name="light">
 				<mech>THE-N Thorn</mech>
 				<mech>HSR-200D Hussar</mech>

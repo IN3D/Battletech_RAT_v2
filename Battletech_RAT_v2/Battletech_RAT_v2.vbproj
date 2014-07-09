@@ -168,6 +168,8 @@
     <Content Include="css\liao.css" />
     <Content Include="css\marik.css" />
     <Content Include="css\steiner.css" />
+    <Content Include="xml\Era Report 2750.xml" />
+    <Content Include="xml\Era Report 3052.xml" />
     <Content Include="xml\Field Manual Capellan Confederation.xml" />
     <Content Include="xml\Field Manual Comstar.xml" />
     <Content Include="xml\Field Manual Crusader Clans.xml" />
@@ -184,7 +186,10 @@
     <Content Include="xml\Field Manual SLDF.xml" />
     <Content Include="xml\Field Manual Updates.xml" />
     <Content Include="xml\Field Manual Warden Clans.xml" />
+    <Content Include="xml\Historical Liberation of Terra I.xml" />
+    <Content Include="xml\Historical Liberation of Terra II.xml" />
     <Content Include="xml\Historical Operation Klondike.xml" />
+    <Content Include="xml\Interstellar Expeditions.xml" />
     <Content Include="xml\Jihad Secrets.xml" />
     <Content Include="xml\Supplemental Wars of Reaving.xml">
       <SubType>Designer</SubType>

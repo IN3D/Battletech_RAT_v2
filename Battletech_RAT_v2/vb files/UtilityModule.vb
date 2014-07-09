@@ -7,11 +7,17 @@ Module UtilityModule
 
     Public Sub LoadXML(ByVal fileDirectory As String)
 
-        Try
+        ' creates a place to keep the current file name outside the scope of the try
+        ' block. This is for reporting errors.
+        Dim currentFile As String = ""
 
-            Dim a As Integer = 0
-            For Each xmlFile As String In My.Computer.FileSystem.GetFiles(fileDirectory)
+        'Try
 
+        Dim a As Integer = 0
+        For Each xmlFile As String In My.Computer.FileSystem.GetFiles(fileDirectory)
+            currentFile = xmlFile
+
+            Try
                 Dim xmlDoc As XmlDocument
                 Dim nodeList As XmlNodeList
                 Dim node As XmlNode
@@ -58,13 +64,16 @@ Module UtilityModule
                     Next
                 Next
                 a = (a + 1)
+            Catch ex As Exception
 
-            Next
+                MessageBox.Show("There was an error loading " + currentFile + ".", "ERROR", MessageBoxButtons.OK)
+            End Try
+        Next
 
-        Catch ex As Exception
+        'Catch ex As Exception
 
-            MessageBox.Show("An error has occured while parsing an xml file.", "ERROR")
-        End Try
+        'MessageBox.Show("An error has occured while parsing " + currentFile + ".", "ERROR")
+        'End Try
 
     End Sub
 
