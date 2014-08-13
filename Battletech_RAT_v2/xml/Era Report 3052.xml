@@ -62,6 +62,10 @@
 				<mech>AS7-D/AS7-K Atlas</mech>
 				<mech>HTM-27T/HTM-CM Hatamoto-Chi</mech>
 				<mech>DCMS-90X-D Daboku/MAL-1R Mauler</mech>
+        <mech>CRK-5003-2 Katana</mech>
+        <mech>CGR-1A9/CGR-3K Charger</mech>
+        <mech>BLR-1G/BLR-3S BattleMaster</mech>
+        <mech>CP-11-A/CP-11-C Cyclops</mech>
 			</weight>
 		</tech>
 	</faction>
