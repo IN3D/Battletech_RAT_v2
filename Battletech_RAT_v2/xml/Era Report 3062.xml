@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+     Battetech: Random Assignment Table v2.0
+
+    ==Created==
+    on: 11/15/14
+    by: Eric Hopkins
+
+    ==Last Modified==
+    on: 11/15/14
+    by: Eric Hopkins
+
+    This file contains the tables found in Era Report: 3062
+-->
+<book name="Era Report: 3062">
+    <faction name="Draconis Combine">
+        <tech name="default">
+            <weight name="light">
+                <mech>HM1 Hitman</mech>
+                <mech>JR7-D/JR7-K Jenner</mech>
+                <mech>OW-1 Owens</mech>
+                <mech>PNT-9R/PNT-10K Panther</mech>
+                <mech>RTX1-0 Raptor</mech>
+                <mech>RTX1-0 Raptor</mech>
+                <mech>KBO-7A Kabuto</mech>
+                <mech>JR7-D/JR7-K Jenner</mech>
+                <mech>SDR-5V/SD-7M Spider</mech>
+                <mech>SDR-9K Venom</mech>
+                <mech>PNT-C Panther</mech>
+            </weight>
+            <weight name="medium">
+                <mech>BJ2-0 Blackjack</mech>
+                <mech>DMO-1K Daimyo</mech>
+                <mech>KIM-2 Komodo</mech>
+                <mech>WVR-7K Wolverine</mech>
+                <mech>FS9-0 Firestarter</mech>
+                <mech>GRF-1N/GRF-1DS Griffin</mech>
+                <mech>PXH-1K/PXH-3K Phoenix Hawk</mech>
+                <mech>SR1-0 Strider</mech>
+                <mech>WFT-1 WolfTrap</mech>
+                <mech>LNX-9C Lynx</mech>
+                <mech>BSN-3K Bishamon</mech>
+            </weight>
+            <weight name="heavy">
+                <mech>BHKU-0 Black Hawk KU</mech>
+                <mech>MTR-5K Maelstrom</mech>
+                <mech>QKD-4G/QKD-5K Quickdraw</mech>
+                <mech>CPLT-C1/CPLT-K2 Catapult</mech>
+                <mech>NDA-1K No Dachi</mech>
+                <mech>DRG-5K Grand Dragon</mech>
+                <mech>DRG-5K Grand Dragon</mech>
+                <mech>DAI-01 Daikyu</mech>
+                <mech>DRG-1G/DRG-5N Grand Dragon</mech>
+                <mech>SJA-7D Shugenja</mech>
+                <mech>AV1-0 Avatar</mech>
+            </weight>
+            <weight name="assault">
+                <mech>TSH-7S Tai-Sho</mech>
+                <mech>OBK-M10 O-Bakemono</mech>
+                <mech>HTM-27T Hatamoto-Chi</mech>
+                <mech>GUN-1ERD Gunslinger</mech>
+                <mech>AS7-K Atlas</mech>
+                <mech>HTM-27T Hatamoto-Chi</mech>
+                <mech>MAL-1R Mauler</mech>
+                <mech>CRK-5003-2 Katana</mech>
+                <mech>AKU-1X Akuma</mech>
+                <mech>NG-C3A Naginata</mech>
+                <mech>SDR-0 Sunder</mech>
+            </weight>
+        </tech>
+    </faction>
+    <faction name="Federated Commonwealth">
+        <tech name="default">
+            <weight name="light">
+                <mech>NTK-2Q Night Hawk</mech>
+                <mech>JVN-10N/JVN-10P Javelin</mech>
+                <mech>GRM-01B Garm</mech>
+                <mech>ALM-7D Fireball</mech>
+                <mech>WLF-1/WLF-2 Wolfhound</mech>
+                <mech>COM-2D/COM-5S Commando</mech>
+                <mech>VLK-QA/VLK-QD Valkyrie</mech>
+                <mech>DRT-3S Dart</mech>
+                <mech>BH-K305 Battle Hawk</mech>
+                <mech>SPR-5F Spector</mech>
+                <mech>TLN-5W Talon</mech>
+            </weight>
+            <weight name="medium">
+                <mech>FS9-0 Firestarter</mech>
+                <mech>END-6Q Enfield</mech>
+                <mech>STH-1D Stealth</mech>
+                <mech>BJ-1/BJ-2 Blackjack</mech>
+                <mech>SNT-04 Sentry</mech>
+                <mech>ENF-4R/ENF-6M Enforcer III</mech>
+                <mech>HCT-3F/HCT-5S Hatchetman</mech>
+                <mech>CN9-A/CN9-D Centurion</mech>
+                <mech>NGS-4S Nightsky</mech>
+                <mech>BSW-S2 Bushwacker</mech>
+                <mech>BTZ-3F Blitzkrieg</mech>
+            </weight>
+            <weight name="heavy">
+                <mech>FLC-8R Falconer</mech>
+                <mech>RFL-3N/RFL-5D Rifleman</mech>
+                <mech>AXM-1N Axman</mech>
+                <mech>CES-3R Caesar</mech>
+                <mech>GAL-1GLS Gallowglas</mech>
+                <mech>JM6-A JagerMech/JM6D3 JagerMech III</mech>
+                <mech>PTR-6M Penetrator</mech>
+                <mech>CES-3R Caesar</mech>
+                <mech>MDG-1A Rakshasa</mech>
+                <mech>BGS-2T Barghest</mech>
+                <mech>BHKU-0 Black Hawk KU</mech>
+            </weight>
+            <weight name="assault">
+                <mech>MAD-4A/MAD-5A Marauder II</mech>
+                <mech>PPR-5S Salamander</mech>
+                <mech>AWS-8Q/AWS-9M Awesome</mech>
+                <mech>GUN-1ERD Gunslinger</mech>
+                <mech>VTR-9B/VTR-9K Victor</mech>
+                <mech>ZEU-6S/ZEU-9S Zeus</mech>
+                <mech>AS7-D/AS7-K Atlas</mech>
+                <mech>VTR-9B/VTR-9K Victor</mech>
+                <mech>BNC-3E/BNC-5S Banshee</mech>
+                <mech>HA1-0 Hauptmann</mech>
+                <mech>DVS-2 Devastator</mech>
+            </weight>
+        </tech>
+    </faction>
+    <faction name="Capellan Confederation/St. Ives">
+        <tech name="default">
+            <weight name="light">
+                <mech>JA-KL-1532 Jackal</mech>
+                <mech>D9-G9 Duan Gung</mech>
+                <mech>RVN-3L Raven</mech>
+                <mech>UM-R60/UM-R63 UrbanMech</mech>
+                <mech>RVN-3L Raven</mech>
+                <mech>RVN-3L Raven</mech>
+                <mech>SDR-5V/SDR-7M Spider</mech>
+                <mech>UM-R60/UM-R63 UrbanMech</mech>
+                <mech>ZPH-1A Tarantula</mech>
+                <mech>WSP-1L/WSP-3M Wasp</mech>
+                <mech>CSK-1A Cossack</mech>
+            </weight>
+        </tech>
+    </faction>
+</book>
