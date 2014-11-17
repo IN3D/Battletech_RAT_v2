@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+     Battetech: Random Assignment Table v2.0
+
+    ==Created==
+    on: 11/16/14
+    by: Eric Hopkins
+
+    ==Last Modified==
+    on: 11/16/14
+    by: Eric Hopkins
+
+    This file contains the tables found in Field Manual: 3085
+-->
+<book name="Field Manual: 3085">
+    <faction name="Capellan Confederation">
+        <tech name="default">
+            <weight name="light">
+                <mech>UM-R63 UrbanMech</mech>
+                <mech>WSP-8T Wasp</mech>
+                <mech>LCT-1V Locust</mech>
+                <mech>UM-R80 UrbanMech</mech>
+                <mech>FLE-17 Flea</mech>
+                <mech>D9-G9 Duan Gung</mech>
+                <mech>C-SK1 Cossack</mech>
+                <mech>RVN-3L Raven</mech>
+                <mech>STG-6L Stinger</mech>
+                <mech>ABS-3T Anubis</mech>
+                <mech>WSP-3L Wasp</mech>
+                <mech>D9-G10 Duan Gung</mech>
+                <mech>FLE-20 Flea</mech>
+                <mech>RVN-4Lr Raven</mech>
+                <mech>MEB-9 Ebony</mech>
+                <mech>DOL-1A1 Dola</mech>
+                <mech>MEB-11 Ebony</mech>
+                <mech>DOL-1A2 Dola</mech>
+                <mech>OW-1 Owens</mech>
+            </weight>
+        </tech>
+    </faction>
+</book>
