@@ -7,10 +7,234 @@
     by: Eric Hopkins
 
     ==Last Modified==
-    on: 11/15/14
+    on: 11/16/14
     by: Eric Hopkins
 
     This file contains the tables found in Era Report: 3062
 -->
 <book name="Era Report: 3145">
+    <faction name="Republic of the Sphere">
+        <tech name="default">
+            <weight name="light">
+                <mech>ALM-10D Fireball</mech>
+                <mech>FNHK-9K Falcon Hawk</mech>
+                <mech>FLE-17 Flea</mech>
+                <mech>PNT-10K2 Panther</mech>
+                <mech>WLF-4W Wolfhound</mech>
+                <mech>FNHK-9K1B Falcon Hawk</mech>
+                <mech>LCT-5W2 Locust</mech>
+                <mech>Arbalest</mech>
+                <mech>Jenner IIC 4</mech>
+                <mech>OTT-11J Ostscout</mech>
+                <mech>Crimson Hawk</mech>
+            </weight>
+            <weight name="medium">
+                <mech>CNS-5M Cronus</mech>
+                <mech>CMA-1S Chimera</mech>
+                <mech>TRG-1N Targe</mech>
+                <mech>EFT-7X Eisenfaust</mech>
+                <mech>Black Hawk</mech>
+                <mech>WVR-7H Wolverine II</mech>
+                <mech>SKW-2F Shockwave</mech>
+                <mech>GRF-5M Griffin</mech>
+                <mech>BJ2-0 Blackjack</mech>
+                <mech>Griffin IIC 3</mech>
+                <mech>KW1-LH8 Lineholder</mech>
+            </weight>
+            <weight name="heavy">
+                <mech>KSC-5I Koschei</mech>
+                <mech>RFL-7X Rifleman</mech>
+                <mech>DRG-7K Grand Dragon</mech>
+                <mech>MAD-9M2 Marauder</mech>
+                <mech>Ryoken II</mech>
+                <mech>OTL-9R Ostsol</mech>
+                <mech>SCG-WF1 Scourge</mech>
+                <mech>EXC-B2b Excalibur</mech>
+                <mech>WHD-10CT Warhammer</mech>
+                <mech>Vulture Mk IV</mech>
+                <mech>RFL-8X Rifleman</mech>
+            </weight>
+            <weight name="assault">
+                <mech>CGR-KMZ Charger</mech>
+                <mech>TR-XB Trebaruna</mech>
+                <mech>LGB-12R Longbow</mech>
+                <mech>MAD-6D Marauder II</mech>
+                <mech>Phoenix Hawk IIC 7</mech>
+                <mech>VKG-2G Viking</mech>
+                <mech>GUN-1ERD Gunslinger</mech>
+                <mech>TI-2PA Titan II</mech>
+                <mech>AWS-10KM Awesome</mech>
+                <mech>PKP-1B Peacekeeper</mech>
+                <mech>MAD-4S Marauder II</mech>
+            </weight>
+        </tech>
+    </faction>
+    <faction name="Capellan Confederation">
+        <tech name="default">
+            <weight name="light">
+                <mech>STG-5G Stinger</mech>
+                <mech>WSP-3L Wasp</mech>
+                <mech>D9-G9 Duan Gung</mech>
+                <mech>ABS-3T Anubis</mech>
+                <mech>ABS-4C Anubis</mech>
+                <mech>D9-G10 Duan Gung</mech>
+                <mech>DOL-1A1 Dola</mech>
+                <mech>MEB-9 Ebony</mech>
+                <mech>MEB-10 Ebony</mech>
+                <mech>Crimson Hawk 2</mech>
+                <mech>Koshi 2</mech>
+            </weight>
+            <weight name="medium">
+                <mech>PXH-5L Phoenix Hawk</mech>
+                <mech>HUR-WO-R40 Huron Warrior</mech>
+                <mech>VND-4L Vindicator</mech>
+                <mech>OSP-26 Osprey</mech>
+                <mech>SYU-6B Sha Yu</mech>
+                <mech>EYL-45A Eyleuka</mech>
+                <mech>FS9-0 Firestarter</mech>
+                <mech>MS1-0 Men Shen</mech>
+                <mech>SHD-8L Shadow Hawk</mech>
+                <mech>Black Hawk (Standard)</mech>
+                <mech>AVL-10 Avalanche</mech>
+            </weight>
+            <weight name="heavy">
+                <mech>OSR-4L Ostroc</mech>
+                <mech>WHM-4L Warhammer</mech>
+                <mech>CTF-3LL Cataphract</mech>
+                <mech>SHY-3B Shen Yi</mech>
+                <mech>CRD-8L Crusader</mech>
+                <mech>THR-C4 Thunder</mech>
+                <mech>WHM-5L Warhammer</mech>
+                <mech>AV1-0 Avatar</mech>
+                <mech>WHD-10CT Warhammer</mech>
+                <mech>Sphinx</mech>
+                <mech>Vulture Mk. IV</mech>
+            </weight>
+            <weight name="assault">
+                <mech>STK-3Fb Stalker</mech>
+                <mech>LBG-12C Longbow</mech>
+                <mech>Y-H9GB Yu Huang</mech>
+                <mech>GOL-3L Goliath</mech>
+                <mech>Y-H10G Yu Huang</mech>
+                <mech>BLR-4L BattleMaster</mech>
+                <mech>XNT-40 Xanthos</mech>
+                <mech>SD1-0 Sunder</mech>
+                <mech>Phoenix Hawk IIC 3</mech>
+                <mech>Warhammer IIC 4</mech>
+                <mech>Hellstar</mech>
+            </weight>
+        </tech>
+    </faction>
+    <faction name="Draconis Combine">
+        <tech name="default">
+            <weight name="light">
+                <mech>SDR-8K Spider</mech>
+                <mech>NX-90 Nyx</mech>
+                <mech>PNT-16K Panther</mech>
+                <mech>RK-4K Rokurokubi</mech>
+                <mech>SDR-9KB Venom</mech>
+                <mech>PNT-12A Panther</mech>
+                <mech>SDR-8X Spider</mech>
+                <mech>Arbalest 2</mech>
+                <mech>Ocelot 3</mech>
+                <mech>Morrigan</mech>
+                <mech>Hankyu</mech>
+            </weight>
+            <weight name="medium">
+                <mech>HCT-5K Hatchetman</mech>
+                <mech>TFT-C3 Thunder Fox</mech>
+                <mech>TSN-1C Tessen</mech>
+                <mech>PXH-7K Phoenix Hawk</mech>
+                <mech>WFT-2B Wolf Trap</mech>
+                <mech>WVR-9W2 Wolverine</mech>
+                <mech>SHD-12C Shadow Hawk</mech>
+                <mech>Griffin IIC 6</mech>
+                <mech>Shadow Cat</mech>
+                <mech>Goshawk III</mech>
+                <mech>Nobori-nin</mech>
+            </weight>
+            <weight name="heavy">
+                <mech>ARC-9K Archer</mech>
+                <mech>OSR-4K Ostroc</mech>
+                <mech>NDA-2KC No-Dachi</mech>
+                <mech>MTR-6E Maelstrom</mech>
+                <mech>SH-1R Shiro</mech>
+                <mech>TDR-60-RLA Thunderbolt</mech>
+                <mech>AV1-0 Avatar</mech>
+                <mech>Rifleman IIC 7</mech>
+                <mech>Vulture Mk IV</mech>
+                <mech>Mad Cat Mk IV</mech>
+                <mech>Nova Cat</mech>
+            </weight>
+            <weight name="assault">
+                <mech>VTR-9K Victor</mech>
+                <mech>OBK-M12 O-Bakemono</mech>
+                <mech>TSH-8S Tai-Sho</mech>
+                <mech>CP-11-B Cyclops</mech>
+                <mech>HTM-28Tr Hatamoto-Chi</mech>
+                <mech>AS7-K3 Atlas</mech>
+                <mech>BNZ-X Banzai</mech>
+                <mech>Mad Cat Mk II</mech>
+                <mech>Warhammer IIC 8</mech>
+                <mech>Phoenix Hawk IIC 2</mech>
+                <mech>Supernova</mech>
+            </weight>
+        </tech>
+    </faction>
+    <faction name="Federated Suns">
+        <tech name="default">
+            <weight name="light">
+                <mech>GRM-01C Garm</mech>
+                <mech>V4-LNT-J3 Valiant</mech>
+                <mech>VLK-QD1 Valkyrie</mech>
+                <mech>ALM-9D Fireball</mech>
+                <mech>JVN-11D Javelin</mech>
+                <mech>VLK-QD4 Valkyrie</mech>
+                <mech>ALM-10D Fireball</mech>
+                <mech>OSR-5D Osiris</mech>
+                <mech>Koshi</mech>
+                <mech>Crimson Hawk</mech>
+                <mech>Arbalest</mech>
+            </weight>
+            <weight name="medium">
+                <mech>CRD-1X Cuirass</mech>
+                <mech>DV-9D Dervish</mech>
+                <mech>HCT-6D Hatchetman</mech>
+                <mech>CN9-D5 Centurion</mech>
+                <mech>EXR-2X Exhumer</mech>
+                <mech>BJ2-0 Blackjack</mech>
+                <mech>GRF-6S Griffin</mech>
+                <mech>NH-2 Rook</mech>
+                <mech>Black Hawk</mech>
+                <mech>Griffin IIC 4</mech>
+                <mech>Shadow Hawk IIC 4</mech>
+            </weight>
+            <weight name="heavy">
+                <mech>OTL-8D Ostsol</mech>
+                <mech>WHM-8D Warhammer</mech>
+                <mech>TSN-6S Thanatos</mech>
+                <mech>HMH-6E Hammerhands</mech>
+                <mech>AV1-0 Avatar</mech>
+                <mech>BL-12-KNT Black Knight</mech>
+                <mech>WHM-9D Warhammer</mech>
+                <mech>PTR-4F Penetrator</mech>
+                <mech>BHKU-0 Black Hawk-KU</mech>
+                <mech>Rifleman IIC 8</mech>
+                <mech>Ryoken II</mech>
+            </weight>
+            <weight name="assault">
+                <mech>VTR-10D Victor</mech>
+                <mech>GOL-5D Goliath</mech>
+                <mech>STK-7D Stalker</mech>
+                <mech>AS8-D Atlas</mech>
+                <mech>PDG-2R Pendragon</mech>
+                <mech>TLR1-0 Templar</mech>
+                <mech>OR-2I Orochi</mech>
+                <mech>MAD-6D Marauder II</mech>
+                <mech>Mad Cat Mk II</mech>
+                <mech>Phoenix Hawk IIC 4</mech>
+                <mech>Warhammer IIC 2</mech>
+            </weight>
+        </tech>
+    </faction>
 </book>
