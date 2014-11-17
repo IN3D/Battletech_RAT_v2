@@ -237,4 +237,396 @@
             </weight>
         </tech>
     </faction>
+    <faction name="FWL: Duchy of Andurien">
+        <tech name="default">
+            <weight name="light">
+                <mech>STG-5G Stinger</mech>
+                <mech>LCT-1Vb Locust</mech>
+                <mech>LCT-6M Locust</mech>
+                <mech>STG-3Gb Stinger</mech>
+                <mech>LCT-5W2 Locust</mech>
+                <mech>HER-4K Hermes</mech>
+                <mech>MEB-9 Ebony</mech>
+                <mech>HMR-3C Hammer</mech>
+                <mech>Crimson Hawk</mech>
+                <mech>Koshi (Standard)</mech>
+                <mech>Jackalope</mech>
+            </weight>
+            <weight name="medium">
+                <mech>B1-HND Bloodhound</mech>
+                <mech>B1-HND Bloodhound</mech>
+                <mech>GRF-2N Griffin</mech>
+                <mech>SHD-7M Shadow Hawk</mech>
+                <mech>WVR-9M Wolverine</mech>
+                <mech>SR1-0 Strider</mech>
+                <mech>ASN-99 Assassin</mech>
+                <mech>BJ2-0 Blackjack</mech>
+                <mech>Black Hawk (Standard)</mech>
+                <mech>Shadow Hawk IIC 8</mech>
+                <mech>Dasher II</mech>
+            </weight>
+            <weight name="heavy">
+                <mech>WHM-8M Warhammer</mech>
+                <mech>TMP-3M2 Tempest</mech>
+                <mech>ARC-8M Archer</mech>
+                <mech>TDR-10M Thunderbolt</mech>
+                <mech>ARC-9M Archer</mech>
+                <mech>HRC-LS-9000 Hercules</mech>
+                <mech>PEN-2H Penthesilea</mech>
+                <mech>TDR-11SE Thunderbolt</mech>
+                <mech>Guillotine IIC 2</mech>
+                <mech>Rifleman IIC 8</mech>
+                <mech>Ursa</mech>
+            </weight>
+            <weight name="assault">
+                <mech>BLR-M3 BattleMaster</mech>
+                <mech>AWS-9Q Awesome</mech>
+                <mech>STK-6M Stalker</mech>
+                <mech>BLR-1Gb BattleMaster</mech>
+                <mech>AWS-10KM Awesome</mech>
+                <mech>LGB-13C Longbow</mech>
+                <mech>XNT-50 Xanthos</mech>
+                <mech>TRB-XB Trebaruna</mech>
+                <mech>Warhammer IIC 8</mech>
+                <mech>Phoenix Hawk IIC 7</mech>
+                <mech>Mad Cat Mk. II</mech>
+            </weight>
+        </tech>
+    </faction>
+    <faction name="FWL: Marik-Stewart Commonwealth">
+        <tech name="default">
+            <weight name="light">
+                <mech>STG-5G Stinger</mech>
+                <mech>LCT-1Vb Locust</mech>
+                <mech>LCT-6M Locust</mech>
+                <mech>STG-3Gb Stinger</mech>
+                <mech>LCT-5W2 Locust</mech>
+                <mech>HER-4K Hermes</mech>
+                <mech>PXK-LM Phoenix Hawk L</mech>
+                <mech>HMR-3C Hammer</mech>
+                <mech>Crimson Hawk</mech>
+                <mech>Koshi (Standard)</mech>
+                <mech>Jackalope</mech>
+            </weight>
+            <weight name="medium">
+                <mech>B1-HND Bloodhound</mech>
+                <mech>B1-HND Bloodhound</mech>
+                <mech>GRF-2N Griffin</mech>
+                <mech>SHD-7M Shadow Hawk</mech>
+                <mech>WVR-9M Wolverine</mech>
+                <mech>SR1-0 Strider</mech>
+                <mech>SKW-4G Shockwave</mech>
+                <mech>BJ2-0 Blackjack</mech>
+                <mech>Black Hawk (Standard)</mech>
+                <mech>Shadow Hawk IIC 8</mech>
+                <mech>Dasher II</mech>
+            </weight>
+            <weight name="heavy">
+                <mech>WHM-8M Warhammer</mech>
+                <mech>TMP-3M2 Tempest</mech>
+                <mech>ARC-8M Archer</mech>
+                <mech>TDR-10M Thunderbolt</mech>
+                <mech>ARC-9M Archer</mech>
+                <mech>HRC-LS-9000 Hercules</mech>
+                <mech>SCG-WF1 Scourge</mech>
+                <mech>TDR-11SE Thunderbolt</mech>
+                <mech>Guillotine IIC 2</mech>
+                <mech>Rifleman IIC 8</mech>
+                <mech>Ursa</mech>
+            </weight>
+            <weight name="assault">
+                <mech>BLR-M3 BattleMaster</mech>
+                <mech>AWS-9Q Awesome</mech>
+                <mech>STK-6M Stalker</mech>
+                <mech>BLR-1Gb BattleMaster</mech>
+                <mech>AWS-10KM Awesome</mech>
+                <mech>LGB-13C Longbow</mech>
+                <mech>TRB-XJ Trebaruna</mech>
+                <mech>TRB-XB Trebaruna</mech>
+                <mech>Warhammer IIC 8</mech>
+                <mech>Phoenix Hawk IIC 7</mech>
+                <mech>Mad Cat Mk. II</mech>
+            </weight>
+        </tech>
+    </faction>
+    <faction name="FWL: Oriente Protectorate">
+        <tech name="default">
+            <weight name="light">
+                <mech>STG-5G Stinger</mech>
+                <mech>LCT-1Vb Locust</mech>
+                <mech>LCT-6M Locust</mech>
+                <mech>STG-3Gb Stinger</mech>
+                <mech>LCT-5W2 Locust</mech>
+                <mech>HER-4K Hermes</mech>
+                <mech>PXK-LM Phoenix Hawk L</mech>
+                <mech>HMR-3C Hammer</mech>
+                <mech>Crimson Hawk</mech>
+                <mech>Koshi (Standard)</mech>
+                <mech>Jackalope</mech>
+            </weight>
+            <weight name="medium">
+                <mech>B1-HND Bloodhound</mech>
+                <mech>B1-HND Bloodhound</mech>
+                <mech>GRF-2N Griffin</mech>
+                <mech>SHD-7M Shadow Hawk</mech>
+                <mech>WVR-9M Wolverine</mech>
+                <mech>SR1-0 Strider</mech>
+                <mech>PXH-7K Phoenix Hawk</mech>
+                <mech>BJ2-0 Blackjack</mech>
+                <mech>Black Hawk (Standard)</mech>
+                <mech>Shadow Hawk IIC 8</mech>
+                <mech>Dasher II</mech>
+            </weight>
+            <weight name="heavy">
+                <mech>WHM-8M Warhammer</mech>
+                <mech>TMP-3M2 Tempest</mech>
+                <mech>ARC-8M Archer</mech>
+                <mech>TDR-10M Thunderbolt</mech>
+                <mech>ARC-9M Archer</mech>
+                <mech>HRC-LS-9000 Hercules</mech>
+                <mech>SCG-WF1 Scourge</mech>
+                <mech>TDR-11SE Thunderbolt</mech>
+                <mech>Guillotine IIC 2</mech>
+                <mech>Rifleman IIC 8</mech>
+                <mech>Ursa</mech>
+            </weight>
+            <weight name="assault">
+                <mech>BLR-M3 BattleMaster</mech>
+                <mech>AWS-9Q Awesome</mech>
+                <mech>STK-6M Stalker</mech>
+                <mech>BLR-1Gb BattleMaster</mech>
+                <mech>AWS-10KM Awesome</mech>
+                <mech>LGB-13C Longbow</mech>
+                <mech>SD1-0 Sunder</mech>
+                <mech>TRB-XB Trebaruna</mech>
+                <mech>Warhammer IIC 8</mech>
+                <mech>Phoenix Hawk IIC 7</mech>
+                <mech>Mad Cat Mk. II</mech>
+            </weight>
+        </tech>
+    </faction>
+    <faction name="FWL: Regulan Fiefs">
+        <tech name="default">
+            <weight name="light">
+                <mech>STG-5G Stinger</mech>
+                <mech>LCT-1Vb Locust</mech>
+                <mech>LCT-6M Locust</mech>
+                <mech>STG-3Gb Stinger</mech>
+                <mech>LCT-5W2 Locust</mech>
+                <mech>HER-4K Hermes</mech>
+                <mech>WGT-3SC Wight</mech>
+                <mech>HMR-3C Hammer</mech>
+                <mech>Crimson Hawk</mech>
+                <mech>Koshi (Standard)</mech>
+                <mech>Jackalope</mech>
+            </weight>
+            <weight name="medium">
+                <mech>B1-HND Bloodhound</mech>
+                <mech>B1-HND Bloodhound</mech>
+                <mech>GRF-2N Griffin</mech>
+                <mech>SHD-7M Shadow Hawk</mech>
+                <mech>WVR-9M Wolverine</mech>
+                <mech>SR1-0 Strider</mech>
+                <mech>VTRU-1 Violator</mech>
+                <mech>BJ2-0 Blackjack</mech>
+                <mech>Black Hawk (Standard)</mech>
+                <mech>Shadow Hawk IIC 8</mech>
+                <mech>Dasher II</mech>
+            </weight>
+            <weight name="heavy">
+                <mech>WHM-8M Warhammer</mech>
+                <mech>TMP-3M2 Tempest</mech>
+                <mech>ARC-8M Archer</mech>
+                <mech>TDR-10M Thunderbolt</mech>
+                <mech>ARC-9M Archer</mech>
+                <mech>HRC-LS-9000 Hercules</mech>
+                <mech>PKM-2D Patriot</mech>
+                <mech>TDR-11SE Thunderbolt</mech>
+                <mech>Guillotine IIC 2</mech>
+                <mech>Rifleman IIC 8</mech>
+                <mech>Ursa</mech>
+            </weight>
+            <weight name="assault">
+                <mech>BLR-M3 BattleMaster</mech>
+                <mech>AWS-9Q Awesome</mech>
+                <mech>STK-6M Stalker</mech>
+                <mech>BLR-1Gb BattleMaster</mech>
+                <mech>AWS-10KM Awesome</mech>
+                <mech>LGB-13C Longbow</mech>
+                <mech>NTL-AG Neanderthal</mech>
+                <mech>TRB-XB Trebaruna</mech>
+                <mech>Warhammer IIC 8</mech>
+                <mech>Phoenix Hawk IIC 7</mech>
+                <mech>Mad Cat Mk. II</mech>
+            </weight>
+        </tech>
+    </faction>
+    <faction name="FWL: Rim Commonality">
+        <tech name="default">
+            <weight name="light">
+                <mech>STG-5G Stinger</mech>
+                <mech>LCT-1Vb Locust</mech>
+                <mech>LCT-6M Locust</mech>
+                <mech>STG-3Gb Stinger</mech>
+                <mech>LCT-5W2 Locust</mech>
+                <mech>HER-4K Hermes</mech>
+                <mech>FLE-19 Flea</mech>
+                <mech>HMR-3C Hammer</mech>
+                <mech>Crimson Hawk</mech>
+                <mech>Koshi (Standard)</mech>
+                <mech>Jackalope</mech>
+            </weight>
+            <weight name="medium">
+                <mech>B1-HND Bloodhound</mech>
+                <mech>B1-HND Bloodhound</mech>
+                <mech>GRF-2N Griffin</mech>
+                <mech>SHD-7M Shadow Hawk</mech>
+                <mech>WVR-9M Wolverine</mech>
+                <mech>SR1-0 Strider</mech>
+                <mech>SCP-10M Scorpion</mech>
+                <mech>BJ2-0 Blackjack</mech>
+                <mech>Black Hawk (Standard)</mech>
+                <mech>Shadow Hawk IIC 8</mech>
+                <mech>Dasher II</mech>
+            </weight>
+            <weight name="heavy">
+                <mech>WHM-8M Warhammer</mech>
+                <mech>TMP-3M2 Tempest</mech>
+                <mech>ARC-8M Archer</mech>
+                <mech>TDR-10M Thunderbolt</mech>
+                <mech>ARC-9M Archer</mech>
+                <mech>HRC-LS-9000 Hercules</mech>
+                <mech>WHD-10CT Warhammer</mech>
+                <mech>TDR-11SE Thunderbolt</mech>
+                <mech>Guillotine IIC 2</mech>
+                <mech>Rifleman IIC 8</mech>
+                <mech>Ursa</mech>
+            </weight>
+            <weight name="assault">
+                <mech>BLR-M3 BattleMaster</mech>
+                <mech>AWS-9Q Awesome</mech>
+                <mech>STK-6M Stalker</mech>
+                <mech>BLR-1Gb BattleMaster</mech>
+                <mech>AWS-10KM Awesome</mech>
+                <mech>LGB-13C Longbow</mech>
+                <mech>EMP-6M2 Emperor</mech>
+                <mech>TRB-XB Trebaruna</mech>
+                <mech>Warhammer IIC 8</mech>
+                <mech>Phoenix Hawk IIC 7</mech>
+                <mech>Mad Cat Mk. II</mech>
+            </weight>
+        </tech>
+    </faction>
+    <faction name="FWL: Duchy of Tamarind-Abbey">
+        <tech name="default">
+            <weight name="light">
+                <mech>STG-5G Stinger</mech>
+                <mech>LCT-1Vb Locust</mech>
+                <mech>LCT-6M Locust</mech>
+                <mech>STG-3Gb Stinger</mech>
+                <mech>LCT-5W2 Locust</mech>
+                <mech>HER-4K Hermes</mech>
+                <mech>EGL-3M Eagle</mech>
+                <mech>HMR-3C Hammer</mech>
+                <mech>Crimson Hawk</mech>
+                <mech>Koshi (Standard)</mech>
+                <mech>Jackalope</mech>
+            </weight>
+            <weight name="medium">
+                <mech>B1-HND Bloodhound</mech>
+                <mech>B1-HND Bloodhound</mech>
+                <mech>GRF-2N Griffin</mech>
+                <mech>SHD-7M Shadow Hawk</mech>
+                <mech>WVR-9M Wolverine</mech>
+                <mech>SR1-0 Strider</mech>
+                <mech>CRB-27b Crab</mech>
+                <mech>BJ2-0 Blackjack</mech>
+                <mech>Black Hawk (Standard)</mech>
+                <mech>Shadow Hawk IIC 8</mech>
+                <mech>Dasher II</mech>
+            </weight>
+            <weight name="heavy">
+                <mech>WHM-8M Warhammer</mech>
+                <mech>TMP-3M2 Tempest</mech>
+                <mech>ARC-8M Archer</mech>
+                <mech>TDR-10M Thunderbolt</mech>
+                <mech>ARC-9M Archer</mech>
+                <mech>HRC-LS-9000 Hercules</mech>
+                <mech>GLT-6WB3 Guillotine</mech>
+                <mech>TDR-11SE Thunderbolt</mech>
+                <mech>Guillotine IIC 2</mech>
+                <mech>Rifleman IIC 8</mech>
+                <mech>Ursa</mech>
+            </weight>
+            <weight name="assault">
+                <mech>BLR-M3 BattleMaster</mech>
+                <mech>AWS-9Q Awesome</mech>
+                <mech>STK-6M Stalker</mech>
+                <mech>BLR-1Gb BattleMaster</mech>
+                <mech>AWS-10KM Awesome</mech>
+                <mech>LGB-13C Longbow</mech>
+                <mech>GOL-6M Goliath</mech>
+                <mech>TRB-XB Trebaruna</mech>
+                <mech>Warhammer IIC 8</mech>
+                <mech>Phoenix Hawk IIC 7</mech>
+                <mech>Mad Cat Mk. II</mech>
+            </weight>
+        </tech>
+    </faction>
+    <faction name="FWL: Independent/Lesser">
+        <tech name="default">
+            <weight name="light">
+                <mech>STG-5G Stinger</mech>
+                <mech>LCT-1Vb Locust</mech>
+                <mech>LCT-6M Locust</mech>
+                <mech>STG-3Gb Stinger</mech>
+                <mech>LCT-5W2 Locust</mech>
+                <mech>HER-4K Hermes</mech>
+                <mech>EGL-3M Eagle</mech>
+                <mech>HMR-3C Hammer</mech>
+                <mech>Crimson Hawk</mech>
+                <mech>Koshi (Standard)</mech>
+                <mech>Jackalope</mech>
+            </weight>
+            <weight name="medium">
+                <mech>B1-HND Bloodhound</mech>
+                <mech>B1-HND Bloodhound</mech>
+                <mech>GRF-2N Griffin</mech>
+                <mech>SHD-7M Shadow Hawk</mech>
+                <mech>WVR-9M Wolverine</mech>
+                <mech>SR1-0 Strider</mech>
+                <mech>GST-11 Ghost</mech>
+                <mech>BJ2-0 Blackjack</mech>
+                <mech>Black Hawk (Standard)</mech>
+                <mech>Shadow Hawk IIC 8</mech>
+                <mech>Dasher II</mech>
+            </weight>
+            <weight name="heavy">
+                <mech>WHM-8M Warhammer</mech>
+                <mech>TMP-3M2 Tempest</mech>
+                <mech>ARC-8M Archer</mech>
+                <mech>TDR-10M Thunderbolt</mech>
+                <mech>ARC-9M Archer</mech>
+                <mech>HRC-LS-9000 Hercules</mech>
+                <mech>BNDR-01Ar Bandersnatch</mech>
+                <mech>TDR-11SE Thunderbolt</mech>
+                <mech>Guillotine IIC 2</mech>
+                <mech>Rifleman IIC 8</mech>
+                <mech>Ursa</mech>
+            </weight>
+            <weight name="assault">
+                <mech>BLR-M3 BattleMaster</mech>
+                <mech>AWS-9Q Awesome</mech>
+                <mech>STK-6M Stalker</mech>
+                <mech>BLR-1Gb BattleMaster</mech>
+                <mech>AWS-10KM Awesome</mech>
+                <mech>LGB-13C Longbow</mech>
+                <mech>AS7-K2 Atlas</mech>
+                <mech>TRB-XB Trebaruna</mech>
+                <mech>Warhammer IIC 8</mech>
+                <mech>Phoenix Hawk IIC 7</mech>
+                <mech>Mad Cat Mk. II</mech>
+            </weight>
+        </tech>
+    </faction>
 </book>
